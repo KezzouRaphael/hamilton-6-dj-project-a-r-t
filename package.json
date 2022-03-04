@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "sass": "^1.49.9"
+  },
+  "name": "hamilton-6-dj-project-a-r-t",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass css/style.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/becodeorg/hamilton-6-dj-project-a-r-t.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/becodeorg/hamilton-6-dj-project-a-r-t/issues"
+  },
+  "homepage": "https://github.com/becodeorg/hamilton-6-dj-project-a-r-t#readme"
+}
