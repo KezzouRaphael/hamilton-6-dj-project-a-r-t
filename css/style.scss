@@ -1,9 +1,10 @@
+@import "variables.scss";
 body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 300;
   color: rgba(21, 21, 21, 0.8);
-  background-color: #ffffff;
+  background-color: $white;
   letter-spacing: -0.03em;
 }
 h1,
@@ -19,10 +20,23 @@ h6 {
   color: #151515;
   letter-spacing: 0;
 }
+h4 {
+  font-size: 1.375rem;
+  font-weight: 500;
+}
+.header-centered {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center !important;
+  font-size: 1.6rem;
+}
 img {
   display: inline-block;
   max-width: 100%;
   height: auto;
+  vertical-align: middle;
+  border-style: none;
+  margin-bottom: 2rem;
 }
 ul {
   list-style: none;
@@ -50,6 +64,9 @@ ul {
       margin-right: 1rem;
     }
   }
+  &-image {
+    margin-top: 2rem;
+  }
   &-list {
     padding-top: 1.688rem;
   }
@@ -58,7 +75,7 @@ ul {
   &-phone,
   &-envelope {
     font-size: 1.25rem;
-    color: #c4c4c4;
+    color: $gray-light;
     margin-right: 0.625rem;
   }
   &-facebook-f,
@@ -80,7 +97,7 @@ a {
   background-color: transparent;
   &:focus,
   &:active {
-    color: #8121e0;
+    color: $purple;
   }
 }
 p {
@@ -93,4 +110,115 @@ p {
   font-style: italic;
   font-size: 1.25rem;
   letter-spacing: 0.08em;
+}
+.button {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  padding: 0.875rem 2.188rem;
+  font-size: 1rem;
+  line-height: 1.25;
+  border: 1px solid;
+  border-radius: 0.313rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
+  cursor: pointer;
+  vertical-align: middle;
+  user-select: none;
+  transition: 250ms all ease-in-out;
+  color: $white;
+  background-color: $purple;
+  border-color: $purple;
+}
+.bigicons {
+  display: block;
+  font-size: 4rem;
+  color: $purple;
+}
+.section-music {
+  background-image: url(/images/bg-circle-2.png);
+  background-size: cover;
+  background-position: center center;
+  background-color: $bggray;
+  padding-bottom: 2rem;
+}
+.flexbox-container,
+.flexibox-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.group-music,
+.group-releases {
+  text-align: center;
+  &-paragraphs {
+    opacity: 0.8;
+  }
+  &-date {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-weight: 400;
+    color: rgba(21, 21, 21, 0.8);
+  }
+}
+.box-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+  &-infos {
+    margin-top: 1rem;
+  }
+}
+///////////////// Tablet design /////////////////
+
+@media screen and (min-width: 480px) {
+  .group-informations-list > li {
+    display: inline-block;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .group-informations-list-social-media-element {
+    display: block !important;
+  }
+  .section-music {
+    padding: 5rem 0;
+  }
+  .flex-container {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .box-container {
+    flex-direction: row;
+    text-align: left;
+    &-icon {
+      margin-right: 1rem;
+    }
+  }
+}
+
+///////////////// Desktop design /////////////////
+
+@media screen and (min-width: 800px) {
+  .flex-container {
+    flex: 0 0 33%;
+    max-width: 31%;
+  }
+  .flexbox-container {
+    gap: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .flexi-container {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
 }
