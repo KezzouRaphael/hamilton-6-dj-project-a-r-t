@@ -14,194 +14,6 @@
 }
 
 
-
-
-
- 
-
-header{
-  background-image: url("/images/banner-img.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed; //parallax effect
-  height:30rem;
-  display:flex;
-  flex-direction: column;
-  font-family: 'Poppins', sans-serif;
-  color:$white;
-  position:relative;
-
-
-
-  nav{
-     
-      position:sticky;
-      display:flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-around;
-      //padding:0.5rem 1rem;
-      position: sticky;
-      top: 1rem;
-      z-index: 10000;
-      //background-color: $gray-dark;
-      
-      .logo{
-           padding-top: 1rem;
-           img{
-              content:url("/images/logo.png");
-              background-repeat: no-repeat;
-              background-position: center;
-              background-size:cover;
-           }
-           
-      }
-      // wrapper of navbar
-      .wrapper{
-              display:flex;
-              flex-direction: row;
-              //padding: 0rem 0.688rem;
-              align-items: center;
-              
-              
-          .wrapper__nav{
-              list-style-type: none;
-              .wrapper__nav__item{
-                  display: inline;
-                  margin-left:2rem;
-                      a{
-                          text-decoration: none;
-                          color:$white;
-                          font-size: 0.938rem;
-                          display:inline-block;
-                          transition-property: all;
-                          transition-duration: 0.5s;
-                          transition-timing-function: ease-in-out;
-                          transition-delay: 0s;
-
-                          &:hover{
-                              color:$gray;
-                          }
-                      }
-           
-              }
-          }  
-          
-          .wrapper__nav-share{
-              list-style-type: none;
-              .wrapper__nav-share__item{
-                  display: inline;
-                  margin-left:2rem;
-                      a{
-                          text-decoration: none;
-                          color:$gray;
-                          font-size: 1.2rem;
-                          display:inline-block;
-                          transition-property: all;
-                          transition-duration: 0.3s;
-                          transition-timing-function: ease-in-out;
-                          transition-delay: 0s;
-
-                          &:hover{
-                              color:$white;
-                          }
-                      }
-           
-              }
-          } 
-
-
-      }
-
-      // hamburger and ellipsis toggle menu
-      .hamburger{
-          //order: -1;
-          display:inline-block;
-          margin-left:1rem;
-          font-size: 1rem;
-          width:2rem;
-          height:3rem;
-          cursor: pointer;
-      }
-
-      .ellipsis{
-          display:none;
-          margin-left:2rem;
-          font-size: 1rem;
-          width:2rem;
-          height:2rem;
-          cursor: pointer;
-      }
-
-     
-  }
-
-  h1{
-      align-self: center;
-       margin-top:6rem;
-  }
-
-  .breadcrumbs{
-      list-style-type: none;
-      align-self: center;
-      padding: 3rem;
-      
-
-      .breadcrumbs__item{
-          display: inline;
-          padding:0rem 1rem;
-
-          a{
-              text-decoration: none;
-              color:$white;
-              font-size: 0.813rem;
-              position: relative;
-              
-
-              &::after{
-                  content: '';
-                  position: absolute;
-                  width: 0.313rem;
-                  height: 0.313rem;
-                  border-radius: 50%;
-                  top: 50%;
-                  
-                  right: -1rem;
-                  display: inline-block;
-                  background: $yellow;
-                  transform: translate3d(0, -50%, 0);
-              }
-          }
-      }
-  }
-
-}
-
-
-
-.sticky {
-  transition-property:background-color;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-in-out;
-  transition-delay: 0s;
-  position: fixed;
-  width:100vw;
-  top: 0;
-  background-color: $gray-dark;
-}
-
-::selection {
-  background: $purple;
-  color: $white;
-}
-
-
-
-
-
- 
-
 header{
   background-image: url("/images/banner-img.jpg");
   background-position: center;
@@ -471,9 +283,6 @@ header{
 
 
 
-footer {
-    background: #282828;
-    color: white;
 
 
 
@@ -733,6 +542,9 @@ p {
     margin-top: 1rem;
   }
 }
+
+
+
 ///////////////// Tablet design /////////////////
 
 @media screen and (min-width: 480px) {
