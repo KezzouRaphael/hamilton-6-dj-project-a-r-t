@@ -25,83 +25,78 @@ header {
   font-family: "Poppins", sans-serif;
   color: $white;
   position: relative;
-  nav{
-     
-      position:sticky;
-      display:flex;
-      flex-direction: row;
-      padding: 0rem 0.688rem;
-      align-items: center;
-      justify-content: space-around;
-      //padding:0.5rem 1rem;
-      position: sticky;
-      top: 1rem;
-      z-index: 10000;
-      //background-color: $gray-dark;
-      
-      .logo{
-           padding-top: 1rem;
-           img{
-              content:url("/images/logo.png");
-              background-repeat: no-repeat;
-              background-position: center;
-              background-size:cover;
-           }
-           
+  nav {
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    padding: 0rem 0.688rem;
+    align-items: center;
+    justify-content: space-around;
+    //padding:0.5rem 1rem;
+    position: sticky;
+    top: 1rem;
+    z-index: 10000;
+    //background-color: $gray-dark;
+
+    .logo {
+      padding-top: 1rem;
+      img {
+        content: url("/images/logo.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
       }
-      // wrapper of navbar
-      .wrapper{
-              display:flex;
-              flex-direction: row;
-              //padding: 0rem 0.688rem;
-              align-items: center;
-              
-              
-          .wrapper__nav{
-              list-style-type: none;
-              .wrapper__nav__item{
-                  display: inline;
-                  margin-left:2rem;
-                      a{
-                          text-decoration: none;
-                          color:$white;
-                          font-size: 0.938rem;
-                          display:inline-block;
-                          transition-property: all;
-                          transition-duration: 0.5s;
-                          transition-timing-function: ease-in-out;
-                          transition-delay: 0s;
+    }
+    // wrapper of navbar
+    .wrapper {
+      display: flex;
+      flex-direction: row;
+      //padding: 0rem 0.688rem;
+      align-items: center;
 
-                          &:hover{
-                              color:$gray;
-                          }
-                      }
-           
-              }
-          }  
-          
-          .wrapper__nav-share{
-              list-style-type: none;
-              .wrapper__nav-share__item{
-                  display: inline;
-                  margin-left:2rem;
-                      a{
-                          text-decoration: none;
-                          color:$gray;
-                          font-size: 1.2rem;
-                          display:inline-block;
-                          transition-property: all;
-                          transition-duration: 0.3s;
-                          transition-timing-function: ease-in-out;
-                          transition-delay: 0s;
+      .wrapper__nav {
+        list-style-type: none;
+        .wrapper__nav__item {
+          display: inline;
+          margin-left: 2rem;
+          a {
+            text-decoration: none;
+            color: $white;
+            font-size: 0.938rem;
+            display: inline-block;
+            transition-property: all;
+            transition-duration: 0.5s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0s;
 
-                          &:hover{
-                              color:$white;
-                          }
-                      }
-           
-              }
-          } 
+            &:hover {
+              color: $gray;
+            }
+          }
+        }
+      }
+
+      .wrapper__nav-share {
+        list-style-type: none;
+        .wrapper__nav-share__item {
+          display: inline;
+          margin-left: 2rem;
+          a {
+            text-decoration: none;
+            color: $gray;
+            font-size: 1.2rem;
+            display: inline-block;
+            transition-property: all;
+            transition-duration: 0.3s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0s;
+
+            &:hover {
+              color: $white;
+            }
+          }
+        }
+      }
       .wrapper__nav {
         list-style-type: none;
         .wrapper__nav__item {
@@ -124,14 +119,14 @@ header {
         }
       }
       // hamburger and ellipsis toggle menu
-      .hamburger{
-          //order: -1;
-          display:inline-block;
-          margin-left:1rem;
-          font-size: 1rem;
-          width:2rem;
-          height:3rem;
-          cursor: pointer;
+      .hamburger {
+        //order: -1;
+        display: inline-block;
+        margin-left: 1rem;
+        font-size: 1rem;
+        width: 2rem;
+        height: 3rem;
+        cursor: pointer;
       }
     }
 
@@ -206,110 +201,108 @@ header {
 }
 // gallery
 
-.gallery{
+.gallery {
   display: grid;
   margin: 8rem 0;
-  grid-template-columns:  repeat(1, auto);
+  grid-template-columns: repeat(1, auto);
   row-gap: 2rem;
   column-gap: 2rem;
-    
-  .gallery__1{
+
+  .gallery__1 {
     content: url("/images/gallery-1.jpg");
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
 
-  .gallery__2{
+  .gallery__2 {
     content: url("/images/gallery-2.jpg");
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-  .gallery__3{
+  .gallery__3 {
     content: url("/images/gallery-3.jpg");
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
 
-  .gallery__4{
+  .gallery__4 {
     content: url("/images/gallery-4.jpg");
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
 
-  .gallery__5{
+  .gallery__5 {
     content: url("/images/gallery-5.jpg");
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
 
-  .gallery__6{
+  .gallery__6 {
     content: url("/images/gallery-6.jpg");
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-  .gallery__7{
+  .gallery__7 {
     content: url("/images/gallery-7.jpg");
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
 
-  .gallery__8{
+  .gallery__8 {
     content: url("/images/gallery-8.jpg");
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
 
-  .gallery__9{
+  .gallery__9 {
     content: url("/images/gallery-9.jpg");
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
 
-  .gallery__10{
+  .gallery__10 {
     content: url("/images/gallery-10.jpg");
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-  .gallery__11{
+  .gallery__11 {
     content: url("/images/gallery-11.jpg");
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
 
-  .gallery__12{
+  .gallery__12 {
     content: url("/images/gallery-12.jpg");
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-
 }
 .gallery {
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    padding-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    
-    img {
-        max-width: 90vw;
-    }
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
 
-    p {
-        
-    }
+  img {
+    max-width: 90vw;
+  }
+
+  p {
+  }
 }
 footer {
   background: #282828;
@@ -639,16 +632,14 @@ p {
 ///////////////// Tablet design /////////////////
 
 @media screen and (min-width: 480px) {
-
-    //gallery for tablet design
-    .gallery{
-      display: grid;
-      margin: 8rem 0;
-      grid-template-columns:  repeat(3, auto);
-      row-gap: 2rem;
-      column-gap: 2rem;
-    }
-
+  //gallery for tablet design
+  .gallery {
+    display: grid;
+    margin: 8rem 0;
+    grid-template-columns: repeat(3, auto);
+    row-gap: 2rem;
+    column-gap: 2rem;
+  }
 
   #footerlist {
     li {
@@ -692,16 +683,14 @@ p {
 ///////////////// Desktop design /////////////////
 
 @media screen and (min-width: 800px) {
-
   //gallery for desktop design
-  .gallery{
+  .gallery {
     display: grid;
     margin: 8rem 0;
-    grid-template-columns:  repeat(4, auto);
+    grid-template-columns: repeat(4, auto);
     row-gap: 2rem;
     column-gap: 2rem;
   }
-
 
   .flex-container {
     flex: 0 0 33%;
