@@ -394,7 +394,7 @@ p {
   &-list {
     border-bottom: 5px solid $purple;
     color: $white;
-    padding: 0.063rem 15rem;
+    padding: 0.063rem 4rem; //breaks the design if screen < 300 width but I don't think it's an issue
   }
 }
 
@@ -411,7 +411,7 @@ p {
   &:hover {
     border-bottom: 5px solid $purple;
     color: $white;
-    padding: 0.063rem 15rem;
+    padding: 0.063rem 4rem;
   }
 }
 .scheduler-content {
@@ -434,11 +434,21 @@ p {
   position: absolute;
   display: inline-block;
   left: 0;
-  //: 1.375rem;
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
   border: 1px solid $gray-light;
+}
+.active-dot {
+  position: absolute;
+  background-color: $purple;
+  width: 0.5rem;
+  height: 0.5rem;
+  display: inline-block;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
 }
 .month {
   &-list {
@@ -455,6 +465,28 @@ p {
   }
   &-item {
     padding: 1rem;
+  }
+}
+.event {
+  &-button {
+    font-weight: 600;
+    font-size: 0.8rem;
+  }
+  &-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.scheduler-content-item {
+  position: relative;
+  padding-left: 3.75rem;
+  &::before {
+    position: absolute;
+    content: "";
+    top: 2rem;
+    bottom: -0.7rem;
+    left: 1rem;
+    border-left: 1px solid $gray-light;
   }
 }
 .section-tour {
@@ -496,6 +528,11 @@ p {
       margin-right: 1rem;
     }
   }
+  .month-list {
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 2rem;
+  }
 }
 
 ///////////////// Desktop design /////////////////
@@ -532,5 +569,18 @@ p {
   #footercopyright {
     padding-top: 80px;
     padding-bottom: 100px;
+  }
+  .month-list {
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 2rem;
+  }
+  .event-container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 2rem;
+    &-content {
+      max-width: 40rem;
+    }
   }
 }

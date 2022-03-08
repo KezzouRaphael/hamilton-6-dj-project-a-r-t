@@ -385,7 +385,7 @@ p {
 #active-list {
   border-bottom: 5px solid #6f42c1;
   color: #fff;
-  padding: 0.063rem 15rem;
+  padding: 0.063rem 4rem;
 }
 
 .flexbox-tours-container {
@@ -403,7 +403,7 @@ p {
 .carrousel:hover {
   border-bottom: 5px solid #6f42c1;
   color: #fff;
-  padding: 0.063rem 15rem;
+  padding: 0.063rem 4rem;
 }
 
 .scheduler-content {
@@ -434,6 +434,18 @@ p {
   border: 1px solid #c4c4c4;
 }
 
+.active-dot {
+  position: absolute;
+  background-color: #6f42c1;
+  width: 0.5rem;
+  height: 0.5rem;
+  display: inline-block;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .month-list {
   display: flex;
   flex-wrap: wrap;
@@ -448,6 +460,28 @@ p {
 }
 .month-item {
   padding: 1rem;
+}
+
+.event-button {
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+.event-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.scheduler-content-item {
+  position: relative;
+  padding-left: 3.75rem;
+}
+.scheduler-content-item::before {
+  position: absolute;
+  content: "";
+  top: 2rem;
+  bottom: -0.7rem;
+  left: 1rem;
+  border-left: 1px solid #c4c4c4;
 }
 
 .section-tour {
@@ -491,6 +525,12 @@ p {
   .box-container-icon {
     margin-right: 1rem;
   }
+
+  .month-list {
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 2rem;
+  }
 }
 @media screen and (min-width: 800px) {
   .flex-container {
@@ -525,6 +565,21 @@ p {
   #footercopyright {
     padding-top: 80px;
     padding-bottom: 100px;
+  }
+
+  .month-list {
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 2rem;
+  }
+
+  .event-container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 2rem;
+  }
+  .event-container-content {
+    max-width: 40rem;
   }
 }
 
