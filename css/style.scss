@@ -389,11 +389,15 @@ p {
     margin-top: 1rem;
   }
 }
-#active-list {
-  border-bottom: 5px solid $purple;
-  color: $white;
-  padding: 0.063rem 15rem;
+
+#active {
+  &-list {
+    border-bottom: 5px solid $purple;
+    color: $white;
+    padding: 0.063rem 15rem;
+  }
 }
+
 .flexbox-tours-container {
   width: 100%;
   padding-right: 1rem;
@@ -409,6 +413,32 @@ p {
     color: $white;
     padding: 0.063rem 15rem;
   }
+}
+.scheduler-content {
+  background: $white;
+  padding: 40px 20px;
+  border: 1px solid $gray-light;
+  text-align: left;
+  &-month {
+    visibility: hidden;
+    overflow: hidden;
+    height: 0;
+  }
+}
+.active-content {
+  visibility: visible;
+  height: auto;
+  overflow: visible;
+}
+.dot {
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  //: 1.375rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 1px solid $gray-light;
 }
 .month {
   &-list {
@@ -429,6 +459,7 @@ p {
 }
 .section-tour {
   background-color: $bggray;
+  padding: 5rem 0;
 }
 ///////////////// Tablet design /////////////////
 

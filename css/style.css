@@ -406,6 +406,34 @@ p {
   padding: 0.063rem 15rem;
 }
 
+.scheduler-content {
+  background: #fff;
+  padding: 40px 20px;
+  border: 1px solid #c4c4c4;
+  text-align: left;
+}
+.scheduler-content-month {
+  visibility: hidden;
+  overflow: hidden;
+  height: 0;
+}
+
+.active-content {
+  visibility: visible;
+  height: auto;
+  overflow: visible;
+}
+
+.dot {
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 1px solid #c4c4c4;
+}
+
 .month-list {
   display: flex;
   flex-wrap: wrap;
@@ -424,6 +452,7 @@ p {
 
 .section-tour {
   background-color: #f5f5f5;
+  padding: 5rem 0;
 }
 
 @media screen and (min-width: 480px) {
