@@ -317,6 +317,26 @@ header .breadcrumbs .breadcrumbs__item a::after {
      object-fit: cover;
 }
 
+.gallery {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.gallery img {
+  max-width: 90vw;
+}
+
 footer {
   background: #282828;
   color: white;

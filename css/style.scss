@@ -295,6 +295,37 @@ header{
 
 
 
+
+.gallery {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    img {
+        max-width: 90vw;
+    }
+
+    p {
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 footer {
   background: #282828;
   color: white;
