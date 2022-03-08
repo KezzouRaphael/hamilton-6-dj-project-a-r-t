@@ -608,6 +608,23 @@ p {
   margin-top: 1rem;
 }
 
+.albumsimg1 {
+  margin-top: 60px;
+  max-width: 90%;
+}
+
+.albumsimg2,
+.albumsimg3,
+.albumsimg4,
+.albumsimg5,
+.albumsimg6 {
+  max-width: 90%;
+}
+
+.albumsdetails {
+  padding-bottom: 2rem;
+}
+
 @media screen and (min-width: 480px) {
   .gallery {
     display: -ms-grid;
@@ -653,6 +670,20 @@ p {
   .box-container-icon {
     margin-right: 1rem;
   }
+  .albumsimg1,
+  .albumsimg2 {
+    margin-top: 60px;
+    max-width: 90%;
+  }
+  .albumsimg3,
+  .albumsimg4,
+  .albumsimg5,
+  .albumsimg6 {
+    max-width: 90%;
+  }
+  .albumsdetails {
+    padding-bottom: 2rem;
+  }
 }
 
 @media screen and (min-width: 800px) {
@@ -696,6 +727,23 @@ p {
   #footercopyright {
     padding-top: 80px;
     padding-bottom: 100px;
+  }
+  .albumsimg1,
+  .albumsimg2,
+  .albumsimg3 {
+    margin-top: 60px;
+    max-width: 90%;
+  }
+  .albumsimg4,
+  .albumsimg5,
+  .albumsimg6 {
+    max-width: 90%;
+  }
+  .albumsdetails {
+    padding-bottom: 2rem;
+  }
+  .section-releases {
+    max-width: 80%;
   }
 }
 /*# sourceMappingURL=style.css.map */

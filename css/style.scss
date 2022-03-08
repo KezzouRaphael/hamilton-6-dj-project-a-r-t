@@ -543,7 +543,23 @@ p {
   }
 }
 
-
+.albumsimg1 {
+  margin-top: 60px;
+  max-width: 90%;
+  }
+  
+  .albumsimg2,
+  .albumsimg3,
+  .albumsimg4, 
+  .albumsimg5,
+  .albumsimg6,{
+  max-width: 90%;
+  }
+  
+  .albumsdetails {
+  padding-bottom: 2rem;
+  }
+  
 
 ///////////////// Tablet design /////////////////
 
@@ -591,6 +607,22 @@ p {
       margin-right: 1rem;
     }
   }
+
+  .albumsimg1,
+  .albumsimg2 {
+  margin-top: 60px;
+  max-width: 90%;
+  }
+  .albumsimg3,
+  .albumsimg4, 
+  .albumsimg5,
+  .albumsimg6,{
+  max-width: 90%;
+  }
+  .albumsdetails {
+  padding-bottom: 2rem;
+  }
+
 }
 
 ///////////////// Desktop design /////////////////
@@ -639,4 +671,24 @@ p {
     padding-top: 80px;
     padding-bottom: 100px;
   }
-}
+
+  .albumsimg1,
+  .albumsimg2,
+  .albumsimg3 {
+  margin-top: 60px;
+  max-width: 90%;
+  }
+  .albumsimg4, 
+  .albumsimg5,
+  .albumsimg6,{
+  max-width: 90%;
+  }
+  .albumsdetails {
+  padding-bottom: 2rem;
+  }
+
+  .section-releases {
+  max-width: 80%;
+  }
+
+  }
