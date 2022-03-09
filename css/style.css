@@ -691,7 +691,7 @@ p {
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 800px) {
   .gallery {
     display: -ms-grid;
     display: grid;
