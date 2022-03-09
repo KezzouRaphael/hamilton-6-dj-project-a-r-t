@@ -589,6 +589,11 @@ p {
   color: rgba(21, 21, 21, 0.8);
 }
 
+.section-releases {
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
 .box-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -686,7 +691,7 @@ p {
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   .gallery {
     display: -ms-grid;
     display: grid;
@@ -744,6 +749,11 @@ p {
   }
   .section-releases {
     max-width: 80%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }
 /*# sourceMappingURL=style.css.map */
