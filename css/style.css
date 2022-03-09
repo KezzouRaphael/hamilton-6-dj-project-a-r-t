@@ -247,6 +247,7 @@ header .breadcrumbs .breadcrumbs__item a::after {
   background-image: url("/images/homapage-banner-img.jpg");
   height: 100vh;
 }
+ 
 
 .sticky {
   -webkit-transition-property: background-color;
