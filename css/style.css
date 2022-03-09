@@ -238,6 +238,11 @@ header .breadcrumbs .breadcrumbs__item a::after {
   height: 100vh;
 }
 
+#home_nav {
+  background-image: url("/images/homapage-banner-img.jpg");
+  height: 100vh;
+}
+
 .sticky {
   -webkit-transition-property: background-color;
   transition-property: background-color;
