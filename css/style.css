@@ -18,8 +18,11 @@
 }
 
 .single .single__info {
-  font-size: 3rem;
-  text-shadow: 1px 1px white;
+  overflow: visible;
+  font-size: 2.5rem;
+  font-weight: bold;
+  fill: transparent;
+  stroke: #fff;
 }
 
 .single .player {
