@@ -959,6 +959,48 @@ p {
   margin-bottom: 30px;
 }
 
+.Fanbase {
+  background-image: url("/images/bg-circle-1.png");
+  background-color: #282828;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.Fanbase img {
+  border-radius: 5%;
+}
+
+.Fanbase .fanbaseimg1 {
+  float: right;
+  margin-right: 10%;
+}
+
+.Fanbase .fanbaseimg3 {
+  max-width: 50%;
+  float: left;
+  margin-left: 10%;
+}
+
+.Fanbase .fanbaseimg6 {
+  margin-left: 20%;
+}
+
+.Fanbase .fanbasejoin {
+  text-align: left;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.Fanbase h3,
+.Fanbase h4 {
+  color: white;
+  padding-top: 40px;
+}
+
 @media screen and (min-width: 480px) {
   .gallery {
     display: -ms-grid;
