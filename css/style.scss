@@ -195,11 +195,33 @@ header{
 
 // gallery
 
+.zoom{
+  position:absolute;
+  width:5rem;
+  height:5rem;
+  background-color:$white;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 10px rgba(204, 199, 199, 0.2);
+  transition:1s;
+  transform: translate(-50%, -50%);
+    p{
+      text-align:center;
+      position:absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+}
+
+.mover{
+  position:relative;
+}
+
 .gallery{
   display: grid;
   margin: 8rem 0;
   grid-template-columns:  repeat(1, auto);
   row-gap: 2rem;
+  position: relative;
   column-gap: 2rem;
     
   .gallery__1{
@@ -207,6 +229,8 @@ header{
     width: 100%;
     height: 100%;
     object-fit: cover;
+ 
+
   }
 
   .gallery__2{
