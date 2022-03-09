@@ -783,6 +783,49 @@ p {
   margin-bottom: 30px;
 }
 
+.Fanbase {
+  
+  background-image: url('/images/bg-circle-1.png');
+  background-color: #282828;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 50px;
+
+  img {
+    border-radius: 5%;
+  }
+
+  .fanbaseimg1 {
+    float: right;
+    margin-right: 10%;
+  }
+
+  .fanbaseimg3 {
+    max-width: 50%;
+    float: left;
+    margin-left: 10%;
+  }
+
+  .fanbaseimg6 {
+    margin-left: 20%;
+    
+  }
+
+
+  .fanbasejoin {
+    text-align: left;
+  }
+
+  h3,
+  h4{
+    color: white;
+    padding-top: 40px;
+  }
+}
+
 ///////////////// Tablet design /////////////////
 
 @media screen and (min-width: 480px) {
