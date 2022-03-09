@@ -152,12 +152,7 @@ header .breadcrumbs .breadcrumbs__item a {
   font-size: 0.813rem;
   position: relative;
 }
-
-#home_nav {
-  background-image: url("/images/homapage-banner-img.jpg");
-  height: 100vh;
-}
-#home_nav::after {
+header .breadcrumbs .breadcrumbs__item a::after {
   content: "";
   position: absolute;
   width: 0.313rem;
@@ -168,6 +163,11 @@ header .breadcrumbs .breadcrumbs__item a {
   display: inline-block;
   background: #ffc107;
   transform: translate3d(0, -50%, 0);
+}
+
+#home_nav {
+  background-image: url("/images/homapage-banner-img.jpg");
+  height: 100vh;
 }
 
 .sticky {
