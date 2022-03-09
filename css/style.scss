@@ -23,12 +23,14 @@
   margin: 0 3rem;
 
   .single__info{
+    font-family: "Poppins", sans-serif;
     overflow: visible;
-    font-size: 3.5rem;
+    letter-spacing: 0.2rem;
+    font-size: 3rem;
     font-weight: bold;
     fill: transparent;
     stroke: $white;
-    display: inline;
+     
   }
 
   .player{
@@ -249,7 +251,10 @@ header {
 // banner of the home pageYOffset
 #home_nav {
   background-image: url("/images/homapage-banner-img.jpg");
-  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   
 }
 .sticky {
   transition-property: background-color;
