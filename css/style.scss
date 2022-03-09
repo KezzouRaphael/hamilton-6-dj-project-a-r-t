@@ -13,6 +13,25 @@
   color: $white;
 }
 
+// index styles
+
+.single{
+
+  .single__info{
+    font-size: 3rem;
+    text-shadow: 1px 1px white;
+    color:transparent;
+  }
+
+  .single__audio{
+    border-bottom: 2px solid;
+  }
+
+}
+
+
+
+
 header {
   background-image: url("/images/banner-img.jpg");
   background-position: center;
@@ -170,6 +189,19 @@ header {
         color: $white;
         font-size: 0.813rem;
         position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          width: 0.313rem;
+          height: 0.313rem;
+          border-radius: 50%;
+          top: 50%;
+          right: -1rem;
+          display: inline-block;
+          background: $yellow;
+          transform: translate3d(0, -50%, 0);
+        }
       }
     }
   }
@@ -178,19 +210,6 @@ header {
 #home_nav {
   background-image: url("/images/homapage-banner-img.jpg");
   height: 100vh;
-  &::after {
-    content: "";
-    position: absolute;
-    width: 0.313rem;
-    height: 0.313rem;
-    border-radius: 50%;
-    top: 50%;
-
-    right: -1rem;
-    display: inline-block;
-    background: $yellow;
-    transform: translate3d(0, -50%, 0);
-  }
 }
 .sticky {
   transition-property: background-color;

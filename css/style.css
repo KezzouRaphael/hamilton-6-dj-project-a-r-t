@@ -17,6 +17,16 @@
   color: #fff;
 }
 
+.single .single__info {
+  font-size: 3rem;
+  text-shadow: 1px 1px white;
+  color: transparent;
+}
+
+.single .single__audio {
+  border-bottom: 2px solid;
+}
+
 header {
   background-image: url("/images/banner-img.jpg");
   background-position: center;
@@ -219,12 +229,7 @@ header .breadcrumbs .breadcrumbs__item a {
   position: relative;
 }
 
-#home_nav {
-  background-image: url("/images/homapage-banner-img.jpg");
-  height: 100vh;
-}
-
-#home_nav::after {
+header .breadcrumbs .breadcrumbs__item a::after {
   content: "";
   position: absolute;
   width: 0.313rem;
@@ -236,6 +241,11 @@ header .breadcrumbs .breadcrumbs__item a {
   background: #ffc107;
   -webkit-transform: translate3d(0, -50%, 0);
           transform: translate3d(0, -50%, 0);
+}
+
+#home_nav {
+  background-image: url("/images/homapage-banner-img.jpg");
+  height: 100vh;
 }
 
 .sticky {
