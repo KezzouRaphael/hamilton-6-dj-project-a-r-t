@@ -219,7 +219,12 @@ header .breadcrumbs .breadcrumbs__item a {
   position: relative;
 }
 
-header .breadcrumbs .breadcrumbs__item a::after {
+#home_nav {
+  background-image: url("/images/homapage-banner-img.jpg");
+  height: 100vh;
+}
+
+#home_nav::after {
   content: "";
   position: absolute;
   width: 0.313rem;
@@ -248,6 +253,29 @@ header .breadcrumbs .breadcrumbs__item a::after {
   background-color: #343a40;
 }
 
+gallery .zoom {
+  position: absolute;
+  top: 0;
+  width: 5rem;
+  height: 5rem;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 0.6rem rgba(204, 199, 199, 0.3);
+          box-shadow: 0 0 0 0.6rem rgba(204, 199, 199, 0.3);
+}
+
+gallery .zoom::before {
+  content: "Zoom";
+  position: absolute;
+  top: 1.5rem;
+  left: 1rem;
+}
+
+gallery .zoom:hover {
+  -webkit-box-shadow: 0 0 0 1rem rgba(204, 199, 199, 0.3);
+          box-shadow: 0 0 0 1rem rgba(204, 199, 199, 0.3);
+}
+
 .gallery {
   display: -ms-grid;
   display: grid;
@@ -255,11 +283,16 @@ header .breadcrumbs .breadcrumbs__item a::after {
   -ms-grid-columns: (auto)[1];
       grid-template-columns: repeat(1, auto);
   row-gap: 2rem;
+  position: relative;
   -webkit-column-gap: 2rem;
           column-gap: 2rem;
 }
 
 .gallery .gallery__1 {
+  position: relative;
+}
+
+.gallery .gallery__1 img {
   content: url("/images/gallery-1.jpg");
   width: 100%;
   height: 100%;
@@ -268,6 +301,10 @@ header .breadcrumbs .breadcrumbs__item a::after {
 }
 
 .gallery .gallery__2 {
+  position: relative;
+}
+
+.gallery .gallery__2 img {
   content: url("/images/gallery-2.jpg");
   width: 100%;
   height: 100%;
@@ -276,6 +313,10 @@ header .breadcrumbs .breadcrumbs__item a::after {
 }
 
 .gallery .gallery__3 {
+  position: relative;
+}
+
+.gallery .gallery__3 img {
   content: url("/images/gallery-3.jpg");
   width: 100%;
   height: 100%;
@@ -284,6 +325,10 @@ header .breadcrumbs .breadcrumbs__item a::after {
 }
 
 .gallery .gallery__4 {
+  position: relative;
+}
+
+.gallery .gallery__4 img {
   content: url("/images/gallery-4.jpg");
   width: 100%;
   height: 100%;
@@ -292,6 +337,10 @@ header .breadcrumbs .breadcrumbs__item a::after {
 }
 
 .gallery .gallery__5 {
+  position: relative;
+}
+
+.gallery .gallery__5 img {
   content: url("/images/gallery-5.jpg");
   width: 100%;
   height: 100%;
@@ -300,6 +349,10 @@ header .breadcrumbs .breadcrumbs__item a::after {
 }
 
 .gallery .gallery__6 {
+  position: relative;
+}
+
+.gallery .gallery__6 img {
   content: url("/images/gallery-6.jpg");
   width: 100%;
   height: 100%;
@@ -308,6 +361,10 @@ header .breadcrumbs .breadcrumbs__item a::after {
 }
 
 .gallery .gallery__7 {
+  position: relative;
+}
+
+.gallery .gallery__7 img {
   content: url("/images/gallery-7.jpg");
   width: 100%;
   height: 100%;
@@ -316,6 +373,10 @@ header .breadcrumbs .breadcrumbs__item a::after {
 }
 
 .gallery .gallery__8 {
+  position: relative;
+}
+
+.gallery .gallery__8 img {
   content: url("/images/gallery-8.jpg");
   width: 100%;
   height: 100%;
@@ -324,6 +385,10 @@ header .breadcrumbs .breadcrumbs__item a::after {
 }
 
 .gallery .gallery__9 {
+  position: relative;
+}
+
+.gallery .gallery__9 img {
   content: url("/images/gallery-9.jpg");
   width: 100%;
   height: 100%;
@@ -332,6 +397,10 @@ header .breadcrumbs .breadcrumbs__item a::after {
 }
 
 .gallery .gallery__10 {
+  position: relative;
+}
+
+.gallery .gallery__10 img {
   content: url("/images/gallery-10.jpg");
   width: 100%;
   height: 100%;
@@ -340,6 +409,10 @@ header .breadcrumbs .breadcrumbs__item a::after {
 }
 
 .gallery .gallery__11 {
+  position: relative;
+}
+
+.gallery .gallery__11 img {
   content: url("/images/gallery-11.jpg");
   width: 100%;
   height: 100%;
@@ -348,6 +421,10 @@ header .breadcrumbs .breadcrumbs__item a::after {
 }
 
 .gallery .gallery__12 {
+  position: relative;
+}
+
+.gallery .gallery__12 img {
   content: url("/images/gallery-12.jpg");
   width: 100%;
   height: 100%;
@@ -369,10 +446,6 @@ header .breadcrumbs .breadcrumbs__item a::after {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-.gallery img {
-  max-width: 90vw;
 }
 
 footer {
@@ -790,6 +863,25 @@ p {
 .section-tour {
   background-color: #f5f5f5;
   padding: 5rem 0;
+}
+
+#scroll-up-button {
+  display: none;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #6f42c1;
+  color: #fff;
+  cursor: pointer;
+  padding: 1.5rem 1.7rem;
+  border-radius: 0.6rem;
+}
+
+#scroll-up-button:hover {
+  background-color: black;
 }
 
 .imgAboutdj {
