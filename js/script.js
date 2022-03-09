@@ -122,12 +122,19 @@ function getNumber(val){
   return parseInt(number);
   }
 
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-    buttonScroll.style.display = "block";
-  } else {
-    buttonScroll.style.display = "none";
-  }
-}
+  function myFunction() {
+    console.log(sticky);
+     if (window.pageYOffset >= 10) {
+       navbar.classList.add("sticky")
+     } else {
+       navbar.classList.remove("sticky");
+     }
+     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+       buttonScroll.style.display = "block";
+     } else {
+       buttonScroll.style.display = "none";
+     }
+   }
 
 function scrollClicked(e){
   ///Go to top of page
