@@ -300,10 +300,6 @@ header {
   img {
     max-width: 90vw;
   }
-
-  p {
-    //???????????????
-  }
 }
 footer {
   background: #282828;
@@ -629,6 +625,23 @@ p {
 .section-tour {
   background-color: $bggray;
   padding: 5rem 0;
+}
+#scroll-up-button {
+  display: none;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: $purple;
+  color: $white;
+  cursor: pointer;
+  padding: 1.5rem 1.7rem;
+  border-radius: 0.6rem;
+  &:hover {
+    background-color: black;
+  }
 }
 ///////////////// Tablet design /////////////////
 
