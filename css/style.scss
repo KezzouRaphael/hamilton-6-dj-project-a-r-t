@@ -134,6 +134,7 @@ header {
           width:2rem;
           height:3rem;
           cursor: pointer;
+      
       }
     }
 
@@ -297,6 +298,7 @@ header {
   }
 
 }
+
 .gallery {
     justify-content: center;
     text-align: center;
@@ -309,10 +311,8 @@ header {
         max-width: 90vw;
     }
 
-    p {
-        
-    }
 }
+
 footer {
   background: #282828;
   color: white;
@@ -668,6 +668,37 @@ p {
   padding: 5rem 0;
 }
 
+.imgAboutdj {
+  border-radius: 5%;
+}
+
+.aboutDj {
+
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 3%;
+  margin-right: 3%;
+
+  h3 {
+    font-size: 1.6rem
+  }
+
+}
+
+.quote {
+  margin-right: 5%;
+  margin-left: 5%;
+  font-size: 18px;
+}
+
+.group-releases-paragraphs,
+.group-releases-date {
+  margin-bottom: 30px;
+}
+
+
+
+
 ///////////////// Tablet design /////////////////
 
 @media screen and (min-width: 480px) {
@@ -810,7 +841,7 @@ p {
     margin-right: 10%;
   }
 
-  }
+
 
   .month-list {
     flex-direction: row;
