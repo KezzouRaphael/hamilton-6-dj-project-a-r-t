@@ -11,6 +11,16 @@
   color: #fff;
 }
 
+.single .single__info {
+  font-size: 3rem;
+  text-shadow: 1px 1px white;
+  color: transparent;
+}
+
+.single .single__audio {
+  border-bottom: 2px solid;
+}
+
 header {
   background-image: url("/images/banner-img.jpg");
   background-position: center;
@@ -163,11 +173,6 @@ header .breadcrumbs .breadcrumbs__item a::after {
   display: inline-block;
   background: #ffc107;
   transform: translate3d(0, -50%, 0);
-}
-
-#home_nav {
-  background-image: url("/images/homapage-banner-img.jpg");
-  height: 100vh;
 }
 
 .sticky {
@@ -733,6 +738,7 @@ p {
   margin-bottom: 30px;
 }
 
+
 .next-gig-container {
   width: 100%;
   padding-right: 1rem;
@@ -744,6 +750,47 @@ p {
   background-image: url("/images/bg-counter.jpg");
   background-color: #343a40;
   color: #fff;
+
+.Fanbase {
+  background-image: url("/images/bg-circle-1.png");
+  background-color: #282828;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.Fanbase img {
+  border-radius: 5%;
+}
+
+.Fanbase .fanbaseimg1 {
+  float: right;
+  margin-right: 10%;
+}
+
+.Fanbase .fanbaseimg3 {
+  max-width: 50%;
+  float: left;
+  margin-left: 10%;
+}
+
+.Fanbase .fanbaseimg6 {
+  margin-left: 20%;
+}
+
+.Fanbase .fanbasejoin {
+  text-align: left;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.Fanbase h3,
+.Fanbase h4 {
+  color: white;
+  padding-top: 40px;
 }
 
 @media screen and (min-width: 480px) {

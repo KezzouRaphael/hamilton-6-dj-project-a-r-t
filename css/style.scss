@@ -13,6 +13,25 @@
   color: $white;
 }
 
+// index styles
+
+.single{
+
+  .single__info{
+    font-size: 3rem;
+    text-shadow: 1px 1px white;
+    color:transparent;
+  }
+
+  .single__audio{
+    border-bottom: 2px solid;
+  }
+
+}
+
+
+
+
 header {
   background-image: url("/images/banner-img.jpg");
   background-position: center;
@@ -775,6 +794,51 @@ p {
     background-image: url("/images/bg-counter.jpg");
     background-color: $gray-dark;
     color: $white;
+  }
+}
+
+.Fanbase {
+  
+  background-image: url('/images/bg-circle-1.png');
+  background-color: #282828;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding-bottom: 50px;
+  padding-top: 50px;
+
+  img {
+    border-radius: 5%;
+  }
+
+  .fanbaseimg1 {
+    float: right;
+    margin-right: 10%;
+  }
+
+  .fanbaseimg3 {
+    max-width: 50%;
+    float: left;
+    margin-left: 10%;
+  }
+
+  .fanbaseimg6 {
+    margin-left: 20%;
+    
+  }
+
+
+  .fanbasejoin {
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  h3,
+  h4{
+    color: white;
+    padding-top: 40px;
   }
 }
 
