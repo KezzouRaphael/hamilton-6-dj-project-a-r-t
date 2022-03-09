@@ -18,20 +18,24 @@
 
 
 .single{
+  display:flex;
+  flex-direction:column;
+  margin: 0 3rem;
 
   .single__info{
     overflow: visible;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-weight: bold;
     fill: transparent;
     stroke: $white;
+    display: inline;
   }
 
   .player{
      display: flex;
      justify-content:flex-start;
      align-items:center;
-
+    
     
 
     .player__time{
@@ -50,7 +54,7 @@
       display: inline;
       margin: 0 0.5rem;
       border-radius:3rem;
-      width: 20rem;
+      width: 100%;
       overflow: hidden;
       .player__seekbar__slider{
         background-color:$white;
