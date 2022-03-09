@@ -817,6 +817,20 @@ p {
 .group-releases-date {
   margin-bottom: 30px;
 }
+.next-gig {
+  &-container {
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 5rem;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    background-image: url("/images/bg-counter.jpg");
+    background-color: $gray-dark;
+    color: $white;
+  }
+}
 
 .Fanbase {
   
