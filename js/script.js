@@ -45,7 +45,9 @@ window.onscroll = function() {myFunction()};
 
 let navbar = document.querySelector("nav");
 let sticky = navbar.offsetTop;
-
+///////Scroll-up
+let buttonScroll = document.querySelector("#scroll-up-button");
+buttonScroll.addEventListener("click",scrollClicked);
  
 function myFunction() {
  console.log(sticky);
@@ -54,4 +56,15 @@ function myFunction() {
   } else {
     navbar.classList.remove("sticky");
   }
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    buttonScroll.style.display = "block";
+  } else {
+    buttonScroll.style.display = "none";
+  }
 }
+
+function scrollClicked(e){
+  ///Go to top of page
+  document.body.scrollTop = 0; //Safari
+  document.documentElement.scrollTop = 0; //For Chrome , Firefox, IE, Opera
+};
