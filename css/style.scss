@@ -13,6 +13,25 @@
   color: $white;
 }
 
+// index styles
+
+.single{
+
+  .single__info{
+    font-size: 3rem;
+    text-shadow: 1px 1px white;
+    color:transparent;
+  }
+
+  .single__audio{
+    border-bottom: 2px solid;
+  }
+
+}
+
+
+
+
 header {
   background-image: url("/images/banner-img.jpg");
   background-position: center;
