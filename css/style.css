@@ -45,28 +45,20 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-start;
+  align-items: center;
 }
-
-.single .player .player__time {
+.player .player__time {
   margin: 0 0.3rem;
 }
-
-.single .player .player__time::after {
+.player .player__time::after {
   content: "-";
   margin: 0 0.3rem;
 }
-
-.single .player .player__length {
+.player .player__length {
   margin: 0 0.1rem;
 }
-
-.single .player .player__seekbar {
+.player .player__seekbar {
   background-color: #6c757d;
   height: 0.3rem;
   display: inline;
@@ -75,13 +67,11 @@
   width: 100%;
   overflow: hidden;
 }
-
-.single .player .player__seekbar .player__seekbar__slider {
+.player .player__seekbar .player__seekbar__slider {
   background-color: #fff;
   width: 0rem;
 }
-
-.single .player .player__control {
+.player .player__control {
   color: #6c757d;
   background-image: url("images/play-svgrepo-com.svg");
 }
