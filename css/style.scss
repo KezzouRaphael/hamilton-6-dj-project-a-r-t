@@ -773,6 +773,9 @@ p {
 .section-tour {
   background-color: $bggray;
   padding: 5rem 0;
+  h3 {
+    text-align: center;
+  }
 }
 #scroll-up-button {
   display: none;
@@ -866,6 +869,14 @@ p {
 
   .fanbasejoin {
     text-align: left;
+    h3,
+    p {
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+  }
+
+  .fanbasediv {
     margin-left: 5%;
     margin-right: 5%;
   }
@@ -874,6 +885,31 @@ p {
   h4{
     color: white;
     padding-top: 40px;
+  }
+}
+
+.btnlatest {
+  text-align: center;
+  background-image: url(/images/homepage-latest-releases-background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  padding-right: 5%;
+  padding-left: 5%;
+
+  h4 {
+  color: white;
+  }
+
+  .btndiscography {
+    background-color: $purple;
+    color: white;
+    margin-top: 5%;
+    padding: 15px;
+    border: none;
+    border-radius: 5%;
   }
 }
 
