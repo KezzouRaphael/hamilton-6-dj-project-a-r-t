@@ -13,15 +13,36 @@
   color: $white;
 }
 
-// index styles
  
+ 
+.single{
+  display:flex;
+  flex-direction:column;
+  margin: 0 3rem;
 
+  .single__info{
+    font-family: "Poppins", sans-serif;
+    overflow: visible;
+    letter-spacing: 0.2rem;
+    font-size: 3.5rem;
+    font-weight: bold;
+    fill: transparent;
+    stroke: $white;
+     
+
+    text{
+      display: block;
+       
+    }
+     
+  }
+ 
 
   .player{
      display: flex;
      justify-content:flex-start;
      align-items:center;
-
+    
     
 
     .player__time{
@@ -40,7 +61,7 @@
       display: inline;
       margin: 0 0.5rem;
       border-radius:3rem;
-      width: 20rem;
+      width: 100%;
       overflow: hidden;
       .player__seekbar__slider{
         background-color:$white;
@@ -50,6 +71,7 @@
     }
     .player__control{
       color:$gray;
+      background-image: url("images/play-svgrepo-com.svg");
     }
   }
 
@@ -230,7 +252,10 @@ header {
 // banner of the home pageYOffset
 #home_nav {
   background-image: url("/images/homapage-banner-img.jpg");
-  //height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
 }
 .sticky {
   transition-property: background-color;

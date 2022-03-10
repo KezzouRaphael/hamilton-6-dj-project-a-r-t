@@ -86,8 +86,8 @@ function parallax() {
       let ball=document.createElement("div");
       ball.setAttribute("class","zoom");
       children[i].append(ball);
-      //zoom.style.top=yCenter+"px";
-      //zoom.style.left=xCenter+"px";
+      zoom.style.top=yCenter+"px";
+      zoom.style.left=xCenter+"px";
       console.log(children[i]);
    });
 
@@ -160,13 +160,14 @@ const audio = new Audio(
 //play button
  
 playButton=audioPlayer.querySelector(".player__control")
-playButton.addEventListener("click",()=>{
+playButton.addEventListener("click",(e)=>{
   if(audio.paused){
     audio.play();
+    e.target.classList.replace("fa-pause","fa-play");
      
   }else{
     audio.pause();
-     
+    e.target.classList.replace("fa-play","fa-pause");
   }
 });
 
@@ -186,7 +187,6 @@ setInterval(()=>{
 audio.addEventListener(
   "loadeddata",
   () => {
-    
     startTime=audioPlayer.querySelector(".player__time").textContent= getTimeCodeFromNum(audio.currentTime);
     endTime=audioPlayer.querySelector(".player__length").textContent= getTimeCodeFromNum(audio.duration);
     audio.volume = 1;
