@@ -540,7 +540,6 @@ p {
 
 .button {
   position: relative;
-  overflow: hidden;
   display: inline-block;
   padding: 0.875rem 2.188rem;
   font-size: 1rem;
@@ -671,7 +670,12 @@ p {
   height: 0;
 }
 
+.event-desc {
+  display: none;
+}
+
 .active-content {
+  display: inline;
   visibility: visible;
   height: auto;
   overflow: visible;
@@ -806,13 +810,27 @@ p {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  border-radius: 5%;
 }
 
-#countdown {
-  text-align: center;
+#test {
+  margin: 2rem;
+}
+
+#countdown-p {
+  color: #c4c4c4;
+  font-size: larger;
+}
+#countdown-days, #countdown-hours, #countdown-minutes, #countdown-seconds {
+  font-size: xx-large;
+}
+#countdown-days-content, #countdown-hours-content, #countdown-minutes-content, #countdown-seconds-content {
+  font-size: x-small;
+  letter-spacing: 0.1rem;
+  color: #c4c4c4;
 }
 #countdown-seconds, #countdown-seconds-content {
-  visibility: hidden;
+  display: none;
 }
 
 .flexbox-countdown {
@@ -823,7 +841,7 @@ p {
   padding: 2rem;
 }
 .flexbox-countdown-items {
-  flex: 0 0 25%;
+  flex: 0 0 33%;
 }
 
 .Fanbase {
@@ -931,7 +949,11 @@ p {
   }
 
   #countdown-seconds, #countdown-seconds-content {
-    visibility: visible;
+    display: inline;
+  }
+
+  .flexbox-countdown-items {
+    flex: 0 0 25%;
   }
 }
 @media screen and (min-width: 800px) {
@@ -1016,8 +1038,31 @@ p {
     max-width: 40rem;
   }
 
+  #countdown-p {
+    font-size: smaller;
+  }
   #countdown-seconds, #countdown-seconds-content {
-    visibility: visible;
+    display: inline;
+  }
+
+  .flexbox-countdown-items {
+    flex: 0 0 25%;
+  }
+
+  .next-gig-titles {
+    text-align: left;
+  }
+  .next-gig-container {
+    display: flex;
+    flex-basis: auto;
+  }
+
+  .event-container-content {
+    flex: 0 0 50%;
+  }
+
+  #text-right {
+    text-align: right;
   }
 }
 
