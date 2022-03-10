@@ -86,8 +86,8 @@ function parallax() {
       let ball=document.createElement("div");
       ball.setAttribute("class","zoom");
       children[i].append(ball);
-      //zoom.style.top=yCenter+"px";
-      //zoom.style.left=xCenter+"px";
+      zoom.style.top=yCenter+"px";
+      zoom.style.left=xCenter+"px";
       console.log(children[i]);
    });
 
@@ -160,13 +160,14 @@ const audio = new Audio(
 //play button
  
 playButton=audioPlayer.querySelector(".player__control")
-playButton.addEventListener("click",()=>{
+playButton.addEventListener("click",(e)=>{
   if(audio.paused){
     audio.play();
+    e.target.classList.replace("fa-pause","fa-play");
      
   }else{
     audio.pause();
-     
+    e.target.classList.replace("fa-play","fa-pause");
   }
 });
 
@@ -186,7 +187,6 @@ setInterval(()=>{
 audio.addEventListener(
   "loadeddata",
   () => {
-    
     startTime=audioPlayer.querySelector(".player__time").textContent= getTimeCodeFromNum(audio.currentTime);
     endTime=audioPlayer.querySelector(".player__length").textContent= getTimeCodeFromNum(audio.duration);
     audio.volume = 1;
@@ -224,15 +224,9 @@ var x = setInterval(function() {
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-  // Output the result in an element with id="demo"
-  document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-    
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("countdown").innerHTML = "EXPIRED";
-  }
+  // Display
+  document.getElementById("countdown-days").innerHTML = days;
+  document.getElementById("countdown-hours").innerHTML = hours;
+  document.getElementById("countdown-minutes").innerHTML = minutes; 
+  document.getElementById("countdown-seconds").innerHTML = seconds;
 }, 1000);
- 

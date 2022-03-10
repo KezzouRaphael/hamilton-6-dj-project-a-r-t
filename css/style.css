@@ -11,9 +11,22 @@
   color: #fff;
 }
 
+.single {
+  display: flex;
+  flex-direction: column;
+  margin: 0 3rem;
+}
 .single .single__info {
-  font-size: 3rem;
-  text-shadow: 1px 1px white;
+  font-family: "Poppins", sans-serif;
+  overflow: visible;
+  letter-spacing: 0.2rem;
+  font-size: 3.5rem;
+  font-weight: bold;
+  fill: transparent;
+  stroke: #fff;
+}
+.single .single__info text {
+  display: block;
 }
 .single .player {
   display: flex;
@@ -36,7 +49,7 @@
   display: inline;
   margin: 0 0.5rem;
   border-radius: 3rem;
-  width: 20rem;
+  width: 100%;
   overflow: hidden;
 }
 .single .player .player__seekbar .player__seekbar__slider {
@@ -45,6 +58,7 @@
 }
 .single .player .player__control {
   color: #6c757d;
+  background-image: url("images/play-svgrepo-com.svg");
 }
 
 header {
@@ -203,7 +217,9 @@ header .breadcrumbs .breadcrumbs__item a::after {
 
 #home_nav {
   background-image: url("/images/homapage-banner-img.jpg");
-  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .sticky {
@@ -769,6 +785,13 @@ p {
   margin-bottom: 30px;
 }
 
+.next-gig {
+  width: 90%;
+  position: relative;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -20%);
+}
 .next-gig-container {
   width: 100%;
   padding-right: 1rem;
@@ -780,6 +803,27 @@ p {
   background-image: url("/images/bg-counter.jpg");
   background-color: #343a40;
   color: #fff;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#countdown {
+  text-align: center;
+}
+#countdown-seconds, #countdown-seconds-content {
+  visibility: hidden;
+}
+
+.flexbox-countdown {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+.flexbox-countdown-items {
+  flex: 0 0 25%;
 }
 
 .Fanbase {
@@ -885,6 +929,10 @@ p {
     justify-content: center;
     padding: 0 2rem;
   }
+
+  #countdown-seconds, #countdown-seconds-content {
+    visibility: visible;
+  }
 }
 @media screen and (min-width: 800px) {
   .gallery {
@@ -966,6 +1014,10 @@ p {
   }
   .event-container-content {
     max-width: 40rem;
+  }
+
+  #countdown-seconds, #countdown-seconds-content {
+    visibility: visible;
   }
 }
 
