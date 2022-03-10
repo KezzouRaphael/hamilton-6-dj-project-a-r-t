@@ -836,6 +836,11 @@ p {
   padding-bottom: 50px;
   padding-top: 50px;
 }
+.Fanbase .fa-solid {
+  padding-bottom: 10px;
+  color: #6f42c1;
+  font-size: 50px;
+}
 .Fanbase img {
   border-radius: 5%;
 }
@@ -856,10 +861,69 @@ p {
   margin-left: 5%;
   margin-right: 5%;
 }
+.Fanbase .fanbasediv {
+  margin-top: 40px;
+}
 .Fanbase h3,
 .Fanbase h4 {
   color: white;
-  padding-top: 40px;
+}
+
+.btnlatest {
+  text-align: center;
+  background-image: url(/images/homepage-latest-releases-background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  padding-right: 5%;
+  padding-left: 5%;
+  max-height: 40vh;
+}
+.btnlatest h4 {
+  color: white;
+}
+.btnlatest .btndiscography {
+  background-color: #6f42c1;
+  color: white;
+  margin-top: 5%;
+  padding: 15px;
+  border: none;
+  border-radius: 5%;
+}
+
+.suscribesection {
+  text-align: center;
+  background-image: url(/images/homepage-footer-background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  padding-right: 5%;
+  padding-left: 5%;
+  min-height: 50vh;
+}
+.suscribesection h3 {
+  color: white;
+  font-size: x-large;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.suscribesection input {
+  margin-top: 5%;
+  padding: 15px;
+  border: none;
+  width: 80vw;
+}
+.suscribesection .btnsuscribe {
+  background-color: #6f42c1;
+  color: white;
+  margin-top: 5%;
+  padding: 15px;
+  border: none;
+  width: 80vw;
 }
 
 @media screen and (min-width: 480px) {
@@ -1018,6 +1082,23 @@ p {
 
   #countdown-seconds, #countdown-seconds-content {
     visibility: visible;
+  }
+
+  .suscribesection {
+    min-height: 50vh;
+  }
+  .suscribesection input {
+    width: 30vw;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .suscribesection .btnsuscribe {
+    text-align: center;
+    margin-top: 5%;
+    padding: 10px;
+    width: 10vw;
+    border-radius: 10px;
+    margin-left: 1%;
   }
 }
 

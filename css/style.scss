@@ -867,6 +867,12 @@ p {
   padding-bottom: 50px;
   padding-top: 50px;
 
+  .fa-solid {
+    padding-bottom: 10px;
+    color: $purple;
+    font-size: 50px;
+  }
+
   img {
     border-radius: 5%;
   }
@@ -892,12 +898,80 @@ p {
     margin-right: 5%;
   }
 
+  .fanbasediv {
+    margin-top: 40px;
+  }
+
   h3,
   h4 {
     color: white;
-    padding-top: 40px;
+    
   }
 }
+
+.btnlatest {
+  text-align: center;
+  background-image: url(/images/homepage-latest-releases-background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  padding-right: 5%;
+  padding-left: 5%;
+  max-height: 40vh;
+  
+  h4 {
+  color: white;
+  }
+  
+  .btndiscography {
+  background-color: $purple;
+  color: white;
+  margin-top: 5%;
+  padding: 15px;
+  border: none;
+  border-radius: 5%;
+  }
+  }
+  
+  .suscribesection {
+    text-align: center;
+    background-image: url(/images/homepage-footer-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    padding-right: 5%;
+    padding-left: 5%;
+    min-height: 50vh;
+
+    h3 {
+      color: white;
+      font-size: x-large;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+
+    input {
+      margin-top: 5%;
+      padding: 15px;
+      border: none;
+      width: 80vw;
+    }
+
+    .btnsuscribe {
+      background-color: $purple;
+      color: white;
+      margin-top: 5%;
+      padding: 15px;
+      border: none;
+      width: 80vw;
+      
+    }
+  }
+
 
 ///////////////// Tablet design /////////////////
 
@@ -1055,6 +1129,25 @@ p {
     &-seconds,
     &-seconds-content {
       visibility: visible;
+    }
+  }
+
+  .suscribesection {
+    min-height: 50vh;
+
+    input {
+      width: 30vw;
+      border-radius: 10px;
+      padding: 10px;
+    }
+
+    .btnsuscribe {
+      text-align: center;
+      margin-top: 5%;
+      padding: 10px;
+      width: 10vw;
+      border-radius: 10px;
+      margin-left: 1%;
     }
   }
 }
