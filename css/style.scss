@@ -12,42 +12,66 @@
   background: $purple;
   color: $white;
 }
+ 
+.single{
+  display:flex;
+  flex-direction:column;
+  margin: 0 3rem;
 
-// index styles
+  .single__info{
+    font-family: "Poppins", sans-serif;
+    overflow: visible;
+    letter-spacing: 0.2rem;
+    font-size: 3.5rem;
+    font-weight: bold;
+    fill: transparent;
+    stroke: $white;
+     
 
-.player {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+    text{
+      display: block;
+       
+    }
+     
+  }
+ 
 
-  .player__time {
-    margin: 0 0.3rem;
-    &::after {
-      content: "-";
+  .player{
+     display: flex;
+     justify-content:flex-start;
+     align-items:center;
+    
+    
+
+    .player__time{
       margin: 0 0.3rem;
+      &::after{
+        content: "-";
+        margin: 0 0.3rem;
+      }
     }
-  }
-  .player__length {
-    margin: 0 0.1rem;
-  }
-  .player__seekbar {
-    background-color: $gray;
-    height: 0.3rem;
-    display: inline;
-    margin: 0 0.5rem;
-    border-radius: 3rem;
-    width: 20rem;
-    overflow: hidden;
-    .player__seekbar__slider {
-      background-color: $white;
-      width: 0rem;
+    .player__length{
+      margin: 0 0.1rem;
     }
-  }
-  .player__control {
-    color: $gray;
-  }
-}
+    .player__seekbar{
+      background-color: $gray;
+      height:0.3rem;
+      display: inline;
+      margin: 0 0.5rem;
+      border-radius:3rem;
+      width: 100%;
+      overflow: hidden;
+      .player__seekbar__slider{
+        background-color:$white;
+        width:0rem;
 
+      }
+    }
+    .player__control{
+      color:$gray;
+      background-image: url("images/play-svgrepo-com.svg");
+    }
+  }
 header {
   background-image: url("/images/banner-img.jpg");
   background-position: center;
@@ -225,7 +249,10 @@ header {
 // banner of the home pageYOffset
 #home_nav {
   background-image: url("/images/homapage-banner-img.jpg");
-  //height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
 }
 .sticky {
   transition-property: background-color;
