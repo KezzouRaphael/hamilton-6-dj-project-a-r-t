@@ -14,43 +14,37 @@
 }
 
 // index styles
- 
 
+.player {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 
-  .player{
-     display: flex;
-     justify-content:flex-start;
-     align-items:center;
-
-    
-
-    .player__time{
+  .player__time {
+    margin: 0 0.3rem;
+    &::after {
+      content: "-";
       margin: 0 0.3rem;
-      &::after{
-        content: "-";
-        margin: 0 0.3rem;
-      }
     }
-    .player__length{
-      margin: 0 0.1rem;
+  }
+  .player__length {
+    margin: 0 0.1rem;
+  }
+  .player__seekbar {
+    background-color: $gray;
+    height: 0.3rem;
+    display: inline;
+    margin: 0 0.5rem;
+    border-radius: 3rem;
+    width: 20rem;
+    overflow: hidden;
+    .player__seekbar__slider {
+      background-color: $white;
+      width: 0rem;
     }
-    .player__seekbar{
-      background-color: $gray;
-      height:0.3rem;
-      display: inline;
-      margin: 0 0.5rem;
-      border-radius:3rem;
-      width: 20rem;
-      overflow: hidden;
-      .player__seekbar__slider{
-        background-color:$white;
-        width:0rem;
-
-      }
-    }
-    .player__control{
-      color:$gray;
-    }
+  }
+  .player__control {
+    color: $gray;
   }
 }
 
