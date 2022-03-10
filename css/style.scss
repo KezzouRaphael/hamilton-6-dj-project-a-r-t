@@ -13,60 +13,59 @@
   color: $white;
 }
 
-// index styles
- 
+.single {
+  display: flex;
+  flex-direction: column;
+  margin: 0 3rem;
 
+  .single__info {
+    font-family: "Poppins", sans-serif;
+    overflow: visible;
+    letter-spacing: 0.2rem;
+    font-size: 3.5rem;
+    font-weight: bold;
+    fill: transparent;
+    stroke: $white;
 
-.single{
-
-  .single__info{
-    font-size: 3rem;
-    text-shadow: 1px 1px white;
-     
-    //color:transparent;
+    text {
+      display: block;
+    }
   }
 
-  .player{
-     display: flex;
-     justify-content:flex-start;
-     align-items:center;
+  .player {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 
-    
-
-    .player__time{
+    .player__time {
       margin: 0 0.3rem;
-      &::after{
+      &::after {
         content: "-";
         margin: 0 0.3rem;
       }
     }
-    .player__length{
+    .player__length {
       margin: 0 0.1rem;
     }
-    .player__seekbar{
+    .player__seekbar {
       background-color: $gray;
-      height:0.3rem;
+      height: 0.3rem;
       display: inline;
       margin: 0 0.5rem;
-      border-radius:3rem;
-      width: 20rem;
+      border-radius: 3rem;
+      width: 100%;
       overflow: hidden;
-      .player__seekbar__slider{
-        background-color:$white;
-        width:0rem;
-
+      .player__seekbar__slider {
+        background-color: $white;
+        width: 0rem;
       }
     }
-    .player__control{
-      color:$gray;
+    .player__control {
+      color: $gray;
+      background-image: url("images/play-svgrepo-com.svg");
     }
   }
-
 }
-
-
-
-
 header {
   background-image: url("/images/banner-img.jpg");
   background-position: center;
@@ -244,7 +243,9 @@ header {
 // banner of the home pageYOffset
 #home_nav {
   background-image: url("/images/homapage-banner-img.jpg");
-  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .sticky {
   transition-property: background-color;
@@ -773,9 +774,6 @@ p {
 .section-tour {
   background-color: $bggray;
   padding: 5rem 0;
-  h3 {
-    text-align: center;
-  }
 }
 #scroll-up-button {
   display: none;
@@ -821,6 +819,11 @@ p {
   margin-bottom: 30px;
 }
 .next-gig {
+  width: 90%;
+  position: relative;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -20%);
   &-container {
     width: 100%;
     padding-right: 1rem;
@@ -832,12 +835,30 @@ p {
     background-image: url("/images/bg-counter.jpg");
     background-color: $gray-dark;
     color: $white;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
-
+#countdown {
+  text-align: center;
+  &-seconds,
+  &-seconds-content {
+    visibility: hidden;
+  }
+}
+.flexbox-countdown {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+  &-items {
+    flex: 0 0 25%;
+  }
+}
 .Fanbase {
-  
-  background-image: url('/images/bg-circle-1.png');
+  background-image: url("/images/bg-circle-1.png");
   background-color: #282828;
   background-size: cover;
   background-position: center;
@@ -863,53 +884,18 @@ p {
 
   .fanbaseimg6 {
     margin-left: 20%;
-    
   }
-
 
   .fanbasejoin {
     text-align: left;
-    h3,
-    p {
-      margin-left: 5%;
-      margin-right: 5%;
-    }
-  }
-
-  .fanbasediv {
     margin-left: 5%;
     margin-right: 5%;
   }
 
   h3,
-  h4{
+  h4 {
     color: white;
     padding-top: 40px;
-  }
-}
-
-.btnlatest {
-  text-align: center;
-  background-image: url(/images/homepage-latest-releases-background.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  padding-top: 15%;
-  padding-bottom: 15%;
-  padding-right: 5%;
-  padding-left: 5%;
-
-  h4 {
-  color: white;
-  }
-
-  .btndiscography {
-    background-color: $purple;
-    color: white;
-    margin-top: 5%;
-    padding: 15px;
-    border: none;
-    border-radius: 5%;
   }
 }
 
@@ -977,6 +963,12 @@ p {
     flex-direction: row;
     justify-content: center;
     padding: 0 2rem;
+  }
+  #countdown {
+    &-seconds,
+    &-seconds-content {
+      visibility: visible;
+    }
   }
 }
 
@@ -1057,6 +1049,12 @@ p {
     padding-right: 2rem;
     &-content {
       max-width: 40rem;
+    }
+  }
+  #countdown {
+    &-seconds,
+    &-seconds-content {
+      visibility: visible;
     }
   }
 }
