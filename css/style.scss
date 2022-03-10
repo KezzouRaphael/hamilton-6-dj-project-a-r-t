@@ -778,6 +778,7 @@ p {
 .section-tour {
   background-color: $bggray;
   padding: 5rem 0;
+  text-align: center;
 }
 #scroll-up-button {
   display: none;
@@ -821,6 +822,9 @@ p {
 .group-releases-paragraphs,
 .group-releases-date {
   margin-bottom: 30px;
+}
+.prelease {
+  margin-bottom: 5px;
 }
 .next-gig {
   width: 90%;
@@ -936,23 +940,22 @@ p {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  padding-top: 15%;
-  padding-bottom: 15%;
   padding-right: 5%;
   padding-left: 5%;
-  max-height: 40vh;
+  max-height: 50vh;
 
   h4 {
     color: white;
+    padding-top: 5%;
   }
 
   .btndiscography {
     background-color: $purple;
     color: white;
-    margin-top: 5%;
     padding: 15px;
     border: none;
     border-radius: 5%;
+    margin: 5%;
   }
 }
 
@@ -996,6 +999,8 @@ p {
     height: 50px;
   }
 }
+
+
 
 ///////////////// Tablet design /////////////////
 
