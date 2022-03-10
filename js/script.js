@@ -75,42 +75,40 @@ function parallax() {
   }
 
 }
-
+// // zoom button of gallery
+//  let gallery= document.querySelector(".gallery");
+//  if(gallery){
  
-// zoom button of gallery
- let gallery= document.querySelector(".gallery");
- if(gallery){
- 
-   // if the class gallery is found  image tags
-   let children=gallery.children;
+//    // if the class gallery is found  image tags
+//    let children=gallery.children;
     
-  for(let i=0;i<children.length;i++){
-    // loop over the image tags
+//   for(let i=0;i<children.length;i++){
+//     // loop over the image tags
 
-      children[i].addEventListener("mouseenter",(e)=>{
-      //const box = e.target.getBoundingClientRect()
-      //const xCenter = box.left ;
-      //const yCenter = box.top;
-      //let imageContainer=e.target;
-      let ball=document.createElement("div");
-      ball.setAttribute("class","zoom");
-      children[i].append(ball);
-      zoom.style.top=yCenter+"px";
-      zoom.style.left=xCenter+"px";
-      console.log(children[i]);
-   });
+//       children[i].addEventListener("mouseenter",(e)=>{
+//       //const box = e.target.getBoundingClientRect()
+//       //const xCenter = box.left ;
+//       //const yCenter = box.top;
+//       //let imageContainer=e.target;
+//       let ball=document.createElement("div");
+//       ball.setAttribute("class","zoom");
+//       children[i].append(ball);
+//       zoom.style.top=yCenter+"px";
+//       zoom.style.left=xCenter+"px";
+//       console.log(children[i]);
+//    });
 
-   children[i].addEventListener("mouseleave",(e)=>{
-      let ball=document.querySelector(".ball");
-      if(ball){
-        children[i].removeChild(ball);
-      }
-   });
+//    children[i].addEventListener("mouseleave",(e)=>{
+//       let ball=document.querySelector(".ball");
+//       if(ball){
+//         children[i].removeChild(ball);
+//       }
+//    });
 
-  }
+//   }
    
 
- }
+//  }
 
 
 
