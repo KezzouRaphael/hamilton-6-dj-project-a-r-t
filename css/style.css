@@ -540,6 +540,7 @@ p {
 
 .button {
   position: relative;
+  overflow: hidden;
   display: inline-block;
   padding: 0.875rem 2.188rem;
   font-size: 1rem;
@@ -670,12 +671,7 @@ p {
   height: 0;
 }
 
-.event-desc {
-  display: none;
-}
-
 .active-content {
-  display: inline;
   visibility: visible;
   height: auto;
   overflow: visible;
@@ -810,27 +806,13 @@ p {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 5%;
 }
 
-#test {
-  margin: 2rem;
-}
-
-#countdown-p {
-  color: #c4c4c4;
-  font-size: larger;
-}
-#countdown-days, #countdown-hours, #countdown-minutes, #countdown-seconds {
-  font-size: xx-large;
-}
-#countdown-days-content, #countdown-hours-content, #countdown-minutes-content, #countdown-seconds-content {
-  font-size: x-small;
-  letter-spacing: 0.1rem;
-  color: #c4c4c4;
+#countdown {
+  text-align: center;
 }
 #countdown-seconds, #countdown-seconds-content {
-  display: none;
+  visibility: hidden;
 }
 
 .flexbox-countdown {
@@ -841,7 +823,7 @@ p {
   padding: 2rem;
 }
 .flexbox-countdown-items {
-  flex: 0 0 33%;
+  flex: 0 0 25%;
 }
 
 .Fanbase {
@@ -1018,11 +1000,7 @@ p {
   }
 
   #countdown-seconds, #countdown-seconds-content {
-    display: inline;
-  }
-
-  .flexbox-countdown-items {
-    flex: 0 0 25%;
+    visibility: visible;
   }
 
   .suscribesection {
@@ -1054,10 +1032,6 @@ p {
   }
   .aboutDj h3 {
     padding-top: 60px;
-  }
-
-  .fanbase img {
-    float: left;
   }
 }
 @media screen and (min-width: 800px) {
@@ -1142,31 +1116,8 @@ p {
     max-width: 40rem;
   }
 
-  #countdown-p {
-    font-size: smaller;
-  }
   #countdown-seconds, #countdown-seconds-content {
-    display: inline;
-  }
-
-  .flexbox-countdown-items {
-    flex: 0 0 25%;
-  }
-
-  .next-gig-titles {
-    text-align: left;
-  }
-  .next-gig-container {
-    display: flex;
-    flex-basis: auto;
-  }
-
-  .event-container-content {
-    flex: 0 0 50%;
-  }
-
-  #text-right {
-    text-align: right;
+    visibility: visible;
   }
 }
 

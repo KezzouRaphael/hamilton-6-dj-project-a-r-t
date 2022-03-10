@@ -580,7 +580,7 @@ p {
 }
 .button {
   position: relative;
-  //overflow: hidden;
+  overflow: hidden;
   display: inline-block;
   padding: 0.875rem 2.188rem;
   font-size: 1rem;
@@ -707,11 +707,7 @@ p {
     height: 0;
   }
 }
-.event-desc {
-  display: none;
-}
 .active-content {
-  display: inline;
   visibility: visible;
   height: auto;
   overflow: visible;
@@ -842,31 +838,13 @@ p {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 5%;
   }
-}
-#test {
-  margin: 2rem;
 }
 #countdown {
-  &-p {
-    color: $gray-light;
-    font-size: larger;
-  }
-  &-days,
-  &-hours,
-  &-minutes,
-  &-seconds {
-    font-size: xx-large;
-    &-content {
-      font-size: x-small;
-      letter-spacing: 0.1rem;
-      color: $gray-light;
-    }
-  }
+  text-align: center;
   &-seconds,
   &-seconds-content {
-    display: none;
+    visibility: hidden;
   }
 }
 .flexbox-countdown {
@@ -876,7 +854,7 @@ p {
   flex-wrap: wrap;
   padding: 2rem;
   &-items {
-    flex: 0 0 33%;
+    flex: 0 0 25%;
   }
 }
 .Fanbase {
@@ -1065,12 +1043,7 @@ p {
   #countdown {
     &-seconds,
     &-seconds-content {
-      display: inline;
-    }
-  }
-  .flexbox-countdown {
-    &-items {
-      flex: 0 0 25%;
+      visibility: visible;
     }
   }
 
@@ -1115,6 +1088,7 @@ p {
     }
   }
 }
+
 ///////////////// Desktop design /////////////////
 
 @media screen and (min-width: 800px) {
@@ -1195,32 +1169,11 @@ p {
     }
   }
   #countdown {
-    &-p {
-      font-size: smaller;
-    }
     &-seconds,
     &-seconds-content {
-      display: inline;
+      visibility: visible;
     }
   }
-  .flexbox-countdown {
-    &-items {
-      flex: 0 0 25%;
-    }
-  }
-  .next-gig {
-    &-titles {
-      text-align: left;
-    }
-    &-container {
-      display: flex;
-      flex-basis: auto;
-    }
-  }
-  .event-container-content {
-    flex: 0 0 50%;
-  }
-  #text-right {
-    text-align: right;
-  }
+
+  
 }
