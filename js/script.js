@@ -17,7 +17,7 @@ function carrouselclicked(e){
     links.removeAttribute("id");
   }
   e.target.setAttribute("id","active-list");
-  let hreflink = e.target.getAttribute("href");
+  let hreflink = e.target.getAttribute("href"); 
   let node = document.querySelector(hreflink);
   let content = document.querySelectorAll(".scheduler-content-month");
   for(el of content)
@@ -142,3 +142,97 @@ function scrollClicked(e){
   document.documentElement.scrollTop = 0; //For Chrome , Firefox, IE, Opera
 };
 
+ 
+
+
+
+
+// script for media player
+const audioPlayer = document.querySelector(".player");
+let startTime;
+let endTime;
+let slider;
+let playButton;
+const audio = new Audio(
+  "https://ia800905.us.archive.org/19/items/FREE_background_music_dhalius/backsound.mp3"
+);
+  
+//play button
+ 
+playButton=audioPlayer.querySelector(".player__control")
+playButton.addEventListener("click",()=>{
+  if(audio.paused){
+    audio.play();
+     
+  }else{
+    audio.pause();
+     
+  }
+});
+
+//slider
+slider=audioPlayer.querySelector(".player__seekbar__slider");
+
+setInterval(()=>{
+  slider.style.width = (audio.currentTime/audio.duration)*100+"%";
+  startTime=audioPlayer.querySelector(".player__time").textContent= getTimeCodeFromNum(audio.currentTime);
+  endTime=audioPlayer.querySelector(".player__length").textContent= getTimeCodeFromNum(audio.duration);
+},500);
+ 
+//slide bar function
+
+ 
+
+audio.addEventListener(
+  "loadeddata",
+  () => {
+    
+    startTime=audioPlayer.querySelector(".player__time").textContent= getTimeCodeFromNum(audio.currentTime);
+    endTime=audioPlayer.querySelector(".player__length").textContent= getTimeCodeFromNum(audio.duration);
+    audio.volume = 1;
+  },false);
+
+  //turn 128 seconds into 2:08
+function getTimeCodeFromNum(num) {
+  let seconds = parseInt(num);
+  let minutes = parseInt(seconds / 60);
+  seconds -= minutes * 60;
+  const hours = parseInt(minutes / 60);
+  minutes -= hours * 60;
+
+  if (hours === 0) return `${minutes}:${String(seconds % 60).padStart(2, 0)}`;
+  return `${String(hours).padStart(2, 0)}:${minutes}:${String(
+    seconds % 60
+  ).padStart(2, 0)}`;
+}
+ 
+////////////////COUNTDOWN
+// Set the date we're counting down to
+var countDownDate = new Date("April 20, 2022 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML = "EXPIRED";
+  }
+}, 1000);
+ 
