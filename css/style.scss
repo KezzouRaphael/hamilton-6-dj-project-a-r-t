@@ -17,15 +17,6 @@
  
 
 
-.single{
-
-  .single__info{
-    font-size: 3rem;
-    text-shadow: 1px 1px white;
-     
-    //color:transparent;
-  }
-
   .player{
      display: flex;
      justify-content:flex-start;
@@ -61,11 +52,7 @@
       color:$gray;
     }
   }
-
 }
-
-
-
 
 header {
   background-image: url("/images/banner-img.jpg");
@@ -244,7 +231,7 @@ header {
 // banner of the home pageYOffset
 #home_nav {
   background-image: url("/images/homapage-banner-img.jpg");
-  height: 100vh;
+  //height: 100vh;
 }
 .sticky {
   transition-property: background-color;
@@ -818,6 +805,11 @@ p {
   margin-bottom: 30px;
 }
 .next-gig {
+  width: 90%;
+  position: relative;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -20%);
   &-container {
     width: 100%;
     padding-right: 1rem;
@@ -829,12 +821,30 @@ p {
     background-image: url("/images/bg-counter.jpg");
     background-color: $gray-dark;
     color: $white;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
-
+#countdown {
+  text-align: center;
+  &-seconds,
+  &-seconds-content {
+    visibility: hidden;
+  }
+}
+.flexbox-countdown {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+  &-items {
+    flex: 0 0 25%;
+  }
+}
 .Fanbase {
-  
-  background-image: url('/images/bg-circle-1.png');
+  background-image: url("/images/bg-circle-1.png");
   background-color: #282828;
   background-size: cover;
   background-position: center;
@@ -860,9 +870,7 @@ p {
 
   .fanbaseimg6 {
     margin-left: 20%;
-    
   }
-
 
   .fanbasejoin {
     text-align: left;
@@ -871,7 +879,7 @@ p {
   }
 
   h3,
-  h4{
+  h4 {
     color: white;
     padding-top: 40px;
   }
@@ -941,6 +949,12 @@ p {
     flex-direction: row;
     justify-content: center;
     padding: 0 2rem;
+  }
+  #countdown {
+    &-seconds,
+    &-seconds-content {
+      visibility: visible;
+    }
   }
 }
 
@@ -1021,6 +1035,12 @@ p {
     padding-right: 2rem;
     &-content {
       max-width: 40rem;
+    }
+  }
+  #countdown {
+    &-seconds,
+    &-seconds-content {
+      visibility: visible;
     }
   }
 }
