@@ -15,32 +15,21 @@
   font-size: 3rem;
   text-shadow: 1px 1px white;
 }
-
 .single .player {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: flex-start;
+  align-items: center;
 }
-
 .single .player .player__time {
   margin: 0 0.3rem;
 }
-
 .single .player .player__time::after {
   content: "-";
   margin: 0 0.3rem;
 }
-
 .single .player .player__length {
   margin: 0 0.1rem;
 }
-
 .single .player .player__seekbar {
   background-color: #6c757d;
   height: 0.3rem;
@@ -50,12 +39,10 @@
   width: 20rem;
   overflow: hidden;
 }
-
 .single .player .player__seekbar .player__seekbar__slider {
   background-color: #fff;
   width: 0rem;
 }
-
 .single .player .player__control {
   color: #6c757d;
 }
@@ -212,6 +199,11 @@ header .breadcrumbs .breadcrumbs__item a::after {
   display: inline-block;
   background: #ffc107;
   transform: translate3d(0, -50%, 0);
+}
+
+#home_nav {
+  background-image: url("/images/homapage-banner-img.jpg");
+  height: 100vh;
 }
 
 .sticky {
@@ -777,7 +769,6 @@ p {
   margin-bottom: 30px;
 }
 
-
 .next-gig-container {
   width: 100%;
   padding-right: 1rem;
@@ -801,32 +792,26 @@ p {
   padding-bottom: 50px;
   padding-top: 50px;
 }
-
 .Fanbase img {
   border-radius: 5%;
 }
-
 .Fanbase .fanbaseimg1 {
   float: right;
   margin-right: 10%;
 }
-
 .Fanbase .fanbaseimg3 {
   max-width: 50%;
   float: left;
   margin-left: 10%;
 }
-
 .Fanbase .fanbaseimg6 {
   margin-left: 20%;
 }
-
 .Fanbase .fanbasejoin {
   text-align: left;
   margin-left: 5%;
   margin-right: 5%;
 }
-
 .Fanbase h3,
 .Fanbase h4 {
   color: white;
