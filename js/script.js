@@ -142,6 +142,70 @@ function scrollClicked(e){
   document.documentElement.scrollTop = 0; //For Chrome , Firefox, IE, Opera
 };
 
+ 
+
+
+
+
+// script for media player
+const audioPlayer = document.querySelector(".player");
+let startTime;
+let endTime;
+let slider;
+let playButton;
+const audio = new Audio(
+  "https://ia800905.us.archive.org/19/items/FREE_background_music_dhalius/backsound.mp3"
+);
+  
+//play button
+ 
+playButton=audioPlayer.querySelector(".player__control")
+playButton.addEventListener("click",()=>{
+  if(audio.paused){
+    audio.play();
+     
+  }else{
+    audio.pause();
+     
+  }
+});
+
+//slider
+slider=audioPlayer.querySelector(".player__seekbar__slider");
+
+setInterval(()=>{
+  slider.style.width = (audio.currentTime/audio.duration)*100+"%";
+  startTime=audioPlayer.querySelector(".player__time").textContent= getTimeCodeFromNum(audio.currentTime);
+  endTime=audioPlayer.querySelector(".player__length").textContent= getTimeCodeFromNum(audio.duration);
+},500);
+ 
+//slide bar function
+
+ 
+
+audio.addEventListener(
+  "loadeddata",
+  () => {
+    
+    startTime=audioPlayer.querySelector(".player__time").textContent= getTimeCodeFromNum(audio.currentTime);
+    endTime=audioPlayer.querySelector(".player__length").textContent= getTimeCodeFromNum(audio.duration);
+    audio.volume = 1;
+  },false);
+
+  //turn 128 seconds into 2:08
+function getTimeCodeFromNum(num) {
+  let seconds = parseInt(num);
+  let minutes = parseInt(seconds / 60);
+  seconds -= minutes * 60;
+  const hours = parseInt(minutes / 60);
+  minutes -= hours * 60;
+
+  if (hours === 0) return `${minutes}:${String(seconds % 60).padStart(2, 0)}`;
+  return `${String(hours).padStart(2, 0)}:${minutes}:${String(
+    seconds % 60
+  ).padStart(2, 0)}`;
+}
+ 
 ////////////////COUNTDOWN
 // Set the date we're counting down to
 var countDownDate = new Date("April 20, 2022 15:37:25").getTime();
@@ -160,7 +224,6 @@ var x = setInterval(function() {
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
   // Display
   document.getElementById("countdown-days").innerHTML = days;
   document.getElementById("countdown-hours").innerHTML = hours;
