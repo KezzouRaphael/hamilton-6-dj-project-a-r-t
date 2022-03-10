@@ -53,47 +53,35 @@
 
         <span class="ellipsis fa-solid fa-ellipsis-vertical"></span>
       </nav>
- 
-       
-         <article class="single">
-          <div class="single__header"> 
-            <h1>New Single</h1>
-          </div>
- 
-
       <article class="single">
-        <h1 class="single__header">New Single</h1>
-          <p class="single__info">
-            Feel the Rhythm
-          </p> 
+        <div class="single__header">
+          <h1>New Single</h1>
+        </div>
+        <div>
+          <svg
+            class="single__info"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <text x="0" y="80">Feel the Rhythm</text>
+          </svg>
+        </div>
 
-         <div>
-          <svg class="single__info" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink">
-              <text x="0" y="80">
-                Feel the Rhythm
-              </text> 
-            </svg>
+        <div class="player">
+          <span class="player__control fa-solid fa-play"></span>
+          <div class="player__seekbar">
+            <div class="player__seekbar__slider">_</div>
           </div>
-         
-          <div class="player">
-            <span class="player__control fa-solid fa-play"></span>
-            <div class="player__seekbar">
-              <div class="player__seekbar__slider">
-               _</div> 
-                 
-            </div>
-           
-            <span class="player__time"></span>
-            <span class="player__length"></span>
-          </div>
+
+          <span class="player__time"></span>
+          <span class="player__length"></span>
+        </div>
 
         <div class="single__audio"></div>
       </article>
     </header>
 
     <main>
- 
       <section class="next-gig">
         <div class="next-gig-container">
           <h1>Next Gig</h1>
@@ -125,7 +113,7 @@
           <a class="button" href="#1">GET IN TOUCH</a>
         </div>
       </section>
- 
+
       <button id="scroll-up-button">^</button>
       <section class="aboutDj">
         <img class="imgAboutdj" src="./images/home-dj.jpg" />
