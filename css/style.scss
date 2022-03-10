@@ -969,7 +969,6 @@ p {
   padding-bottom: 15%;
   padding-right: 5%;
   padding-left: 5%;
-  min-height: 50vh;
 
   h3 {
     color: white;
@@ -1080,8 +1079,6 @@ p {
   }
 
   .suscribesection {
-    min-height: 50vh;
-
     input {
       width: 30vw;
       border-radius: 10px;
@@ -1113,13 +1110,9 @@ p {
       padding-top: 60px;
     }
   }
-
-  .fanbase {
-    img {
-      float: left;
-    }
-  }
 }
+
+
 ///////////////// Desktop design /////////////////
 
 @media screen and (min-width: 800px) {
