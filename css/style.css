@@ -862,6 +862,30 @@ p {
   padding-top: 40px;
 }
 
+.btnlatest {
+  text-align: center;
+  background-image: url(/images/homepage-latest-releases-background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  padding-right: 5%;
+  padding-left: 5%;
+  max-height: 40vh;
+}
+.btnlatest h4 {
+  color: white;
+}
+.btnlatest .btndiscography {
+  background-color: #6f42c1;
+  color: white;
+  margin-top: 5%;
+  padding: 15px;
+  border: none;
+  border-radius: 5%;
+}
+
 @media screen and (min-width: 480px) {
   .gallery {
     display: grid;
