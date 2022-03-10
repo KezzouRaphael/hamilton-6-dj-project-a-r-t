@@ -32,10 +32,14 @@
   font-family: "Poppins", sans-serif;
   overflow: visible;
   letter-spacing: 0.2rem;
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: bold;
   fill: transparent;
   stroke: #fff;
+}
+
+.single .single__info text {
+  display: block;
 }
 
 .single .player {
@@ -80,6 +84,7 @@
 
 .single .player .player__control {
   color: #6c757d;
+  background-image: url("images/play-svgrepo-com.svg");
 }
 
 header {

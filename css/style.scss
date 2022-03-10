@@ -13,9 +13,7 @@
   color: $white;
 }
 
-// index styles
  
-
 
 .single{
   display:flex;
@@ -26,10 +24,16 @@
     font-family: "Poppins", sans-serif;
     overflow: visible;
     letter-spacing: 0.2rem;
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: bold;
     fill: transparent;
     stroke: $white;
+     
+
+    text{
+      display: block;
+       
+    }
      
   }
 
@@ -66,6 +70,7 @@
     }
     .player__control{
       color:$gray;
+      background-image: url("images/play-svgrepo-com.svg");
     }
   }
 
