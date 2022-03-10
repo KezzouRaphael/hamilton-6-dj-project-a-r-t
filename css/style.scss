@@ -800,38 +800,10 @@ p {
   }
 }
 #countdown {
-  &-days,
-  &-hours,
-  &-minutes,
-  &-seconds {
-    position: relative;
-  }
-  &-days::after {
-    content: "DAYS";
-    position: absolute;
-    top: 1rem;
-    left: 1.6rem;
-  }
-  &-hours::after {
-    content: "HOURS";
-    position: absolute;
-    top: 1rem;
-    left: 1.6rem;
-  }
-  &-minutes::after {
-    content: "MINUTES";
-    position: absolute;
-    top: 1rem;
-    left: 1.6rem;
-  }
-  &-seconds {
+  text-align: center;
+  &-seconds,
+  &-seconds-content {
     visibility: hidden;
-    &::after {
-      content: "SECONDS";
-      position: absolute;
-      top: 1rem;
-      left: 1.6rem;
-    }
   }
 }
 .flexbox-countdown {
@@ -952,7 +924,8 @@ p {
     padding: 0 2rem;
   }
   #countdown {
-    &-seconds {
+    &-seconds,
+    &-seconds-content {
       visibility: visible;
     }
   }
@@ -1038,7 +1011,8 @@ p {
     }
   }
   #countdown {
-    &-seconds {
+    &-seconds,
+    &-seconds-content {
       visibility: visible;
     }
   }

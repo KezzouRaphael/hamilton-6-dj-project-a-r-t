@@ -764,35 +764,11 @@ p {
   background-repeat: no-repeat;
 }
 
-#countdown-days, #countdown-hours, #countdown-minutes, #countdown-seconds {
-  position: relative;
+#countdown {
+  text-align: center;
 }
-#countdown-days::after {
-  content: "DAYS";
-  position: absolute;
-  top: 1rem;
-  left: 1.6rem;
-}
-#countdown-hours::after {
-  content: "HOURS";
-  position: absolute;
-  top: 1rem;
-  left: 1.6rem;
-}
-#countdown-minutes::after {
-  content: "MINUTES";
-  position: absolute;
-  top: 1rem;
-  left: 1.6rem;
-}
-#countdown-seconds {
+#countdown-seconds, #countdown-seconds-content {
   visibility: hidden;
-}
-#countdown-seconds::after {
-  content: "SECONDS";
-  position: absolute;
-  top: 1rem;
-  left: 1.6rem;
 }
 
 .flexbox-countdown {
@@ -910,7 +886,7 @@ p {
     padding: 0 2rem;
   }
 
-  #countdown-seconds {
+  #countdown-seconds, #countdown-seconds-content {
     visibility: visible;
   }
 }
@@ -996,7 +972,7 @@ p {
     max-width: 40rem;
   }
 
-  #countdown-seconds {
+  #countdown-seconds, #countdown-seconds-content {
     visibility: visible;
   }
 }
