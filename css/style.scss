@@ -1,6 +1,12 @@
 @import "variables.scss";
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-
+//USE TO DEBUG OVERFLOW
+// * {
+//   outline: 1px solid #f00 !important;
+// }
+.overflow-header-svg {
+  overflow: hidden;
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -508,6 +514,10 @@ p {
   color: $white;
   background-color: $purple;
   border-color: $purple;
+  &:hover {
+    background-color: $white;
+    color: black;
+  }
 }
 .bigicons {
   display: block;
@@ -756,7 +766,7 @@ p {
     border-radius: 5%;
   }
 }
-#test {
+#ticketbutton {
   margin: 2rem;
 }
 #countdown {
@@ -821,9 +831,9 @@ p {
     margin-left: 10%;
   }
 
-  .fanbaseimg6 {
-    margin-left: 20%;
-  }
+  // .fanbaseimg6 {
+  //   //margin-left: 20%; OVERFLOWWWW
+  // }
 
   .fanbasejoin {
     text-align: left;
@@ -920,7 +930,6 @@ p {
   }
 }
 .slideshow-container-sponsors {
-  width: 100vw;
   position: relative;
   margin: auto;
   display: flex;
@@ -978,14 +987,44 @@ p {
     opacity: 1;
   }
 }
-
 .homegallery {
   img {
     padding: 0;
     margin: 0;
   }
 }
-
+/////////////////////////////////////////////TICKETS
+.tickets {
+  margin: 0.5rem 5rem;
+}
+.section-tickets-title {
+  text-align: center;
+}
+.flextickets-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-right: 1rem;
+  //border-right: 1px solid $gray-light;
+}
+.slideshow-container-tickets {
+  &-content {
+    display: none;
+  }
+  &-dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: $gray-light;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    &:hover {
+      background-color: $purple;
+    }
+  }
+}
 ///////////////// Tablet design /////////////////
 
 @media screen and (min-width: 480px) {
@@ -1115,6 +1154,20 @@ p {
       width: 50%;
     }
   }
+  .slideshow-container-tickets {
+    display: flex;
+    flex-direction: row;
+    &-content {
+      flex: 0 0 50%;
+    }
+  }
+  .flextickets-container {
+    padding-right: 1rem;
+    border-right: 1px solid $gray-light;
+  }
+  .tickets {
+    margin: 0.5rem 2rem;
+  }
 }
 
 ///////////////// Desktop design /////////////////
@@ -1224,5 +1277,23 @@ p {
   }
   #text-right {
     text-align: right;
+  }
+  .slideshow-container-tickets {
+    display: flex;
+    flex-direction: row;
+  }
+  .slideshow-container-tickets {
+    display: flex;
+    flex-direction: row;
+    &-content {
+      flex: 0 0 33%;
+    }
+  }
+  .flextickets-container {
+    padding-right: 1rem;
+    border-right: 1px solid $gray-light;
+  }
+  .tickets {
+    margin: 0.5rem 2rem;
   }
 }
