@@ -8,6 +8,7 @@
   overflow: hidden;
 }
 * {
+  //outline: 1px solid #f00 !important;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -133,7 +134,16 @@ header {
   z-index: 2000;
   background: $gray-dark;
   padding: 1rem 1rem;
+  font-weight: bold;
 
+ 
+  .navbar__logo{
+    max-width: 70%;
+    img{
+      margin:0;
+    }
+  }
+ 
   .navbar__hamburger {
     color: $white;
     font-size: 2rem;
@@ -158,6 +168,7 @@ header {
         transition-duration: 0.5s;
         transition-timing-function: ease-in-out;
         transition-delay: 0s;
+ 
 
         &:hover {
           color: $white;
@@ -1228,8 +1239,9 @@ p {
     display: flex;
     position: sticky;
     z-index: 2000;
-    background: $gray-dark;
-    padding: 1rem 0;
+    background:$gray-dark;
+    padding:0.5rem 1rem;
+    font-weight: bold;
     align-items: center;
     justify-content: space-between;
 
@@ -1240,7 +1252,16 @@ p {
     .navbar__hamburger {
       order: 4;
     }
+ 
+    navbar__logo{
+      max-width: 80%;
+      img{
+        margin:0;
+      }
+    }
 
+
+ 
     .navbar__page {
       list-style: none;
       display: inline-block;
@@ -1266,13 +1287,15 @@ p {
       }
     }
 
-    .navbar__share {
-      all: unset;
-      padding: 0 0.5rem;
-      .navbar__share__item {
-        all: unset;
-        padding: 0 0.5rem;
-      }
+ 
+    .navbar__share{
+        all:unset;
+        //padding: 0 0.5rem;
+        .navbar__share__item{
+            all:unset;
+            padding: 0 0.5rem;
+        }
+ 
     }
   }
 
@@ -1281,7 +1304,7 @@ p {
     display: grid;
     margin: 8rem 0;
     grid-template-columns: repeat(4, auto);
-    row-gap: 2rem;
+    row-gap: 1rem;
     column-gap: 2rem;
   }
 
