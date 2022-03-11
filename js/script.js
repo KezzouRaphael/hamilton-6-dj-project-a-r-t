@@ -4,7 +4,21 @@ let carrouselLinks = document.querySelectorAll(".carrousel");
 
 // parallax effect of header
 
-window.onscroll = function() {parallax()};
+ 
+
+document.addEventListener("scroll",()=>{parallax();});
+
+function parallax() {
+  let navbar = document.querySelector(".navbar");
+  //let sticky = navbar.offsetTop;
+
+  if (window.pageYOffset >= 10) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+
+}
 
 
 for(links of carrouselLinks)
@@ -66,16 +80,7 @@ let buttonScroll = document.querySelector("#scroll-up-button");
 buttonScroll.addEventListener("click",scrollClicked);
 
  
-function parallax() {
-  let navbar = document.querySelector("nav");
-  //let sticky = navbar.offsetTop;
-  if (window.pageYOffset >= 10) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
 
-}
 // // zoom button of gallery
 //  let gallery= document.querySelector(".gallery");
 //  if(gallery){
