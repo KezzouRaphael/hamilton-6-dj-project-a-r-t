@@ -682,6 +682,7 @@ p {
 .section-tour {
   background-color: #f5f5f5;
   padding: 5rem 0;
+  text-align: center;
 }
 
 #scroll-up-button {
@@ -725,6 +726,10 @@ p {
 .group-releases-paragraphs,
 .group-releases-date {
   margin-bottom: 30px;
+}
+
+.prelease {
+  margin-bottom: 5px;
 }
 
 .next-gig {
@@ -831,22 +836,21 @@ p {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  padding-top: 15%;
-  padding-bottom: 15%;
   padding-right: 5%;
   padding-left: 5%;
-  max-height: 40vh;
+  max-height: 50vh;
 }
 .btnlatest h4 {
   color: white;
+  padding-top: 5%;
 }
 .btnlatest .btndiscography {
   background-color: #6f42c1;
   color: white;
-  margin-top: 5%;
   padding: 15px;
   border: none;
   border-radius: 5%;
+  margin: 5%;
 }
 
 .suscribesection {
@@ -859,7 +863,6 @@ p {
   padding-bottom: 15%;
   padding-right: 5%;
   padding-left: 5%;
-  min-height: 50vh;
 }
 .suscribesection h3 {
   color: white;
@@ -958,14 +961,10 @@ p {
   #countdown-seconds, #countdown-seconds-content {
     display: inline;
   }
-
   .flexbox-countdown-items {
     flex: 0 0 25%;
   }
 
-  .suscribesection {
-    min-height: 50vh;
-  }
   .suscribesection input {
     width: 30vw;
     border-radius: 10px;
