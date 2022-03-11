@@ -31,7 +31,7 @@ function resizeWindow(){
     }
   }
   catch(error){
-    console.error("don't worry just press a button to patch");
+    console.error("Don't worry just press a button to patch");
   }
 }
 
@@ -213,6 +213,6 @@ function showSlidesNews(n) {
   }
   }
   catch(error){
-        console.log("Don't worry press a button in recent news to fix");
+        console.error("Don't worry press a button in recent news to fix");
   }
 }
