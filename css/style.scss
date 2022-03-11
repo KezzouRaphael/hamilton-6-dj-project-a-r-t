@@ -1025,6 +1025,14 @@ p {
     }
   }
 }
+/////////////////////RECENT NEWS
+.bgimage {
+  background-image: url(/images/homepage-news-background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 ///////////////// Tablet design /////////////////
 
 @media screen and (min-width: 480px) {
@@ -1143,7 +1151,7 @@ p {
     display: flex;
     flex-direction: row;
     img {
-      width: 33.5%;
+      width: 33.3%;
     }
   }
 
