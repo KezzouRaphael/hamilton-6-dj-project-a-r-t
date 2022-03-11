@@ -73,9 +73,6 @@
   }
 }
 
-
-
-
 header {
   background-image: url("/images/banner-img.jpg");
   background-position: center;
@@ -88,9 +85,7 @@ header {
   font-family: "Poppins", sans-serif;
   color: $white;
   position: relative;
-  
- 
-     
+
   h1 {
     align-self: center;
     margin-top: 6rem;
@@ -128,109 +123,95 @@ header {
   }
 }
 
-
-// mobile and tablet design for header 
-.navbar{
-  display:flex;
+// mobile and tablet design for header
+.navbar {
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   position: sticky;
   z-index: 2000;
-  background:$gray-dark;
+  background: $gray-dark;
   padding: 1rem 1rem;
 
+  .navbar__hamburger {
+    color: $white;
+    font-size: 2rem;
+  }
 
+  .navbar__share {
+    display: none;
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: $gray-dark;
+    border-radius: 0.2rem;
+    .navbar__share__item {
+      //display: inline-block;
+      text-align: center;
+      padding: 0.5rem 1rem;
+      a {
+        color: $gray;
+        text-decoration: none;
+        transition-property: all;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 0s;
 
- .navbar__hamburger{
-     color: $white;
-     font-size:2rem;
- }
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+  }
 
- .navbar__share{
-     display: none;
-     list-style: none;
-     position:absolute;
-     top:100%;
-     right:0;
-     background:$gray-dark;
-     border-radius:0.2rem;
-     .navbar__share__item{
-         //display: inline-block;
-         text-align: center;
-         padding:0.5rem 1rem;
-         a {
-             color:$gray;
-             text-decoration: none;
-             transition-property: all;
-             transition-duration: 0.5s;
-             transition-timing-function: ease-in-out;
-             transition-delay: 0s;
- 
-             &:hover {
-               color: $white;
-             }
+  .navbar__eclipse {
+    color: $white;
+    font-size: 2rem;
+  }
 
-         }
-     }
- }
+  .navbar__page {
+    display: none;
+  }
 
+  //page navigation
+  .left {
+    left: 0;
+  }
 
- .navbar__eclipse{
-     color: $white;
-     font-size:2rem;
-     
- }
+  .right {
+    right: 0;
+  }
 
- .navbar__page{
-     display: none;
- }
+  .navbar__side {
+    display: none;
+    list-style: none;
+    position: absolute;
+    z-index: 200;
+    top: 100%;
+    height: 100vh;
+    background: $gray-dark;
+    .navbar__side__item {
+      padding: 1rem 3rem;
+      text-align: left;
+      a {
+        color: $white;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-decoration: none;
+        transition-property: all;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 0s;
 
- //page navigation
- .left{
-     left: 0;
- }
-
- .right{
-     right: 0;
- }
-
- .navbar__side{
-     display:none;
-     list-style: none;
-     position:absolute;
-     z-index: 200;
-     top:100%;
-     height:100vh;
-     background:$gray-dark;
-     .navbar__side__item{
-         padding: 1rem 3rem;
-         text-align: left;
-         a{  
-             color: $white;
-             text-transform: uppercase;
-             text-decoration: none;
-             text-decoration: none;
-             transition-property: all;
-             transition-duration: 0.5s;
-             transition-timing-function: ease-in-out;
-             transition-delay: 0s;
- 
-             &:hover {
-               color: $gray;
-             }
-             
-         }
-     }
- }
-
-
+        &:hover {
+          color: $gray;
+        }
+      }
+    }
+  }
 }
-
-
-
-
-
 
 // banner of the home pageYOffset
 #home_nav {
@@ -981,17 +962,35 @@ p {
 }
 /////////////////////////////////////////////TICKETS
 .tickets {
-  margin: 0.5rem 5rem;
-}
-.section-tickets-title {
+  margin: 1rem 3.5rem;
   text-align: center;
 }
+.section-tickets {
+  padding: 2rem;
+  &-title {
+    text-align: center;
+    padding: 2rem;
+  }
+}
+
 .flextickets-container {
   display: flex;
   flex-direction: column;
   text-align: center;
   padding-right: 1rem;
-  //border-right: 1px solid $gray-light;
+  &-title {
+    letter-spacing: 0.1rem;
+  }
+  &-price {
+    font-size: xxx-large;
+    font-size: -webkit-xxx-large;
+  }
+  &-content {
+    font-size: large;
+    font-size: small;
+    color: $gray;
+    font-weight: 500;
+  }
 }
 .slideshow-container-tickets {
   &-content {
@@ -1223,68 +1222,59 @@ p {
 ///////////////// Desktop design /////////////////
 
 @media screen and (min-width: 800px) {
-
   // header for desktop design
-  .navbar{
-    all:unset;
-    display:flex;
+  .navbar {
+    all: unset;
+    display: flex;
     position: sticky;
     z-index: 2000;
-    background:$gray-dark;
-    padding:1rem 0;
+    background: $gray-dark;
+    padding: 1rem 0;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
 
-    .navbar__eclipse{
-        display:none;
+    .navbar__eclipse {
+      display: none;
     }
 
-    .navbar__hamburger{
-         order:4;
+    .navbar__hamburger {
+      order: 4;
     }
 
-
-
-    .navbar__page{
-       
-        list-style: none;
-        display: inline-block;
-        background:$gray-dark;
-        .navbar__page__item{
-            padding: 0 0.5rem;
-            text-align: center;
-            display: inline-block;
-            a{  
-                color: $white;
-                text-transform: uppercase;
-                text-decoration: none;
-                text-decoration: none;
-                transition-property: all;
-                transition-duration: 0.5s;
-                transition-timing-function: ease-in-out;
-                transition-delay: 0s;
-    
-                &:hover {
-                  color: $gray;
-                }
-                
-            }
-        }
-    }
-
-    .navbar__share{
-        all:unset;
+    .navbar__page {
+      list-style: none;
+      display: inline-block;
+      background: $gray-dark;
+      .navbar__page__item {
         padding: 0 0.5rem;
-        .navbar__share__item{
-            all:unset;
-            padding: 0 0.5rem;
+        text-align: center;
+        display: inline-block;
+        a {
+          color: $white;
+          text-transform: uppercase;
+          text-decoration: none;
+          text-decoration: none;
+          transition-property: all;
+          transition-duration: 0.5s;
+          transition-timing-function: ease-in-out;
+          transition-delay: 0s;
+
+          &:hover {
+            color: $gray;
+          }
         }
+      }
     }
 
-}
-
-
-
+    .navbar__share {
+      all: unset;
+      padding: 0 0.5rem;
+      .navbar__share__item {
+        all: unset;
+        padding: 0 0.5rem;
+      }
+    }
+  }
 
   //gallery for desktop design
   .gallery {
