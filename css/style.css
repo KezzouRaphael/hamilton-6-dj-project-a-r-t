@@ -961,6 +961,7 @@ p {
   #countdown-seconds, #countdown-seconds-content {
     display: inline;
   }
+
   .flexbox-countdown-items {
     flex: 0 0 25%;
   }
@@ -991,10 +992,6 @@ p {
   }
   .aboutDj h3 {
     padding-top: 60px;
-  }
-
-  .fanbase img {
-    float: left;
   }
 }
 @media screen and (min-width: 800px) {
