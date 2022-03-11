@@ -1,6 +1,12 @@
 @import "variables.scss";
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-
+//USE TO DEBUG OVERFLOW
+// * {
+//   outline: 1px solid #f00 !important;
+// }
+.overflow-header-svg {
+  overflow: hidden;
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -253,7 +259,7 @@ header {
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
   position: fixed;
-  width: 100vw;
+  width: 96vw;
   top: 0;
   background-color: $gray-dark;
 }
@@ -822,7 +828,7 @@ p {
   }
 
   .fanbaseimg6 {
-    margin-left: 20%;
+    //margin-left: 20%; OVERFLOWWWW
   }
 
   .fanbasejoin {
@@ -919,7 +925,6 @@ p {
   }
 }
 .slideshow-container-sponsors {
-  width: 100vw;
   position: relative;
   margin: auto;
   display: flex;

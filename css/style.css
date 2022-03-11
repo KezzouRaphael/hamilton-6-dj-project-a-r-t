@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+.overflow-header-svg {
+  overflow: hidden;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -228,7 +232,7 @@ header .breadcrumbs .breadcrumbs__item a::after {
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
   position: fixed;
-  width: 100vw;
+  width: 96vw;
   top: 0;
   background-color: #343a40;
 }
@@ -814,9 +818,6 @@ p {
   float: left;
   margin-left: 10%;
 }
-.Fanbase .fanbaseimg6 {
-  margin-left: 20%;
-}
 .Fanbase .fanbasejoin {
   text-align: left;
   margin-left: 5%;
@@ -904,7 +905,6 @@ p {
 }
 
 .slideshow-container-sponsors {
-  width: 100vw;
   position: relative;
   margin: auto;
   display: flex;
