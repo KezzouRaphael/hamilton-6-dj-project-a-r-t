@@ -1,6 +1,12 @@
 @import "variables.scss";
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-
+//USE TO DEBUG OVERFLOW
+// * {
+//   outline: 1px solid #f00 !important;
+// }
+.overflow-header-svg {
+  overflow: hidden;
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,14 +19,12 @@
   color: $white;
 }
 
- 
- 
-.single{
-  display:flex;
-  flex-direction:column;
+.single {
+  display: flex;
+  flex-direction: column;
   margin: 0 3rem;
 
-  .single__info{
+  .single__info {
     font-family: "Poppins", sans-serif;
     overflow: visible;
     letter-spacing: 0.2rem;
@@ -28,53 +32,46 @@
     font-weight: bold;
     fill: transparent;
     stroke: $white;
-     
 
-    text{
+    text {
       display: block;
-       
     }
-     
   }
- 
 
-  .player{
-     display: flex;
-     justify-content:flex-start;
-     align-items:center;
-    
-    
+  .player {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 
-    .player__time{
+    .player__time {
       margin: 0 0.3rem;
-      &::after{
+      &::after {
         content: "-";
         margin: 0 0.3rem;
       }
     }
-    .player__length{
+    .player__length {
       margin: 0 0.1rem;
     }
-    .player__seekbar{
+    .player__seekbar {
       background-color: $gray;
-      height:0.3rem;
+      height: 0.3rem;
       display: inline;
       margin: 0 0.5rem;
-      border-radius:3rem;
+      border-radius: 3rem;
       width: 100%;
       overflow: hidden;
-      .player__seekbar__slider{
-        background-color:$white;
-        width:0rem;
-
+      .player__seekbar__slider {
+        background-color: $white;
+        width: 0rem;
       }
     }
-    .player__control{
-      color:$gray;
+    .player__control {
+      color: $gray;
       background-image: url("images/play-svgrepo-com.svg");
     }
   }
-
+}
 header {
   background-image: url("/images/banner-img.jpg");
   background-position: center;
@@ -255,7 +252,6 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
- 
 }
 .sticky {
   transition-property: background-color;
@@ -267,17 +263,18 @@ header {
   top: 0;
   background-color: $gray-dark;
 }
-gallery .zoom {
+.zoom {
   position: absolute;
-  top: 0;
-
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 5rem;
   height: 5rem;
   background-color: $white;
   border-radius: 50%;
   box-shadow: 0 0 0 0.6rem rgba(204, 199, 199, 0.3);
-  //transition:1s;
-  //transform: translate(-50%, -50%);
+  transition: 1s;
   &::before {
     content: "Zoom";
     position: absolute;
@@ -289,139 +286,37 @@ gallery .zoom {
     box-shadow: 0 0 0 1rem rgba(204, 199, 199, 0.3);
   }
 }
-
-.gallery {
-  display: grid;
-  margin: 8rem 0;
-  grid-template-columns: repeat(1, auto);
-  row-gap: 2rem;
-  position: relative;
-  column-gap: 2rem;
-
-  .gallery__1 {
-    position: relative;
-    img {
-      content: url("/images/gallery-1.jpg");
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  /* Modal Content/Box */
+  &-content {
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    width: 80%; /* Could be more or less, depending on screen size */
   }
+}
 
-  .gallery__2 {
-    position: relative;
-    img {
-      content: url("/images/gallery-2.jpg");
-
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-
-  .gallery__3 {
-    position: relative;
-    img {
-      content: url("/images/gallery-3.jpg");
-
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-
-  .gallery__4 {
-    position: relative;
-    img {
-      content: url("/images/gallery-4.jpg");
-
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-
-  .gallery__5 {
-    position: relative;
-    img {
-      content: url("/images/gallery-5.jpg");
-
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-
-  .gallery__6 {
-    position: relative;
-    img {
-      content: url("/images/gallery-6.jpg");
-
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-
-  .gallery__7 {
-    position: relative;
-    img {
-      content: url("/images/gallery-7.jpg");
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-
-  .gallery__8 {
-    position: relative;
-    img {
-      content: url("/images/gallery-8.jpg");
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-
-  .gallery__9 {
-    position: relative;
-    img {
-      content: url("/images/gallery-9.jpg");
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-
-  .gallery__10 {
-    position: relative;
-    img {
-      content: url("/images/gallery-10.jpg");
-
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-
-  .gallery__11 {
-    position: relative;
-    img {
-      content: url("/images/gallery-11.jpg");
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-
-  .gallery__12 {
-    position: relative;
-    img {
-      content: url("/images/gallery-12.jpg");
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  &:hover,
+  &:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
   }
 }
 
@@ -432,6 +327,14 @@ gallery .zoom {
   padding-top: 50px;
   display: flex;
   flex-wrap: wrap;
+  &-images {
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 }
 
 footer {
@@ -481,7 +384,7 @@ body {
   font-size: 16px;
   font-weight: 300;
   color: rgba(21, 21, 21, 0.8);
-  background-color: $white;
+  background-color: $bggray;
   letter-spacing: -0.03em;
 }
 
@@ -590,7 +493,7 @@ p {
 }
 .button {
   position: relative;
-  overflow: hidden;
+  //overflow: hidden;
   display: inline-block;
   padding: 0.875rem 2.188rem;
   font-size: 1rem;
@@ -611,6 +514,10 @@ p {
   color: $white;
   background-color: $purple;
   border-color: $purple;
+  &:hover {
+    background-color: $white;
+    color: black;
+  }
 }
 .bigicons {
   display: block;
@@ -717,7 +624,11 @@ p {
     height: 0;
   }
 }
+.event-desc {
+  display: none;
+}
 .active-content {
+  display: inline;
   visibility: visible;
   height: auto;
   overflow: visible;
@@ -784,6 +695,7 @@ p {
 .section-tour {
   background-color: $bggray;
   padding: 5rem 0;
+  text-align: center;
 }
 #scroll-up-button {
   display: none;
@@ -828,6 +740,9 @@ p {
 .group-releases-date {
   margin-bottom: 30px;
 }
+.prelease {
+  margin-bottom: 5px;
+}
 .next-gig {
   width: 90%;
   position: relative;
@@ -848,13 +763,31 @@ p {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 5%;
   }
 }
+#ticketbutton {
+  margin: 2rem;
+}
 #countdown {
-  text-align: center;
+  &-p {
+    color: $gray-light;
+    font-size: larger;
+  }
+  &-days,
+  &-hours,
+  &-minutes,
+  &-seconds {
+    font-size: xx-large;
+    &-content {
+      font-size: x-small;
+      letter-spacing: 0.1rem;
+      color: $gray-light;
+    }
+  }
   &-seconds,
   &-seconds-content {
-    visibility: hidden;
+    display: none;
   }
 }
 .flexbox-countdown {
@@ -864,7 +797,7 @@ p {
   flex-wrap: wrap;
   padding: 2rem;
   &-items {
-    flex: 0 0 25%;
+    flex: 0 0 33%;
   }
 }
 .Fanbase {
@@ -876,6 +809,12 @@ p {
   text-align: center;
   padding-bottom: 50px;
   padding-top: 50px;
+
+  .fa-solid {
+    padding-bottom: 10px;
+    color: $purple;
+    font-size: 50px;
+  }
 
   img {
     border-radius: 5%;
@@ -892,9 +831,9 @@ p {
     margin-left: 10%;
   }
 
-  .fanbaseimg6 {
-    margin-left: 20%;
-  }
+  // .fanbaseimg6 {
+  //   //margin-left: 20%; OVERFLOWWWW
+  // }
 
   .fanbasejoin {
     text-align: left;
@@ -902,13 +841,190 @@ p {
     margin-right: 5%;
   }
 
+  .fanbasediv {
+    margin-top: 40px;
+  }
+
   h3,
   h4 {
     color: white;
-    padding-top: 40px;
   }
 }
 
+.btnlatest {
+  text-align: center;
+  background-image: url(/images/homepage-latest-releases-background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-right: 5%;
+  padding-left: 5%;
+  max-height: 50vh;
+
+  h4 {
+    color: white;
+    padding-top: 5%;
+  }
+
+  .btndiscography {
+    background-color: $purple;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5%;
+    margin: 5%;
+  }
+}
+
+.suscribesection {
+  text-align: center;
+  background-image: url(/images/homepage-footer-background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  padding-right: 5%;
+  padding-left: 5%;
+
+  h3 {
+    color: white;
+    font-size: x-large;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  input {
+    margin-top: 5%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: none;
+    width: 80vw;
+    height: 50px;
+    padding-left: 5%;
+  }
+
+  .btnsuscribe {
+    background-color: $purple;
+    color: white;
+    margin-top: 5%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: none;
+    width: 80vw;
+    height: 50px;
+  }
+}
+//////////////////////////////////////////PARTNERS AND SPONSORS///////////////////////////////
+.section-partners-and-sponsors {
+  background-image: url("/images/homepage-sponsors-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  &-title {
+    text-align: center;
+    color: $white;
+    padding-bottom: 10%;
+  }
+}
+.slideshow-container-sponsors {
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  &-image {
+    filter: invert(58%) sepia(48%) saturate(0%) hue-rotate(221deg)
+      brightness(117%) contrast(108%);
+    max-width: 100%;
+  }
+  &-content {
+    display: none;
+  }
+  &-dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: $gray-light;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    &:hover {
+      background-color: $purple;
+    }
+  }
+}
+.current {
+  background-color: $purple;
+}
+#alignement {
+  text-align: center;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.homegallery {
+  img {
+    padding: 0;
+    margin: 0;
+  }
+}
+/////////////////////////////////////////////TICKETS
+.tickets {
+  margin: 0.5rem 5rem;
+}
+.section-tickets-title {
+  text-align: center;
+}
+.flextickets-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-right: 1rem;
+  //border-right: 1px solid $gray-light;
+}
+.slideshow-container-tickets {
+  &-content {
+    display: none;
+  }
+  &-dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: $gray-light;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    &:hover {
+      background-color: $purple;
+    }
+  }
+}
 ///////////////// Tablet design /////////////////
 
 @media screen and (min-width: 480px) {
@@ -977,8 +1093,80 @@ p {
   #countdown {
     &-seconds,
     &-seconds-content {
-      visibility: visible;
+      display: inline;
     }
+  }
+  .flexbox-countdown {
+    &-items {
+      flex: 0 0 25%;
+    }
+  }
+
+  .suscribesection {
+    input {
+      width: 30vw;
+      border-radius: 10px;
+      padding: 10px;
+      margin-right: 1%;
+    }
+
+    .btnsuscribe {
+      text-align: center;
+      width: 15vw;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+  }
+
+  .aboutDj {
+    padding-bottom: 100px;
+    margin-left: 5%;
+    margin-right: 5%;
+
+    img {
+      float: left;
+      width: 40vw;
+      margin-right: 5%;
+      padding-bottom: 50px;
+    }
+
+    h3 {
+      padding-top: 60px;
+    }
+  }
+  #span-2,
+  #span-4 {
+    display: none;
+  }
+
+  .flexone {
+    display: flex;
+    flex-direction: row;
+    img {
+      width: 33.5%;
+    }
+  }
+
+  .flextwo {
+    display: flex;
+    flex-direction: row;
+    img {
+      width: 50%;
+    }
+  }
+  .slideshow-container-tickets {
+    display: flex;
+    flex-direction: row;
+    &-content {
+      flex: 0 0 50%;
+    }
+  }
+  .flextickets-container {
+    padding-right: 1rem;
+    border-right: 1px solid $gray-light;
+  }
+  .tickets {
+    margin: 0.5rem 2rem;
   }
 }
 
@@ -1062,9 +1250,50 @@ p {
     }
   }
   #countdown {
+    &-p {
+      font-size: smaller;
+    }
     &-seconds,
     &-seconds-content {
-      visibility: visible;
+      display: inline;
     }
+  }
+  .flexbox-countdown {
+    &-items {
+      flex: 0 0 25%;
+    }
+  }
+  .next-gig {
+    &-titles {
+      text-align: left;
+    }
+    &-container {
+      display: flex;
+      flex-basis: auto;
+    }
+  }
+  .event-container-content {
+    flex: 0 0 50%;
+  }
+  #text-right {
+    text-align: right;
+  }
+  .slideshow-container-tickets {
+    display: flex;
+    flex-direction: row;
+  }
+  .slideshow-container-tickets {
+    display: flex;
+    flex-direction: row;
+    &-content {
+      flex: 0 0 33%;
+    }
+  }
+  .flextickets-container {
+    padding-right: 1rem;
+    border-right: 1px solid $gray-light;
+  }
+  .tickets {
+    margin: 0.5rem 2rem;
   }
 }

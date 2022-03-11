@@ -4,7 +4,7 @@
     "scss": "^0.2.4"
   },
   "name": "hamilton-6-dj-project-a-r-t",
-  "description": "",
+  "description": "Website for a DJ",
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {},
@@ -16,7 +16,7 @@
     "type": "git",
     "url": "git+https://github.com/becodeorg/hamilton-6-dj-project-a-r-t.git"
   },
-  "author": "",
+  "author": "Kezzou Raphael Tania Vervier Abiel Kiflu",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/becodeorg/hamilton-6-dj-project-a-r-t/issues"
