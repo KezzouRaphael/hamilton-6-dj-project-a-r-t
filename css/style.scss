@@ -921,11 +921,12 @@ p {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  margin: 2rem 0;
+  padding-top: 15%;
+  padding-bottom: 15%;
   &-title {
     text-align: center;
     color: $white;
-    padding: 2rem 0;
+    padding-bottom: 10%;
   }
 }
 .slideshow-container-sponsors {
@@ -984,6 +985,12 @@ p {
   }
   to {
     opacity: 1;
+  }
+}
+.homegallery {
+  img {
+    padding: 0;
+    margin: 0;
   }
 }
 /////////////////////////////////////////////TICKETS
@@ -1130,6 +1137,22 @@ p {
   #span-2,
   #span-4 {
     display: none;
+  }
+
+  .flexone {
+    display: flex;
+    flex-direction: row;
+    img {
+      width: 33.5%;
+    }
+  }
+
+  .flextwo {
+    display: flex;
+    flex-direction: row;
+    img {
+      width: 50%;
+    }
   }
   .slideshow-container-tickets {
     display: flex;
