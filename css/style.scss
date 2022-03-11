@@ -378,7 +378,7 @@ body {
   font-size: 16px;
   font-weight: 300;
   color: rgba(21, 21, 21, 0.8);
-  background-color: $white;
+  background-color: $bggray;
   letter-spacing: -0.03em;
 }
 
@@ -905,9 +905,78 @@ p {
     height: 50px;
   }
 }
+//////////////////////////////////////////PARTNERS AND SPONSORS///////////////////////////////
+.section-partners-and-sponsors {
+  background-image: url("/images/homepage-sponsors-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 2rem 0;
+  &-title {
+    text-align: center;
+    color: $white;
+    padding: 2rem 0;
+  }
+}
+.slideshow-container-sponsors {
+  width: 100vw;
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  &-image {
+    filter: invert(58%) sepia(48%) saturate(0%) hue-rotate(221deg)
+      brightness(117%) contrast(108%);
+    max-width: 100%;
+  }
+  &-content {
+    display: none;
+  }
+  &-dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: $gray-light;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    &:hover {
+      background-color: $purple;
+    }
+  }
+}
+.current {
+  background-color: $purple;
+}
+#alignement {
+  text-align: center;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
 
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
-
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
 ///////////////// Tablet design /////////////////
 
 @media screen and (min-width: 480px) {
@@ -1127,6 +1196,4 @@ p {
   #text-right {
     text-align: right;
   }
-
 }
-
