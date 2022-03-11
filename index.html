@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta description="description" content="DJ Angerone" />
     <link rel="stylesheet" href="/css/style.css" />
+    
     <link rel="icon" href="images/favicon.ico" />
     <script
       src="https://kit.fontawesome.com/bd91ddf262.js"
@@ -22,38 +23,52 @@
   <body>
     <!--Nav bar section--------------------------------------------->
     <header id="home_nav">
-      <nav>
-        <a class="logo" href="/"><img alt="logo" /></a>
-        <div class="wrapper">
-          <ul class="wrapper__nav">
-            <li class="wrapper__nav__item"><a href="about.html">ABOUT</a></li>
-            <li class="wrapper__nav__item">
+      
+
+  <nav class="navbar"> 
+           <span class="navbar__hamburger fa-solid fa-bars"></span>
+           <img class="navbar__logo"   src="/images/logo.png" alt="logo" />
+            
+          <!-- page navigation  -->
+          <ul class="navbar__page">
+            <li class="navbar__page__item"><a href="about.html">ABOUT</a></li>
+            <li class="navbar__page__item">
               <a href="discography.html">DISCOGRAPHY</a>
             </li>
-            <li class="wrapper__nav__item"><a href="tours.html">TOURS</a></li>
-            <li class="wrapper__nav__item">
+            <li class="navbar__page__item"><a href="tours.html">TOURS</a></li>
+            <li class="navbar__page__item">
               <a href="gallery.html">PHOTOS</a>
             </li>
           </ul>
-          <ul class="wrapper__nav-share">
-            <li class="wrapper__nav-share__item">
-              <a href="facebook.com"><span class="fab fa-facebook-f"></span></a>
+
+          <!--  side bar page --> 
+                    <!-- page navigation  -->
+          <ul class="navbar__side">
+              <li class="navbar__side__item"><a href="about.html">ABOUT</a></li>
+              <li class="navbar__side__item"><a href="discography.html">DISCOGRAPHY</a></li>
+              <li class="navbar__side__item"><a href="tours.html">TOURS</a></li>
+              <li class="navbar__side__item"><a href="gallery.html">PHOTOS</a></li>
+            </ul>
+
+
+           <!-- share link navigation   -->
+           <ul class="navbar__share">
+            <li class="navbar__share__item">
+              <a href="https://facebook.com"><span class="fab fa-facebook-f"></span></a>
             </li>
-            <li class="wrapper__nav-share__item">
-              <a href="instagram.com"><span class="fab fa-instagram"></span></a>
+            <li class="navbar__share__item">
+              <a href="https://instagram.com"><span class="fab fa-instagram"></span></a>
             </li>
-            <li class="wrapper__nav-share__item">
-              <a href="twitter.com"><span class="fab fa-twitter"></span></a>
+            <li class="navbar__share__item">
+              <a href="https://twitter.com"><span class="fab fa-twitter"></span></a>
             </li>
-            <li class="wrapper__nav-share__item">
-              <a href="youtube.com"><span class="fab fa-youtube"></span></a>
+            <li class="navbar__share__item">
+              <a href="https://youtube.com"><span class="fab fa-youtube"></span></a>
             </li>
           </ul>
-          <span class="hamburger fa-solid fa-bars"></span>
-        </div>
+            <i class="navbar__eclipse fa-solid fa-ellipsis-vertical"></i>
+          </nav>
 
-        <span class="ellipsis fa-solid fa-ellipsis-vertical"></span>
-      </nav>
       <article class="single">
         <div class="single__header">
           <h1>New Single</h1>
@@ -705,19 +720,19 @@
       </ul>
 
       <div class="footersocialmedia">
-        <a href="#" class="btn">
+        <a href="http://facebook.com/" class="btn">
           <i class="fa-brands fa-facebook-f"></i>
         </a>
-        <a href="#" class="btn">
+        <a href="https://instagram.com/" class="btn">
           <i class="fa-brands fa-instagram"></i>
         </a>
-        <a href="#" class="btn">
+        <a href="https://twitter.com/" class="btn">
           <i class="fa-brands fa-twitter"></i>
         </a>
-        <a href="#" class="btn">
+        <a href="https://your.com/" class="btn">
           <i class="fa-brands fa-youtube"></i>
         </a>
-        <a href="#" class="btn">
+        <a href="https://pinterest.com/" class="btn">
           <i class="fa-brands fa-pinterest-p"></i>
         </a>
       </div>
