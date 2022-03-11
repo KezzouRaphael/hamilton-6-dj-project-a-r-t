@@ -1011,6 +1011,63 @@ p {
     }
   }
 }
+/////////////////////RECENT NEWS
+.section-recent-news {
+  padding: 2rem;
+  &-title {
+    text-align: center;
+    padding: 2rem;
+    font-size: larger;
+  }
+}
+.flexnews {
+  &-date {
+    color: #fff;
+    padding: 0.2rem 0.4rem;
+    background-color: #6f42c1;
+    border-radius: 5%;
+    font-size: medium;
+    font-weight: bold;
+  }
+  &-title {
+    font-weight: 200;
+    font-size: large;
+  }
+  &-paragraph {
+    color: $gray;
+  }
+}
+.bgimage {
+  background-image: url(/images/homepage-news-background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: $white;
+  border-radius: 5%;
+  .flexnews-paragraph {
+    color: $white;
+  }
+}
+.slideshow-container-recent-news {
+  &-content {
+    display: none;
+    padding: 1rem;
+  }
+  &-dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: $gray-light;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    &:hover {
+      background-color: $purple;
+    }
+  }
+}
 ///////////////// Tablet design /////////////////
 
 @media screen and (min-width: 480px) {
@@ -1129,7 +1186,7 @@ p {
     display: flex;
     flex-direction: row;
     img {
-      width: 33.5%;
+      width: 33.3%;
     }
   }
 
@@ -1153,6 +1210,13 @@ p {
   }
   .tickets {
     margin: 0.5rem 2rem;
+  }
+  .slideshow-container-recent-news {
+    display: flex;
+    flex-direction: row;
+    &-content {
+      flex: 0 0 50%;
+    }
   }
 }
 
@@ -1344,5 +1408,12 @@ p {
   }
   .tickets {
     margin: 0.5rem 2rem;
+  }
+  .slideshow-container-recent-news {
+    display: flex;
+    flex-direction: row;
+    &-content {
+      flex: 0 0 33.3%;
+    }
   }
 }
