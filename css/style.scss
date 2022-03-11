@@ -257,17 +257,18 @@ header {
   top: 0;
   background-color: $gray-dark;
 }
-gallery .zoom {
+.zoom {
   position: absolute;
-  top: 0;
-
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 5rem;
   height: 5rem;
   background-color: $white;
   border-radius: 50%;
   box-shadow: 0 0 0 0.6rem rgba(204, 199, 199, 0.3);
-  //transition:1s;
-  //transform: translate(-50%, -50%);
+  transition: 1s;
   &::before {
     content: "Zoom";
     position: absolute;
@@ -279,139 +280,37 @@ gallery .zoom {
     box-shadow: 0 0 0 1rem rgba(204, 199, 199, 0.3);
   }
 }
-
-.gallery {
-  display: grid;
-  margin: 8rem 0;
-  grid-template-columns: repeat(1, auto);
-  row-gap: 2rem;
-  position: relative;
-  column-gap: 2rem;
-
-  .gallery__1 {
-    position: relative;
-    img {
-      content: url("/images/gallery-1.jpg");
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  /* Modal Content/Box */
+  &-content {
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    width: 80%; /* Could be more or less, depending on screen size */
   }
+}
 
-  .gallery__2 {
-    position: relative;
-    img {
-      content: url("/images/gallery-2.jpg");
-
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-
-  .gallery__3 {
-    position: relative;
-    img {
-      content: url("/images/gallery-3.jpg");
-
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-
-  .gallery__4 {
-    position: relative;
-    img {
-      content: url("/images/gallery-4.jpg");
-
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-
-  .gallery__5 {
-    position: relative;
-    img {
-      content: url("/images/gallery-5.jpg");
-
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-
-  .gallery__6 {
-    position: relative;
-    img {
-      content: url("/images/gallery-6.jpg");
-
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-
-  .gallery__7 {
-    position: relative;
-    img {
-      content: url("/images/gallery-7.jpg");
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-
-  .gallery__8 {
-    position: relative;
-    img {
-      content: url("/images/gallery-8.jpg");
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-
-  .gallery__9 {
-    position: relative;
-    img {
-      content: url("/images/gallery-9.jpg");
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-
-  .gallery__10 {
-    position: relative;
-    img {
-      content: url("/images/gallery-10.jpg");
-
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-
-  .gallery__11 {
-    position: relative;
-    img {
-      content: url("/images/gallery-11.jpg");
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-
-  .gallery__12 {
-    position: relative;
-    img {
-      content: url("/images/gallery-12.jpg");
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  &:hover,
+  &:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
   }
 }
 
@@ -422,6 +321,14 @@ gallery .zoom {
   padding-top: 50px;
   display: flex;
   flex-wrap: wrap;
+  &-images {
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
 }
 
 footer {
@@ -1112,7 +1019,6 @@ p {
   }
 }
 
-
 ///////////////// Desktop design /////////////////
 
 @media screen and (min-width: 800px) {
@@ -1221,4 +1127,6 @@ p {
   #text-right {
     text-align: right;
   }
+
 }
+
