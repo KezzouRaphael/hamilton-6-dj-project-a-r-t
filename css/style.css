@@ -232,7 +232,7 @@ header .breadcrumbs .breadcrumbs__item a::after {
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
   position: fixed;
-  width: 96vw;
+  width: 100vw;
   top: 0;
   background-color: #343a40;
 }
@@ -503,6 +503,10 @@ p {
   background-color: #6f42c1;
   border-color: #6f42c1;
 }
+.button:hover {
+  background-color: #fff;
+  color: black;
+}
 
 .bigicons {
   display: block;
@@ -760,7 +764,7 @@ p {
   border-radius: 5%;
 }
 
-#test {
+#ticketbutton {
   margin: 2rem;
 }
 
@@ -963,6 +967,38 @@ p {
     opacity: 1;
   }
 }
+.tickets {
+  margin: 0.5rem 5rem;
+}
+
+.section-tickets-title {
+  text-align: center;
+}
+
+.flextickets-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-right: 1rem;
+}
+
+.slideshow-container-tickets-content {
+  display: none;
+}
+.slideshow-container-tickets-dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #c4c4c4;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.slideshow-container-tickets-dot:hover {
+  background-color: #6f42c1;
+}
+
 @media screen and (min-width: 480px) {
   .gallery {
     display: grid;
