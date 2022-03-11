@@ -1,68 +1,757 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta description="description" content="DJ Angerone">
-    <link rel="stylesheet" href="/css/style.css">  
-    <link rel="icon"  href="images/favicon.ico">
-    <script src="https://kit.fontawesome.com/bd91ddf262.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <title> DJ Angerone </title>
-
-</head>
-<body>
-    <header> 
-        <nav> 
-
-        </nav>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="DJ Angerone" />
+    <link rel="stylesheet" href="/css/style.css" />
     
+    <link rel="icon" href="images/favicon.ico" />
+    <script
+      src="https://kit.fontawesome.com/bd91ddf262.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <title>DJ Angerone</title>
+  </head>
+  <body>
+    <!--Nav bar section--------------------------------------------->
+    <header id="home_nav">
+      
 
-    <main>
+  <nav class="navbar"> 
+           <span class="navbar__hamburger fa-solid fa-bars"></span>
+ 
+           <a href="/" class="navbar__logo"><img    src="/images/logo.png" alt="logo" /></a>
+ 
+            
+          <!-- page navigation  -->
+          <ul class="navbar__page">
+            <li class="navbar__page__item"><a href="about.html">ABOUT</a></li>
+            <li class="navbar__page__item">
+              <a href="discography.html">DISCOGRAPHY</a>
+            </li>
+            <li class="navbar__page__item"><a href="tours.html">TOURS</a></li>
+            <li class="navbar__page__item">
+              <a href="gallery.html">PHOTOS</a>
+            </li>
+          </ul>
 
-    </main>
+          <!--  side bar page --> 
+                    <!-- page navigation  -->
+          <ul class="navbar__side">
+              <li class="navbar__side__item"><a href="about.html">ABOUT</a></li>
+              <li class="navbar__side__item"><a href="discography.html">DISCOGRAPHY</a></li>
+              <li class="navbar__side__item"><a href="tours.html">TOURS</a></li>
+              <li class="navbar__side__item"><a href="gallery.html">PHOTOS</a></li>
+            </ul>
 
-    
-    <footer> 
 
-        <img id="footerlogo" src="./images/logo.png">
+           <!-- share link navigation   -->
+ 
+           <ul class="navbar__share">
+            <li class="navbar__share__item">
+              <a href="https://facebook.com"><span class="fab fa-facebook-f"></span></a>
+            </li>
+            <li class="navbar__share__item">
+              <a href="https://instagram.com"><span class="fab fa-instagram"></span></a>
+            </li>
+            <li class="navbar__share__item">
+              <a href="https://twitter.com"><span class="fab fa-twitter"></span></a>
+            </li>
+            <li class="navbar__share__item">
+              <a href="https://youtube.com"><span class="fab fa-youtube"></span></a>
+            </li>
+          </ul>
+ 
+            <i class="navbar__eclipse fa-solid fa-ellipsis-vertical"></i>
+          </nav>
 
-        <ul id="footerlist">
-            <li>ABOUT</li>
-            <li>DISCOGRAPHY</li>
-            <li>TOURS</li>
-            <li>PHOTOS</li>
-        </ul>
-
-        <div class="footersocialmedia">
-            <a href="#" class="btn">
-                <i class="fa-brands fa-facebook-f"></i>
-            </a>
-            <a href="#" class="btn">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="#" class="btn">
-                <i class="fa-brands fa-twitter"></i>
-            </a>
-            <a href="#" class="btn">
-                <i class="fa-brands fa-youtube"></i>
-
-            </a>
-            <a href="#" class="btn">
-                <i class="fa-brands fa-pinterest-p"></i>
-
-            </a>
+      <article class="single">
+        <div class="single__header">
+          <h1>New Single</h1>
+        </div>
+        <div class="overflow-header-svg">
+          <svg
+            class="single__info"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <text x="0" y="80">Feel the Rhythm</text>
+          </svg>
         </div>
 
-        <p id="footercopyright">&copy; 2022 DJ Angerone. Privacy Policy</p>
+        <div class="player">
+          <span class="player__control fa-solid fa-play"></span>
+          <div class="player__seekbar">
+            <div class="player__seekbar__slider">_</div>
+          </div>
 
+          <span class="player__time"></span>
+          <span class="player__length"></span>
+        </div>
 
+        <div class="single__audio"></div>
+      </article>
+    </header>
+
+    <article>
+      <button id="scroll-up-button">^</button>
+
+      <!--Count down section--------------------------------------------------->
+      <section class="next-gig">
+        <div class="next-gig-container">
+          <div class="next-gig-titles">
+            <h1>Next Gig</h1>
+            <p id="countdown-p">
+              Tickets for my next event are already available.
+            </p>
+          </div>
+          <div class="flexbox-countdown" id="countdown">
+            <p class="flexbox-countdown-items" id="countdown-days"></p>
+            <p class="flexbox-countdown-items" id="countdown-hours"></p>
+            <p class="flexbox-countdown-items" id="countdown-minutes"></p>
+            <p class="flexbox-countdown-items" id="countdown-seconds"></p>
+            <p class="flexbox-countdown-items" id="countdown-days-content">
+              DAYS
+            </p>
+            <p class="flexbox-countdown-items" id="countdown-hours-content">
+              HOURS
+            </p>
+            <p class="flexbox-countdown-items" id="countdown-minutes-content">
+              MINS
+            </p>
+            <p class="flexbox-countdown-items" id="countdown-seconds-content">
+              SECS
+            </p>
+          </div>
+          <a class="button" href="#1" id="ticketbutton">BUY TICKETS</a>
+        </div>
+      </section>
+
+      <!--About DJ section------------------------------------------------------->
+
+      <section class="aboutDj">
+        <img class="imgAboutdj" src="./images/home-dj.jpg" alt="DJ"/>
+
+        <h3>About DJ Angerone</h3>
+
+        <p>
+          Mike Myers, professionally know as DJ Angerone, is internationally
+          acclaimed Progressive House & Trance DJ & musician.
+        </p>
+
+        <p class="quote">
+          I try to experiment with various music genres in every track that I
+          make.
+        </p>
+
+        <p>
+          Since the beginning of his career in 2010, he has already released 5
+          EPs on a range of worldwide know labels (Booster Records, DSTRCT
+          Recordings etc.) and received a number of music awards.
+        </p>
+      </section>
+
+      <!--View discography section----------------------------------------------->
+
+      <section class="btnlatest">
+        <h4>Listen to the Latest Releases by DJ Angerone</h4>
+
+        <a href="./discography.html"
+          ><button class="btndiscography">VIEW DISCOGRAPHY</button></a
+        >
+      </section>
+
+      <!--Latest releases section------------------------------------------------->
+
+      <section class="section-releases">
+        <div class="group-releases">
+          <div>
+            <h3 class="header-centered">Latest Releases</h3>
+            <p class="prelease">
+              Here are the most recent singles, EPs, and other releases that DJ
+              Angerone has worked on. You can stream and buy them on our website
+              and a variety of digital stores.
+            </p>
+          </div>
+
+          <div class="flexbox-container">
+            <div class="flex-container outer">
+              <div>
+                <img
+                  class="albumsimg1"
+                  src="images/dicography-album-cover-1.jpg"
+                  alt="cover of the album intense"
+                />
+              </div>
+
+              <div class="albumsdetails">
+                <h4>Intense</h4>
+                <p>2022</p>
+              </div>
+            </div>
+
+            <div class="flex-container outer">
+              <div>
+                <img
+                  class="albumsimg2"
+                  src="images/dicography-album-cover-2.jpg"
+                  alt="cover of the album"
+                />
+              </div>
+
+              <div class="albumsdetails">
+                <h4>My Space</h4>
+                <p>2022</p>
+              </div>
+            </div>
+
+            <div class="flex-container outer">
+              <div>
+                <img
+                  class="albumsimg3"
+                  src="images/dicography-album-cover-3.jpg"
+                  alt="cover of the album 2018 hits"
+                />
+              </div>
+
+              <div class="albumsdetails">
+                <h4>Trance Year Mix</h4>
+                <p>2018</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Suscribe - Join the fanbase section-------------------------------------->
+
+      <section class="Fanbase">
+        <div>
+          <img src="./images/fanbase-1.jpg" class="fanbaseimg1" alt="fans"/>
+          <img src="./images/fanbase-2.jpg" class="fanbaseimg2" alt="fans"/>
+          <img src="./images/about-us-dj-img.jpg" class="fanbaseimg3" alt="fans"/>
+          <img src="./images/fanbase-3.jpg" class="fanbaseimg4" alt="fans"/>
+          <img src="./images/fanbase-5.jpg" class="fanbaseimg5" alt="fans" />
+          <img src="./images/fanbase-6.jpg" class="fanbaseimg6" alt="fans"/>
+        </div>
+
+        <div class="fanbasejoin">
+          <h3>Join the Fanbase</h3>
+          <p>
+            Take your chance to join DJ Angerone's fan club to receive exclusive
+            tracks, free downloads, and other great offers.
+          </p>
+        </div>
+
+        <div class="fanbasediv">
+          <i class="fa-solid fa-headphones-simple"></i>
+          <h4>Exclusive Releases</h4>
+          <p>
+            Get access to unreleased albums and EPs before they are published.
+          </p>
+        </div>
+
+        <div class="fanbasediv">
+          <i class="fa-solid fa-podcast"></i>
+          <h4>Full DJ Sets & Podcasts</h4>
+          <p>
+            Listen and download full sets and podcasts with tracklists by DJ
+            Angerone.
+          </p>
+        </div>
+
+        <div class="fanbasediv">
+          <i class="fa-solid fa-download"></i>
+          <h4>Free Downloads</h4>
+          <p>
+            Free tracks and remixes are regularly published for DJ Angerone's
+            fan club.
+          </p>
+        </div>
+      </section>
+
+      <!--Tour schedule------------------------------------------------------------->
+
+      <section class="section-tour">
+        <h4>Tour schedule</h4>
+        <div class="flexbox-tours-container">
+          <ul class="month-list">
+            <li class="month-item">
+              <a id="active-list" class="carrousel" href="#March">MARCH</a>
+            </li>
+            <li class="month-item">
+              <a class="carrousel" href="#April">APRIL</a>
+            </li>
+            <li class="month-item">
+              <a class="carrousel" href="#May">MAY</a>
+            </li>
+          </ul>
+          <div class="scheduler-content">
+            <div class="scheduler-content-month active-content" id="March">
+              <div class="march-tours-container">
+                <div class="scheduler-content-item">
+                  <span class="dot">
+                    <span id="dot1" class="minidot active-dot"> </span>
+                  </span>
+                  <p class="event-time">March 13, 2022</p>
+                  <div class="event-container">
+                    <div class="event-container-content">
+                      <h4 class="event-title">Encore Beach Club,Las Vegas</h4>
+                      <p id="event-desc1" class="event-desc active-content">
+                        DJ Angerone will visit one of the most famous night
+                        clubs in Las Vegas in March to play his latest tracks
+                        and the greatest Trance hits as a part of his US tour.
+                      </p>
+                    </div>
+                    <div class="event-container-content" id="text-right">
+                      <a class="event-button" href="#dot1" pref="#event-desc1"
+                        >BUY TICKETS</a
+                      >
+                      <i class="fas fa-angle-double-right"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="scheduler-content-item">
+                  <span class="dot">
+                    <span id="dot2" class="minidot"> </span>
+                  </span>
+                  <p class="event-time">March 21, 2022</p>
+                  <div class="event-container">
+                    <div class="event-container-content">
+                      <h4 class="event-title">
+                        Soundscape Weekender Festival, Coventry
+                      </h4>
+                      <p id="event-desc2" class="event-desc">
+                        DJ Angerone will visit one of the most famous night
+                        clubs in Las Vegas in March to play his latest tracks
+                        and the greatest Trance hits as a part of his US tour.
+                      </p>
+                    </div>
+                    <div class="event-container-content" id="text-right">
+                      <a class="event-button" href="#dot2" pref="#event-desc2"
+                        >BUY TICKETS</a
+                      >
+                      <i class="fas fa-angle-double-right"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="scheduler-content-item">
+                  <span class="dot">
+                    <span id="dot3" class="minidot"> </span>
+                  </span>
+                  <p class="event-time">March 25, 2022</p>
+                  <div class="event-container">
+                    <div class="event-container-content">
+                      <h4 class="event-title">
+                        Barcelona Beach Festival, Barcelona
+                      </h4>
+                      <p id="event-desc3" class="event-desc">
+                        DJ Angerone will visit one of the most famous night
+                        clubs in Las Vegas in March to play his latest tracks
+                        and the greatest Trance hits as a part of his US tour.
+                      </p>
+                    </div>
+                    <div class="event-container-content" id="text-right">
+                      <a class="event-button" href="#dot3" pref="#event-desc3"
+                        >BUY TICKETS</a
+                      >
+                      <i class="fas fa-angle-double-right"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="scheduler-content-item">
+                  <span class="dot">
+                    <span id="dot4" class="minidot"> </span>
+                  </span>
+                  <p class="event-time">March 29, 2022</p>
+                  <div class="event-container">
+                    <div class="event-container-content">
+                      <h4 class="event-title">Barclaycard Arena, Hamburg</h4>
+                      <p id="event-desc4" class="event-desc">
+                        DJ Angerone will visit one of the most famous night
+                        clubs in Las Vegas in March to play his latest tracks
+                        and the greatest Trance hits as a part of his US tour.
+                      </p>
+                    </div>
+                    <div class="event-container-content" id="text-right">
+                      <a class="event-button" href="#dot4" pref="#event-desc4"
+                        >BUY TICKETS</a
+                      >
+                      <i class="fas fa-angle-double-right"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="scheduler-content-item">
+                  <span class="dot">
+                    <span id="dot5" class="minidot"> </span>
+                  </span>
+                  <p class="event-time">March 30, 2022</p>
+                  <div class="event-container">
+                    <div class="event-container-content">
+                      <h4 class="event-title">Unipol Arena, Bologna</h4>
+                      <p id="event-desc5" class="event-desc">
+                        DJ Angerone will visit one of the most famous night
+                        clubs in Las Vegas in March to play his latest tracks
+                        and the greatest Trance hits as a part of his US tour.
+                      </p>
+                    </div>
+                    <div class="event-container-content" id="text-right">
+                      <a class="event-button" href="#dot5" pref="#event-desc5"
+                        >BUY TICKETS</a
+                      >
+                      <i class="fas fa-angle-double-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="scheduler-content-month" id="April">
+              <div class="april-tours-container">
+                <div class="scheduler-content-item">
+                  <span class="dot">
+                    <span id="dot6" class="minidot active-dot"> </span>
+                  </span>
+                  <p class="event-time">April 1, 2022</p>
+                  <div class="event-container">
+                    <div class="event-container-content">
+                      <h4 class="event-title">Barclaycard Arena, Hamburg</h4>
+                      <p id="event-desc6" class="event-desc active-content">
+                        DJ Angerone will visit one of the most famous night
+                        clubs in Las Vegas in March to play his latest tracks
+                        and the greatest Trance hits as a part of his US tour.
+                      </p>
+                    </div>
+                    <div class="event-container-content" id="text-right">
+                      <a class="event-button" href="#dot6" pref="#event-desc6"
+                        >BUY TICKETS</a
+                      >
+                      <i class="fas fa-angle-double-right"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="scheduler-content-item">
+                  <span class="dot">
+                    <span id="dot7" class="minidot"> </span>
+                  </span>
+                  <p class="event-time">April 30, 2022</p>
+                  <div class="event-container">
+                    <div class="event-container-content">
+                      <h4 class="event-title">Unipol Arena, Bologna</h4>
+                      <p id="event-desc7" class="event-desc">
+                        DJ Angerone will visit one of the most famous night
+                        clubs in Las Vegas in March to play his latest tracks
+                        and the greatest Trance hits as a part of his US tour.
+                      </p>
+                    </div>
+                    <div class="event-container-content" id="text-right">
+                      <a class="event-button" href="#dot7" pref="#event-desc7"
+                        >BUY TICKETS</a
+                      >
+                      <i class="fas fa-angle-double-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="scheduler-content-month" id="May">
+              <div class="may-tours-container">
+                <div class="scheduler-content-item">
+                  <span class="dot">
+                    <span id="dot8" class="minidot active-dot"> </span>
+                  </span>
+                  <p class="event-time">May 13, 2022</p>
+                  <div class="event-container">
+                    <div class="event-container-content">
+                      <h4 class="event-title">Encore Beach Club,Las Vegas</h4>
+                      <p id="event-desc8" class="event-desc active-content">
+                        DJ Angerone will visit one of the most famous night
+                        clubs in Las Vegas in March to play his latest tracks
+                        and the greatest Trance hits as a part of his US tour.
+                      </p>
+                    </div>
+                    <div class="event-container-content" id="text-right">
+                      <a class="event-button" href="#dot8" pref="#event-desc8"
+                        >BUY TICKETS</a
+                      >
+                      <i class="fas fa-angle-double-right"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="scheduler-content-item">
+                  <span class="dot">
+                    <span id="dot9" class="minidot"> </span>
+                  </span>
+                  <p class="event-time">May 21, 2022</p>
+                  <div class="event-container">
+                    <div class="event-container-content">
+                      <h4 class="event-title">
+                        Soundscape Weekender Festival, Coventry
+                      </h4>
+                      <p id="event-desc9" class="event-desc">
+                        DJ Angerone will visit one of the most famous night
+                        clubs in Las Vegas in March to play his latest tracks
+                        and the greatest Trance hits as a part of his US tour.
+                      </p>
+                    </div>
+                    <div class="event-container-content" id="text-right">
+                      <a class="event-button" href="#dot9" pref="#event-desc9"
+                        >BUY TICKETS</a
+                      >
+                      <i class="fas fa-angle-double-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Partners and sponsors section----------------------------------------------------------->
+      <section class="section-partners-and-sponsors">
+        <!-- Slideshow container -->
+        <h2 class="section-partners-and-sponsors-title">Partners & Sponsors</h2>
+        <div class="slideshow-container-sponsors">
+          <div class="slideshow-container-sponsors-content fade">
+            <img
+              src="/images/sponsor-1.png"
+              class="slideshow-container-sponsors-image"
+              alt="sponsors"
+            />
+          </div>
+          <div class="slideshow-container-sponsors-content fade">
+            <img
+              src="/images/sponsor-2.png"
+              class="slideshow-container-sponsors-image"
+              alt="sponsors"
+            />
+          </div>
+          <div class="slideshow-container-sponsors-content fade">
+            <img
+              src="/images/sponsor-3.png"
+              class="slideshow-container-sponsors-image"
+              alt="sponsors"
+            />
+          </div>
+          <div class="slideshow-container-sponsors-content fade">
+            <img
+              src="/images/sponsor-4.png"
+              class="slideshow-container-sponsors-image"
+              alt="sponsors"
+            />
+          </div>
+        </div>
+        <br />
+
+        <!-- The dots/circles -->
+        <div id="alignement">
+          <span
+            number="1"
+            class="slideshow-container-sponsors-dot"
+            id="span-1"
+          ></span>
+          <span
+            number="2"
+            class="slideshow-container-sponsors-dot"
+            id="span-2"
+          ></span>
+          <span
+            number="3"
+            class="slideshow-container-sponsors-dot"
+            id="span-3"
+          ></span>
+          <span
+            number="4"
+            class="slideshow-container-sponsors-dot"
+            id="span-4"
+          ></span>
+        </div>
+      </section>
+      <!--Ticket section----------------------------------------------------------->
+      <section class="section-tickets">
+        <!-- Slideshow container -->
+        <h2 class="section-tickets-title">Tickets</h2>
+        <div class="slideshow-container-tickets">
+          <div class="slideshow-container-tickets-content fade">
+            <div class="flextickets-container">
+              <p class="flextickets-container-title">BASIC</p>
+              <p class="flextickets-container-price">$50</pclass>
+              <p class="flextickets-container-content">1 Event</p>
+              <p class="flextickets-container-content">Basic Access</p>
+              <p class="flextickets-container-content">Club Events Only</p>
+              <p class="flextickets-container-content">Free Snacks</p>
+              <a class="button tickets" href="#1">BUY NOW</a>
+            </div>
+          </div>
+          <div class="slideshow-container-tickets-content fade">
+            <div class="flextickets-container">
+              <p class="flextickets-container-title">STANDARD</p>
+              <p class="flextickets-container-price">$80</p>
+              <p class="flextickets-container-content">3 Events</p>
+              <p class="flextickets-container-content">Extended Access</p>
+              <p class="flextickets-container-content">Club & Beach Events</p>
+              <p class="flextickets-container-content">Free Snacks & Merch</p>
+              <a class="button tickets" href="#1">BUY NOW</a>
+            </div>
+          </div>
+          <div class="slideshow-container-tickets-content fade">
+            <div class="flextickets-container">
+              <p class="flextickets-container-title">GOLD</p>
+              <p class="flextickets-container-price">$120</p>
+              <p class="flextickets-container-content">5+ Events</p>
+              <p class="flextickets-container-content">Unlimited Access</p>
+              <p class="flextickets-container-content">All Events</p>
+              <p class="flextickets-container-content">Free Accommodation</p>
+              <a class="button tickets" href="#1">BUY NOW</a>
+            </div>
+          </div>
+        </div>
+        <br />
+
+        <!-- The dots/circles -->
+        <div id="alignement">
+          <span number="1" class="slideshow-container-tickets-dot"></span>
+          <span number="2" class="slideshow-container-tickets-dot"></span>
+          <span number="3" class="slideshow-container-tickets-dot"></span>
+        </div>
+      </section>
+      <!--Gallery section----------------------------------------------------------->
+      <article class="homegallery">
+
+        <div class="flexone">
+            <img src="/images/gallery-1-original.jpg" class="homegalleryimg1" ref="#gallery-1" alt="gallery images">
+
+            <img src="/images/gallery-3-original.jpg" class="homegalleryimg2" ref="#gallery-2" alt="gallery images">
+
+            <img src="/images/gallery-2-original.jpg" class="homegalleryimg3" ref="#gallery-3" alt="gallery images">
+        </div>
+        <div class="flextwo">
+            <img src="/images/gallery-4-original.jpg" class="homegalleryimg4" ref="#gallery-4" alt="gallery images">
+
+            <img src="/images/gallery-12-original.jpg" class="homegalleryimg5" ref="#gallery-5" alt="gallery images">
+        </div>
+      </article>
+
+      <!--Recent news section----------------------------------------------------------->
+      <section class="section-recent-news">
+        <!-- Slideshow container -->
+        <h2 class="section-recent-news-title">Recent News</h2>
+        <div class="slideshow-container-recent-news">
+          <div class="slideshow-container-recent-news-content fade">
+            <div class="flexnews-container">
+              <a class="flexnews-date" href="#1"> JUN 02, 2022</a>
+              <p class="flexnews-title">New Single “Feel the Rhythm” is Already Available!</p>
+              <p class="flexnews-paragraph">DJ Angerone’s new single “Feel The Rhythm” is already released via Divergence Records and it’s now available for streaming and downloading...</p>
+              <p class ="flexnews-readmore">Read more &raquo;</p>
+            </div>
+          </div>
+          <div class="slideshow-container-recent-news-content fade bgimage">
+            <div class="flexnews-container">
+              <a class="flexnews-date" href="#1"> JUL 02, 2022</a>
+              <p class="flexnews-title">3 New Tour Locations Announced</p>
+              <p class="flexnews-paragraph">We are glad to share with you the recent information about three new locations of DJ Angerone’s “Subliminal Tour”. Now you can...</p>
+              <p class ="flexnews-readmore">Read more &raquo;</p>
+            </div>
+          </div>
+          <div class="slideshow-container-recent-news-content fade">
+            <div class="flexnews-container">
+              <a class="flexnews-date" href="#1"> AUG 02, 2022</a>
+              <p class="flexnews-title">Top 10 Remixes and Collaborations by DJ Angerone</p>
+              <p class="flexnews-paragraph">As one of the most prominent House/Trance DJs and musicians, DJ Angerone has released a lot of great tracks. But what do you know about his...</p>
+              <p class ="flexnews-readmore">Read more &raquo;</p>
+            </div>
+          </div>
+          <div class="slideshow-container-recent-news-content fade">
+            <div class="flexnews-container">
+              <a class="flexnews-date" href="#1"> SEP 22, 2022</a>
+              <p class="flexnews-title">Angerone Podcast: Episode 054 (feat. Danny Lee)</p>
+              <p class="flexnews-paragraph">DJ Angerone is glad to present you a new episode of the Angerone Podcast that features an exclusive one-hour mix by Danny Lee, a resident of...</p>
+              <p class ="flexnews-readmore">Read more &raquo;</p>
+            </div>
+          </div>
+          <div class="slideshow-container-recent-news-content fade bgimage">
+            <div class="flexnews-container">
+              <a class="flexnews-date" href="#1"> OCT 12, 2022</a>
+              <p class="flexnews-title">DJ Angerone Gets “The Best EDM Release” Award</p>
+              <p class="flexnews-paragraph">Yesterday, DJ Angerone has visited WMM Music Awards ceremony and was awarded with “The Best EDM Release” award for “Feel The Rhythm”...</p>
+              <p class ="flexnews-readmore">Read more &raquo;</p>
+            </div>
+          </div>
+          <div class="slideshow-container-recent-news-content fade">
+            <div class="flexnews-container">
+              <a class="flexnews-date" href="#1"> NOV 01, 2022</a>
+              <p class="flexnews-title">Teasing a New House Track featuring Jetpack Boyz</p>
+              <p class="flexnews-paragraph">DJ Angerone and Jetpack Boyz have united once again to bring you a special collaboration, which will be released on Anima Records next...</p>
+              <p class ="flexnews-readmore">Read more &raquo;</p>
+            </div>
+          </div>
+        </div>
+        <br />
+
+        <!-- The dots/circles -->
+        <div id="alignement">
+          <span number="1" class="slideshow-container-recent-news-dot"></span>
+          <span number="2" class="slideshow-container-recent-news-dot"></span>
+          <span number="3" class="slideshow-container-recent-news-dot"></span>
+          <span number="4" class="slideshow-container-recent-news-dot"></span>
+          <span number="5" class="slideshow-container-recent-news-dot"></span>
+          <span number="6" class="slideshow-container-recent-news-dot"></span>
+        </div>
+      </section>
+      <!--Suscribe section----------------------------------------------------------->
+
+      <section class="suscribesection">
+        <h3>Suscribe to Stay Informed</h3>
+        <input
+          type="email"
+          name="email"
+          id="email_input"
+          placeholder="Your E-mail"
+        />
+        <a href="#"><button class="btnsuscribe">SUSCRIBE</button></a>
+      </section>
+    </main>
+
+    <footer>
+      <img id="footerlogo" src="./images/logo.png" alt="logo du sponsor"/>
+
+      <ul id="footerlist">
+        <li>ABOUT</li>
+        <li>DISCOGRAPHY</li>
+        <li>TOURS</li>
+        <li>PHOTOS</li>
+      </ul>
+
+      <div class="footersocialmedia">
+        <a href="http://facebook.com/" class="btn">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://instagram.com/" class="btn">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://twitter.com/" class="btn">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="https://your.com/" class="btn">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="https://pinterest.com/" class="btn">
+          <i class="fa-brands fa-pinterest-p"></i>
+        </a>
+      </div>
+
+      <p id="footercopyright">&copy; 2022 DJ Angerone. Privacy Policy</p>
     </footer>
- 
+
     <script src="/js/script.js"></script>
-</body>
+    <script src="/js/slideshow.js"></script>
+  </body>
 </html>

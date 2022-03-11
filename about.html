@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta description="description" content="DJ Angerone" />
+    <meta name="description" content="DJ Angerone about page" />
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="icon" href="images/favicon.ico" />
     <link
@@ -25,42 +25,71 @@
       href="//fonts.googleapis.com/css?family=Poppins:300,300i,400,500,600,700,800,900,900"
       rel="stylesheet"
     />
-    <title>DJ Angerone</title>
+    <title>About</title>
   </head>
   <body>
     <header>
-      <nav> 
-        <a class="logo" ><img alt="logo"></a> 
-        <div class="wrapper"> 
-        <ul class="wrapper__nav">
-            <li class="wrapper__nav__item"><a href="about.html">ABOUT</a></li>
-            <li class="wrapper__nav__item"><a href="discography.html">DISCOGRAPHY</a></li>
-            <li class="wrapper__nav__item"><a href="tours.html">TOURS</a></li>
-            <li class="wrapper__nav__item"><a href="gallery.html">PHOTOS</a></li>
+      <nav class="navbar"> 
+         <span class="navbar__hamburger fa-solid fa-bars"></span>
+         <a href="/" class="navbar__logo" ><img    src="/images/logo.png" alt="logo" /></a>
+         <!-- page navigation  -->
+         <ul class="navbar__page">
+           <li class="navbar__page__item"><a href="about.html">ABOUT</a></li>
+           <li class="navbar__page__item">
+             <a href="discography.html">DISCOGRAPHY</a>
+           </li>
+           <li class="navbar__page__item"><a href="tours.html">TOURS</a></li>
+           <li class="navbar__page__item">
+             <a href="gallery.html">PHOTOS</a>
+           </li>
+         </ul>
+        <!--  side bar page -->
+        <!-- page navigation  -->
+        <ul class="navbar__side">
+          <li class="navbar__side__item"><a href="about.html">ABOUT</a></li>
+          <li class="navbar__side__item">
+            <a href="discography.html">DISCOGRAPHY</a>
+          </li>
+          <li class="navbar__side__item"><a href="tours.html">TOURS</a></li>
+          <li class="navbar__side__item"><a href="gallery.html">PHOTOS</a></li>
         </ul>
-        <ul class="wrapper__nav-share">
-            <li class="wrapper__nav-share__item" ><a href="facebook.com"><span class="fab fa-facebook-f"></span></a></li>
-            <li class="wrapper__nav-share__item" ><a href="instagram.com"><span class="fab fa-instagram"></span></a></li>
-            <li class="wrapper__nav-share__item" ><a href="twitter.com"><span class="fab fa-twitter"></span></a></li>
-            <li class="wrapper__nav-share__item" ><a href="youtube.com"><span class="fab fa-youtube"></span></a></li>
-        </ul>   
-        </div>
 
-        <span  class="hamburger fa-solid fa-bars"></span> 
-        <span  class="ellipsis fa-solid fa-ellipsis-vertical"></span> 
-       
+        <!-- share link navigation   -->
+        <ul class="navbar__share">
+          <li class="navbar__share__item">
+            <a href="https://facebook.com"
+              ><span class="fab fa-facebook-f"></span
+            ></a>
+          </li>
+          <li class="navbar__share__item">
+            <a href="https://instagram.com"
+              ><span class="fab fa-instagram"></span
+            ></a>
+          </li>
+          <li class="navbar__share__item">
+            <a href="https://twitter.com"
+              ><span class="fab fa-twitter"></span
+            ></a>
+          </li>
+          <li class="navbar__share__item">
+            <a href="https://youtube.com"
+              ><span class="fab fa-youtube"></span
+            ></a>
+          </li>
+        </ul>
+        <i class="navbar__eclipse fa-solid fa-ellipsis-vertical"></i>
+      </nav>
 
-    </nav>
+      <h1>ABOUT US</h1>
 
-    <h1> ABOUT US </h1>  
-
-    <ul class="breadcrumbs">  
-        <li class="breadcrumbs__item"> <a href="index.html">HOME</a> </li>
-        <li class="breadcrumbs__item"> ABOUT US </li>
-    </ul>
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item"><a href="index.html">HOME</a></li>
+        <li class="breadcrumbs__item">ABOUT US</li>
+      </ul>
     </header>
 
     <main>
+      <button id="scroll-up-button">^</button>
       <section class="section-infos">
         <div class="group-informations">
           <div class="flexibox-container">
@@ -112,7 +141,7 @@
                   alt="Dj Angerone's signature"
                 />
               </p>
-              <a class="button" href="#">GET IN TOUCH</a>
+              <a class="button" href="#1">GET IN TOUCH</a>
             </div>
             <div class="flexi-container">
               <div class="group-informations-image">
@@ -226,41 +255,50 @@
               and a variety of digital stores.
             </p>
           </div>
+
           <div class="flexbox-container">
             <div class="flex-container outer">
               <div>
                 <img
+                  class="albumsimg1"
                   src="images/dicography-album-cover-1.jpg"
-                  alt="Cover of Intense"
+                  alt="cover"
                 />
               </div>
-              <div>
+
+              <div class="albumsdetails">
                 <h4>Intense</h4>
-                <p class="group-releases-date">2022</p>
+                <p>2022</p>
               </div>
             </div>
+
             <div class="flex-container outer">
               <div>
                 <img
+                  class="albumsimg2"
                   src="images/dicography-album-cover-2.jpg"
-                  alt="Cover of My Space"
+                  alt="cover"
                 />
               </div>
-              <div>
+
+              <div class="albumsdetails">
                 <h4>My Space</h4>
-                <p class="group-releases-date">2022</p>
+                <p>2022</p>
               </div>
             </div>
+
             <div class="flex-container outer">
               <div>
                 <img
+                  class="albumsimg3"
                   src="images/dicography-album-cover-3.jpg"
-                  alt="Cover of Intense"
+                  alt="cover"
                 />
               </div>
-              <div>
+
+              <div class="albumsdetails">
                 <h4>Trance Year Mix</h4>
-                <p class="group-releases-date">2018</p>
+                <p>2018</p>
               </div>
             </div>
           </div>
@@ -268,36 +306,34 @@
       </section>
     </main>
     <footer>
-        <img id="footerlogo" src="./images/logo.png">
+      <img id="footerlogo" src="./images/logo.png" alt="logo" />
 
-        <ul id="footerlist">
-            <li>ABOUT</li>
-            <li>DISCOGRAPHY</li>
-            <li>TOURS</li>
-            <li>PHOTOS</li>
-        </ul>
+      <ul id="footerlist">
+        <li>ABOUT</li>
+        <li>DISCOGRAPHY</li>
+        <li>TOURS</li>
+        <li>PHOTOS</li>
+      </ul>
 
-        <div class="footersocialmedia">
-            <a href="#" class="btn">
-                <i class="fa-brands fa-facebook-f"></i>
-            </a>
-            <a href="#" class="btn">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="#" class="btn">
-                <i class="fa-brands fa-twitter"></i>
-            </a>
-            <a href="#" class="btn">
-                <i class="fa-brands fa-youtube"></i>
+      <div class="footersocialmedia">
+        <a href="http://facebook.com/" class="btn">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://instagram.com/" class="btn">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://twitter.com/" class="btn">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="https://your.com/" class="btn">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="https://pinterest.com/" class="btn">
+          <i class="fa-brands fa-pinterest-p"></i>
+        </a>
+      </div>
 
-            </a>
-            <a href="#" class="btn">
-                <i class="fa-brands fa-pinterest-p"></i>
-
-            </a>
-        </div>
-
-        <p id="footercopyright">&copy; 2022 DJ Angerone. Privacy Policy</p>
+      <p id="footercopyright">&copy; 2022 DJ Angerone. Privacy Policy</p>
     </footer>
 
     <script src="/js/script.js"></script>

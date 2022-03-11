@@ -1,94 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta description="description" content="DJ Angerone">
-    <link rel="stylesheet" href="/css/style.css">  
-    <link rel="icon"  href="images/favicon.ico">
-    <script src="https://kit.fontawesome.com/bd91ddf262.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <title> Gallery </title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="DJ Angerone" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" href="images/favicon.ico" />
+    <script
+      src="https://kit.fontawesome.com/bd91ddf262.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <title>Gallery</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar"> 
+        <span class="navbar__hamburger fa-solid fa-bars"></span> 
+        <a href="/" class="navbar__logo"><img     src="/images/logo.png" alt="logo" /></a>
 
-</head>
-<body>
-    <header> 
-        <nav> 
-            <a class="logo" ><img alt="logo"></a> 
-            <div class="wrapper"> 
-            <ul class="wrapper__nav">
-                <li class="wrapper__nav__item"><a href="about.html">ABOUT</a></li>
-                <li class="wrapper__nav__item"><a href="discography.html">DISCOGRAPHY</a></li>
-                <li class="wrapper__nav__item"><a href="tours.html">TOURS</a></li>
-                <li class="wrapper__nav__item"><a href="gallery.html">PHOTOS</a></li>
-            </ul>
-            <ul class="wrapper__nav-share">
-                <li class="wrapper__nav-share__item" ><a href="facebook.com"><span class="fab fa-facebook-f"></span></a></li>
-                <li class="wrapper__nav-share__item" ><a href="instagram.com"><span class="fab fa-instagram"></span></a></li>
-                <li class="wrapper__nav-share__item" ><a href="twitter.com"><span class="fab fa-twitter"></span></a></li>
-                <li class="wrapper__nav-share__item" ><a href="youtube.com"><span class="fab fa-youtube"></span></a></li>
-            </ul>   
-            </div>
 
-            <span  class="hamburger fa-solid fa-bars"></span> 
-            <span  class="ellipsis fa-solid fa-ellipsis-vertical"></span> 
-           
-
-        </nav>
- 
-        <h1> ABOUT US </h1>  
-
-        <ul class="breadcrumbs">  
-            <li class="breadcrumbs__item"> <a href="index.html">HOME</a> </li>
-            <li class="breadcrumbs__item"> ABOUT US </li>
+       <!-- page navigation  -->
+       <ul class="navbar__page">
+         <li class="navbar__page__item"><a href="about.html">ABOUT</a></li>
+         <li class="navbar__page__item">
+           <a href="discography.html">DISCOGRAPHY</a>
+         </li>
+         <li class="navbar__page__item"><a href="tours.html">TOURS</a></li>
+         <li class="navbar__page__item">
+           <a href="gallery.html">PHOTOS</a>
+         </li>
+       </ul>
+        <!--  side bar page -->
+        <!-- page navigation  -->
+        <ul class="navbar__side">
+          <li class="navbar__side__item"><a href="about.html">ABOUT</a></li>
+          <li class="navbar__side__item">
+            <a href="discography.html">DISCOGRAPHY</a>
+          </li>
+          <li class="navbar__side__item"><a href="tours.html">TOURS</a></li>
+          <li class="navbar__side__item"><a href="gallery.html">PHOTOS</a></li>
         </ul>
+
+        <!-- share link navigation   -->
+        <ul class="navbar__share">
+          <li class="navbar__share__item">
+            <a href="https://facebook.com"
+              ><span class="fab fa-facebook-f"></span
+            ></a>
+          </li>
+          <li class="navbar__share__item">
+            <a href="https://instagram.com"
+              ><span class="fab fa-instagram"></span
+            ></a>
+          </li>
+          <li class="navbar__share__item">
+            <a href="https://twitter.com"
+              ><span class="fab fa-twitter"></span
+            ></a>
+          </li>
+          <li class="navbar__share__item">
+            <a href="https://youtube.com"
+              ><span class="fab fa-youtube"></span
+            ></a>
+          </li>
+        </ul>
+        <i class="navbar__eclipse fa-solid fa-ellipsis-vertical"></i>
+      </nav>
+
+      <h1>GALLERY #1</h1>
+
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item"><a href="index.html">HOME</a></li>
+        <li class="breadcrumbs__item"><a href="gallery.html">PAGES</a></li>
+        <li class="breadcrumbs__item">GALLERY #1</li>
+      </ul>
     </header>
-    
 
     <main>
-
-    </main>
-
-    
-    <footer> 
-
-        <img id="footerlogo" src="./images/logo.png">
-
-        <ul id="footerlist">
-            <li>ABOUT</li>
-            <li>DISCOGRAPHY</li>
-            <li>TOURS</li>
-            <li>PHOTOS</li>
-        </ul>
-
-        <div class="footersocialmedia">
-            <a href="#" class="btn">
-                <i class="fa-brands fa-facebook-f"></i>
-            </a>
-            <a href="#" class="btn">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="#" class="btn">
-                <i class="fa-brands fa-twitter"></i>
-            </a>
-            <a href="#" class="btn">
-                <i class="fa-brands fa-youtube"></i>
-
-            </a>
-            <a href="#" class="btn">
-                <i class="fa-brands fa-pinterest-p"></i>
-
-            </a>
+      <button id="scroll-up-button">^</button>
+      <article class="gallery">
+        <div class="gallery-images">
+          <img src="/images/gallery-1.jpg" alt="gallery-1" ref="#gallery-1" />
+          <div class="zoom" id="gallery-1"></div>
+        </div>
+        <div class="gallery-images">
+          <img src="/images/gallery-2.jpg" alt="gallery-2" ref="#gallery-2" />
+          <div class="zoom" id="gallery-2"></div>
+        </div>
+        <div class="gallery-images">
+          <img src="/images/gallery-3.jpg" alt="gallery-3" ref="#gallery-3" />
+          <div class="zoom" id="gallery-3"></div>
+        </div>
+        <div class="gallery-images">
+          <img src="/images/gallery-4.jpg" alt="gallery-4" ref="#gallery-4" />
+          <div class="zoom" id="gallery-4"></div>
         </div>
 
-        <p id="footercopyright">&copy; 2022 DJ Angerone. Privacy Policy</p>
+        <div class="gallery-images">
+          <img src="/images/gallery-5.jpg" alt="gallery-5" ref="#gallery-5" />
+          <div class="zoom" id="gallery-5"></div>
+        </div>
+        <div class="gallery-images">
+          <img src="/images/gallery-6.jpg" alt="gallery-6" ref="#gallery-6" />
+          <div class="zoom" id="gallery-6"></div>
+        </div>
+        <div class="gallery-images">
+          <img src="/images/gallery-7.jpg" alt="gallery-7" ref="#gallery-7" />
+          <div class="zoom" id="gallery-7"></div>
+        </div>
+        <div class="gallery-images">
+          <img src="/images/gallery-8.jpg" alt="gallery-8" ref="#gallery-8" />
+          <div class="zoom" id="gallery-8"></div>
+        </div>
 
+        <div class="gallery-images">
+          <img src="/images/gallery-9.jpg" alt="gallery-9" ref="#gallery-9" />
+          <div class="zoom" id="gallery-9"></div>
+        </div>
+        <div class="gallery-images">
+          <img
+            src="/images/gallery-10.jpg"
+            alt="gallery-10"
+            ref="#gallery-10"
+          />
+          <div class="zoom" id="gallery-10"></div>
+        </div>
+        <div class="gallery-images">
+          <img
+            src="/images/gallery-11.jpg"
+            alt="gallery-11"
+            ref="#gallery-11"
+          />
+          <div class="zoom" id="gallery-11"></div>
+        </div>
+        <div class="gallery-images">
+          <img
+            src="/images/gallery-12.jpg"
+            alt="gallery-12"
+            ref="#gallery-12"
+          />
+          <div class="zoom" id="gallery-12"></div>
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+          </div>
+        </div>
+      </article>
+    </main>
 
+    <footer>
+      <img id="footerlogo" src="./images/logo.png" alt="logo" />
+
+      <ul id="footerlist">
+        <li>ABOUT</li>
+        <li>DISCOGRAPHY</li>
+        <li>TOURS</li>
+        <li>PHOTOS</li>
+      </ul>
+
+      <div class="footersocialmedia">
+        <a href="http://facebook.com/" class="btn">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="https://instagram.com/" class="btn">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://twitter.com/" class="btn">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="https://your.com/" class="btn">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="https://pinterest.com/" class="btn">
+          <i class="fa-brands fa-pinterest-p"></i>
+        </a>
+      </div>
+
+      <p id="footercopyright">&copy; 2022 DJ Angerone. Privacy Policy</p>
     </footer>
- 
+
     <script src="/js/script.js"></script>
-</body>
+    <script src="/js/zoomButton.js"></script>
+  </body>
 </html>

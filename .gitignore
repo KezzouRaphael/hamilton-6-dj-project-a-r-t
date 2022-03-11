@@ -1,2 +1,10 @@
 # Dependency directories
 node_modules/
+js/script2.js
+test.html
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+css/style.css.map
+.vdcode/
