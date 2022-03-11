@@ -1011,6 +1011,24 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  color: #fff;
+}
+
+.slideshow-container-recent-news-content {
+  display: none;
+}
+.slideshow-container-recent-news-dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #c4c4c4;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.slideshow-container-recent-news-dot:hover {
+  background-color: #6f42c1;
 }
 
 @media screen and (min-width: 480px) {
@@ -1154,6 +1172,14 @@ p {
   .tickets {
     margin: 0.5rem 2rem;
   }
+
+  .slideshow-container-recent-news {
+    display: flex;
+    flex-direction: row;
+  }
+  .slideshow-container-recent-news-content {
+    flex: 0 0 50%;
+  }
 }
 @media screen and (min-width: 800px) {
   .gallery {
@@ -1284,6 +1310,14 @@ p {
 
   .tickets {
     margin: 0.5rem 2rem;
+  }
+
+  .slideshow-container-recent-news {
+    display: flex;
+    flex-direction: row;
+  }
+  .slideshow-container-recent-news-content {
+    flex: 0 0 33.3%;
   }
 }
 

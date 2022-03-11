@@ -1032,6 +1032,25 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  color: $white;
+}
+.slideshow-container-recent-news {
+  &-content {
+    display: none;
+  }
+  &-dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: $gray-light;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    &:hover {
+      background-color: $purple;
+    }
+  }
 }
 ///////////////// Tablet design /////////////////
 
@@ -1176,6 +1195,13 @@ p {
   .tickets {
     margin: 0.5rem 2rem;
   }
+  .slideshow-container-recent-news {
+    display: flex;
+    flex-direction: row;
+    &-content {
+      flex: 0 0 50%;
+    }
+  }
 }
 
 ///////////////// Desktop design /////////////////
@@ -1303,5 +1329,12 @@ p {
   }
   .tickets {
     margin: 0.5rem 2rem;
+  }
+  .slideshow-container-recent-news {
+    display: flex;
+    flex-direction: row;
+    &-content {
+      flex: 0 0 33.3%;
+    }
   }
 }

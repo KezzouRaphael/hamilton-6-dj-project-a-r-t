@@ -130,7 +130,7 @@ function getNumber(val){
   }
 
   function myFunction() {
-    console.log(sticky);
+    //console.log(sticky);
      if (window.pageYOffset >= 10) {
        navbar.classList.add("sticky")
      } else {
