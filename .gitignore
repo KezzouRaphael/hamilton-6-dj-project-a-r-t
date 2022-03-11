@@ -6,3 +6,4 @@ node_modules/
 *.sass.map
 *.scss.map
 css/style.css.map
+.vdcode/

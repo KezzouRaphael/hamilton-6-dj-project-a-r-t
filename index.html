@@ -20,8 +20,7 @@
     <title>DJ Angerone</title>
   </head>
   <body>
-
-<!--Nav bar section--------------------------------------------->
+    <!--Nav bar section--------------------------------------------->
     <header id="home_nav">
       <nav>
         <a class="logo" href="/"><img alt="logo" /></a>
@@ -86,7 +85,7 @@
     <main>
       <button id="scroll-up-button">^</button>
 
-<!--Count down section--------------------------------------------------->
+      <!--Count down section--------------------------------------------------->
       <section class="next-gig">
         <div class="next-gig-container">
           <div class="next-gig-titles">
@@ -117,9 +116,7 @@
         </div>
       </section>
 
-      
-<!--About DJ section------------------------------------------------------->
-
+      <!--About DJ section------------------------------------------------------->
 
       <section class="aboutDj">
         <img class="imgAboutdj" src="./images/home-dj.jpg" />
@@ -143,15 +140,17 @@
         </p>
       </section>
 
-<!--View discography section----------------------------------------------->
+      <!--View discography section----------------------------------------------->
 
       <section class="btnlatest">
         <h4>Listen to the Latest Releases by DJ Angerone</h4>
-        
-        <a href="./discography.html"><button class="btndiscography">VIEW DISCOGRAPHY</button></a>
-        </section>
-        
-<!--Latest releases section------------------------------------------------->
+
+        <a href="./discography.html"
+          ><button class="btndiscography">VIEW DISCOGRAPHY</button></a
+        >
+      </section>
+
+      <!--Latest releases section------------------------------------------------->
 
       <section class="section-releases">
         <div class="group-releases">
@@ -210,7 +209,7 @@
         </div>
       </section>
 
-<!--Suscribe - Join the fanbase section-------------------------------------->
+      <!--Suscribe - Join the fanbase section-------------------------------------->
 
       <section class="Fanbase">
         <div>
@@ -257,7 +256,7 @@
         </div>
       </section>
 
-<!--Tour schedule------------------------------------------------------------->
+      <!--Tour schedule------------------------------------------------------------->
 
       <section class="section-tour">
         <h4>Tour schedule</h4>
@@ -494,24 +493,63 @@
         </div>
       </section>
 
-<!--Partners and sponsors section----------------------------------------------------------->
-<!--Ticket section----------------------------------------------------------->
-<!--Gallery section----------------------------------------------------------->
-<!--Recent news section----------------------------------------------------------->
+      <!--Partners and sponsors section----------------------------------------------------------->
+      <section class="section-partners-and-sponsors">
+        <!-- Slideshow container -->
+        <h2 class="section-partners-and-sponsors-title">Partners & Sponsors</h2>
+        <div class="slideshow-container-sponsors">
+          <!-- Full-width images with number and caption text -->
+          <div class="slideshow-container-sponsors-content fade">
+            <img
+              src="/images/sponsor-1.png"
+              class="slideshow-container-sponsors-image"
+            />
+          </div>
+          <div class="slideshow-container-sponsors-content fade">
+            <img
+              src="/images/sponsor-2.png"
+              class="slideshow-container-sponsors-image"
+            />
+          </div>
+          <div class="slideshow-container-sponsors-content fade">
+            <img
+              src="/images/sponsor-3.png"
+              class="slideshow-container-sponsors-image"
+            />
+          </div>
+          <div class="slideshow-container-sponsors-content fade">
+            <img
+              src="/images/sponsor-4.png"
+              class="slideshow-container-sponsors-image"
+            />
+          </div>
+        </div>
+        <br />
 
+        <!-- The dots/circles -->
+        <div id="alignement">
+          <span number="1" class="slideshow-container-sponsors-dot"></span>
+          <span number="2" class="slideshow-container-sponsors-dot"></span>
+          <span number="3" class="slideshow-container-sponsors-dot"></span>
+          <span number="4" class="slideshow-container-sponsors-dot"></span>
+        </div>
+      </section>
+      <!--Ticket section----------------------------------------------------------->
+      <!--Gallery section----------------------------------------------------------->
+      <!--Recent news section----------------------------------------------------------->
 
-
-<!--Suscribe section----------------------------------------------------------->
+      <!--Suscribe section----------------------------------------------------------->
 
       <section class="suscribesection">
-
         <h3>Suscribe to Stay Informed</h3>
-        <input type="email" name="email" id="email_input" placeholder="Your E-mail">
+        <input
+          type="email"
+          name="email"
+          id="email_input"
+          placeholder="Your E-mail"
+        />
         <a href="#"><button class="btnsuscribe">SUSCRIBE</button></a>
-
       </section>
-      
-
     </main>
 
     <footer>
@@ -546,5 +584,6 @@
     </footer>
 
     <script src="/js/script.js"></script>
+    <script src="/js/slideshow.js"></script>
   </body>
 </html>
