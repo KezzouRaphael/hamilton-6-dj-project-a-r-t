@@ -6,3 +6,5 @@ test.html
 *.css.map
 *.sass.map
 *.scss.map
+css/style.css.map
+.vdcode/

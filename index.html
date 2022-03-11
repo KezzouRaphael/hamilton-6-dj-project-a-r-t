@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta description="description" content="DJ Angerone" />
     <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/style2.css" />
+    
     <link rel="icon" href="images/favicon.ico" />
     <script
       src="https://kit.fontawesome.com/bd91ddf262.js"
@@ -21,12 +21,11 @@
     <title>DJ Angerone</title>
   </head>
   <body>
-
-<!--Nav bar section--------------------------------------------->
+    <!--Nav bar section--------------------------------------------->
     <header id="home_nav">
       
 
-<nav class="navbar"> 
+  <nav class="navbar"> 
            <span class="navbar__hamburger fa-solid fa-bars"></span>
            <img class="navbar__logo"   src="/images/logo.png" alt="logo" />
             
@@ -74,7 +73,7 @@
         <div class="single__header">
           <h1>New Single</h1>
         </div>
-        <div>
+        <div class="overflow-header-svg">
           <svg
             class="single__info"
             xmlns="http://www.w3.org/2000/svg"
@@ -98,10 +97,10 @@
       </article>
     </header>
 
-    <main>
+    <article>
       <button id="scroll-up-button">^</button>
 
-<!--Count down section--------------------------------------------------->
+      <!--Count down section--------------------------------------------------->
       <section class="next-gig">
         <div class="next-gig-container">
           <div class="next-gig-titles">
@@ -128,13 +127,11 @@
               SECS
             </p>
           </div>
-          <a class="button" href="#1" id="test">BUY TICKETS</a>
+          <a class="button" href="#1" id="ticketbutton">BUY TICKETS</a>
         </div>
       </section>
 
-      
-<!--About DJ section------------------------------------------------------->
-
+      <!--About DJ section------------------------------------------------------->
 
       <section class="aboutDj">
         <img class="imgAboutdj" src="./images/home-dj.jpg" />
@@ -158,15 +155,17 @@
         </p>
       </section>
 
-<!--View discography section----------------------------------------------->
+      <!--View discography section----------------------------------------------->
 
       <section class="btnlatest">
         <h4>Listen to the Latest Releases by DJ Angerone</h4>
-        
-        <a href="./discography.html"><button class="btndiscography">VIEW DISCOGRAPHY</button></a>
-        </section>
-        
-<!--Latest releases section------------------------------------------------->
+
+        <a href="./discography.html"
+          ><button class="btndiscography">VIEW DISCOGRAPHY</button></a
+        >
+      </section>
+
+      <!--Latest releases section------------------------------------------------->
 
       <section class="section-releases">
         <div class="group-releases">
@@ -225,7 +224,7 @@
         </div>
       </section>
 
-<!--Suscribe - Join the fanbase section-------------------------------------->
+      <!--Suscribe - Join the fanbase section-------------------------------------->
 
       <section class="Fanbase">
         <div>
@@ -272,7 +271,7 @@
         </div>
       </section>
 
-<!--Tour schedule------------------------------------------------------------->
+      <!--Tour schedule------------------------------------------------------------->
 
       <section class="section-tour">
         <h4>Tour schedule</h4>
@@ -509,24 +508,142 @@
         </div>
       </section>
 
-<!--Partners and sponsors section----------------------------------------------------------->
-<!--Ticket section----------------------------------------------------------->
-<!--Gallery section----------------------------------------------------------->
-<!--Recent news section----------------------------------------------------------->
+      <!--Partners and sponsors section----------------------------------------------------------->
+      <section class="section-partners-and-sponsors">
+        <!-- Slideshow container -->
+        <h2 class="section-partners-and-sponsors-title">Partners & Sponsors</h2>
+        <div class="slideshow-container-sponsors">
+          <div class="slideshow-container-sponsors-content fade">
+            <img
+              src="/images/sponsor-1.png"
+              class="slideshow-container-sponsors-image"
+            />
+          </div>
+          <div class="slideshow-container-sponsors-content fade">
+            <img
+              src="/images/sponsor-2.png"
+              class="slideshow-container-sponsors-image"
+            />
+          </div>
+          <div class="slideshow-container-sponsors-content fade">
+            <img
+              src="/images/sponsor-3.png"
+              class="slideshow-container-sponsors-image"
+            />
+          </div>
+          <div class="slideshow-container-sponsors-content fade">
+            <img
+              src="/images/sponsor-4.png"
+              class="slideshow-container-sponsors-image"
+            />
+          </div>
+        </div>
+        <br />
 
+        <!-- The dots/circles -->
+        <div id="alignement">
+          <span
+            number="1"
+            class="slideshow-container-sponsors-dot"
+            id="span-1"
+          ></span>
+          <span
+            number="2"
+            class="slideshow-container-sponsors-dot"
+            id="span-2"
+          ></span>
+          <span
+            number="3"
+            class="slideshow-container-sponsors-dot"
+            id="span-3"
+          ></span>
+          <span
+            number="4"
+            class="slideshow-container-sponsors-dot"
+            id="span-4"
+          ></span>
+        </div>
+      </section>
+      <!--Ticket section----------------------------------------------------------->
+      <section class="section-tickets">
+        <!-- Slideshow container -->
+        <h2 class="section-tickets-title">Tickets</h2>
+        <div class="slideshow-container-tickets">
+          <div class="slideshow-container-tickets-content fade">
+            <div class="flextickets-container">
+              <p>BASIC</p>
+              <p>$50</p>
+              <p>1 Event</p>
+              <p>Basic Access</p>
+              <p>Club Events Only</p>
+              <p>Free Snacks</p>
+              <a class="button tickets" href="#1">BUY NOW</a>
+            </div>
+          </div>
+          <div class="slideshow-container-tickets-content fade">
+            <div class="flextickets-container">
+              <p>STANDARD</p>
+              <p>$80</p>
+              <p>3 Events</p>
+              <p>Extended Access</p>
+              <p>Club & Beach Events</p>
+              <p>Free Snacks & Merch</p>
+              <a class="button tickets" href="#1">BUY NOW</a>
+            </div>
+          </div>
+          <div class="slideshow-container-tickets-content fade">
+            <div class="flextickets-container">
+              <p>GOLD</p>
+              <p>$120</p>
+              <p>5+ Events</p>
+              <p>Unlimited Access</p>
+              <p>All Events</p>
+              <p>Free Accommodation</p>
+              <a class="button tickets" href="#1">BUY NOW</a>
+            </div>
+          </div>
+        </div>
+        <br />
 
+        <!-- The dots/circles -->
+        <div id="alignement">
+          <span number="1" class="slideshow-container-tickets-dot"></span>
+          <span number="2" class="slideshow-container-tickets-dot"></span>
+          <span number="3" class="slideshow-container-tickets-dot"></span>
+        </div>
+      </section>
+      <!--Gallery section----------------------------------------------------------->
+      
+    <article class="homegallery">
 
-<!--Suscribe section----------------------------------------------------------->
+      <div class="flexone">
+          <img src="/images/gallery-1-original.jpg" class="homegalleryimg1" ref="#gallery-1">
+
+          <img src="/images/gallery-3-original.jpg" class="homegalleryimg2" ref="#gallery-2">
+
+          <img src="/images/gallery-2-original.jpg" class="homegalleryimg3" ref="#gallery-3">
+      </div>
+      <div class="flextwo">
+          <img src="/images/gallery-4-original.jpg" class="homegalleryimg4" ref="#gallery-4">
+
+          <img src="/images/gallery-12-original.jpg" class="homegalleryimg5" ref="#gallery-5">
+      </div>
+    </article>
+
+      <!--Recent news section----------------------------------------------------------->
+
+      <!--Suscribe section----------------------------------------------------------->
 
       <section class="suscribesection">
-
         <h3>Suscribe to Stay Informed</h3>
-        <input type="email" name="email" id="email_input" placeholder="Your E-mail">
+        <input
+          type="email"
+          name="email"
+          id="email_input"
+          placeholder="Your E-mail"
+        />
         <a href="#"><button class="btnsuscribe">SUSCRIBE</button></a>
-
       </section>
-      
-
     </main>
 
     <footer>
@@ -561,5 +678,6 @@
     </footer>
 
     <script src="/js/script.js"></script>
+    <script src="/js/slideshow.js"></script>
   </body>
 </html>

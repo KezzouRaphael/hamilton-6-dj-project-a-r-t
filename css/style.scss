@@ -1,6 +1,12 @@
 @import "variables.scss";
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-
+//USE TO DEBUG OVERFLOW
+// * {
+//   outline: 1px solid #f00 !important;
+// }
+.overflow-header-svg {
+  overflow: hidden;
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -123,8 +129,103 @@ header {
 }
 
 
+// mobile and tablet design for header 
+.navbar{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  z-index: 2000;
+  background:$gray-dark;
+  padding: 1rem 1rem;
 
 
+
+ .navbar__hamburger{
+     color: $white;
+     font-size:2rem;
+ }
+
+ .navbar__share{
+     display: none;
+     list-style: none;
+     position:absolute;
+     top:100%;
+     right:0;
+     background:$gray-dark;
+     border-radius:0.2rem;
+     .navbar__share__item{
+         //display: inline-block;
+         text-align: center;
+         padding:0.5rem 1rem;
+         a {
+             color:$gray;
+             text-decoration: none;
+             transition-property: all;
+             transition-duration: 0.5s;
+             transition-timing-function: ease-in-out;
+             transition-delay: 0s;
+ 
+             &:hover {
+               color: $white;
+             }
+
+         }
+     }
+ }
+
+
+ .navbar__eclipse{
+     color: $white;
+     font-size:2rem;
+     
+ }
+
+ .navbar__page{
+     display: none;
+ }
+
+ //page navigation
+ .left{
+     left: 0;
+ }
+
+ .right{
+     right: 0;
+ }
+
+ .navbar__side{
+     display:none;
+     list-style: none;
+     position:absolute;
+     z-index: 200;
+     top:100%;
+     height:100vh;
+     background:$gray-dark;
+     .navbar__side__item{
+         padding: 1rem 3rem;
+         text-align: left;
+         a{  
+             color: $white;
+             text-transform: uppercase;
+             text-decoration: none;
+             text-decoration: none;
+             transition-property: all;
+             transition-duration: 0.5s;
+             transition-timing-function: ease-in-out;
+             transition-delay: 0s;
+ 
+             &:hover {
+               color: $gray;
+             }
+             
+         }
+     }
+ }
+
+
+}
 
 
 
@@ -269,7 +370,7 @@ body {
   font-size: 16px;
   font-weight: 300;
   color: rgba(21, 21, 21, 0.8);
-  background-color: $white;
+  background-color: $bggray;
   letter-spacing: -0.03em;
 }
 
@@ -399,6 +500,10 @@ p {
   color: $white;
   background-color: $purple;
   border-color: $purple;
+  &:hover {
+    background-color: $white;
+    color: black;
+  }
 }
 .bigicons {
   display: block;
@@ -647,7 +752,7 @@ p {
     border-radius: 5%;
   }
 }
-#test {
+#ticketbutton {
   margin: 2rem;
 }
 #countdown {
@@ -712,9 +817,9 @@ p {
     margin-left: 10%;
   }
 
-  .fanbaseimg6 {
-    margin-left: 20%;
-  }
+  // .fanbaseimg6 {
+  //   //margin-left: 20%; OVERFLOWWWW
+  // }
 
   .fanbasejoin {
     text-align: left;
@@ -796,9 +901,116 @@ p {
     height: 50px;
   }
 }
+//////////////////////////////////////////PARTNERS AND SPONSORS///////////////////////////////
+.section-partners-and-sponsors {
+  background-image: url("/images/homepage-sponsors-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  &-title {
+    text-align: center;
+    color: $white;
+    padding-bottom: 10%;
+  }
+}
+.slideshow-container-sponsors {
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  &-image {
+    filter: invert(58%) sepia(48%) saturate(0%) hue-rotate(221deg)
+      brightness(117%) contrast(108%);
+    max-width: 100%;
+  }
+  &-content {
+    display: none;
+  }
+  &-dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: $gray-light;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    &:hover {
+      background-color: $purple;
+    }
+  }
+}
+.current {
+  background-color: $purple;
+}
+#alignement {
+  text-align: center;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
 
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
-
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.homegallery {
+  img {
+    padding: 0;
+    margin: 0;
+  }
+}
+/////////////////////////////////////////////TICKETS
+.tickets {
+  margin: 0.5rem 5rem;
+}
+.section-tickets-title {
+  text-align: center;
+}
+.flextickets-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-right: 1rem;
+  //border-right: 1px solid $gray-light;
+}
+.slideshow-container-tickets {
+  &-content {
+    display: none;
+  }
+  &-dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: $gray-light;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    &:hover {
+      background-color: $purple;
+    }
+  }
+}
 ///////////////// Tablet design /////////////////
 
 @media screen and (min-width: 480px) {
@@ -908,11 +1120,108 @@ p {
       padding-top: 60px;
     }
   }
+  #span-2,
+  #span-4 {
+    display: none;
+  }
+
+  .flexone {
+    display: flex;
+    flex-direction: row;
+    img {
+      width: 33.5%;
+    }
+  }
+
+  .flextwo {
+    display: flex;
+    flex-direction: row;
+    img {
+      width: 50%;
+    }
+  }
+  .slideshow-container-tickets {
+    display: flex;
+    flex-direction: row;
+    &-content {
+      flex: 0 0 50%;
+    }
+  }
+  .flextickets-container {
+    padding-right: 1rem;
+    border-right: 1px solid $gray-light;
+  }
+  .tickets {
+    margin: 0.5rem 2rem;
+  }
 }
 
 ///////////////// Desktop design /////////////////
 
 @media screen and (min-width: 800px) {
+
+  // header for desktop design
+  .navbar{
+    all:unset;
+    display:flex;
+    position: sticky;
+    z-index: 2000;
+    background:$gray-dark;
+    padding:1rem 0;
+    align-items: center;
+    justify-content:space-between;
+
+    .navbar__eclipse{
+        display:none;
+    }
+
+    .navbar__hamburger{
+         order:4;
+    }
+
+
+
+    .navbar__page{
+       
+        list-style: none;
+        display: inline-block;
+        background:$gray-dark;
+        .navbar__page__item{
+            padding: 0 0.5rem;
+            text-align: center;
+            display: inline-block;
+            a{  
+                color: $white;
+                text-transform: uppercase;
+                text-decoration: none;
+                text-decoration: none;
+                transition-property: all;
+                transition-duration: 0.5s;
+                transition-timing-function: ease-in-out;
+                transition-delay: 0s;
+    
+                &:hover {
+                  color: $gray;
+                }
+                
+            }
+        }
+    }
+
+    .navbar__share{
+        all:unset;
+        padding: 0 0.5rem;
+        .navbar__share__item{
+            all:unset;
+            padding: 0 0.5rem;
+        }
+    }
+
+}
+
+
+
+
   //gallery for desktop design
   .gallery {
     display: grid;
@@ -1018,6 +1327,22 @@ p {
   #text-right {
     text-align: right;
   }
-
+  .slideshow-container-tickets {
+    display: flex;
+    flex-direction: row;
+  }
+  .slideshow-container-tickets {
+    display: flex;
+    flex-direction: row;
+    &-content {
+      flex: 0 0 33%;
+    }
+  }
+  .flextickets-container {
+    padding-right: 1rem;
+    border-right: 1px solid $gray-light;
+  }
+  .tickets {
+    margin: 0.5rem 2rem;
+  }
 }
-
