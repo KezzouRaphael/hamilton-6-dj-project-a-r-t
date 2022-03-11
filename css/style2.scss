@@ -1,0 +1,191 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    //outline: 1px solid red;
+}
+
+$blue: #007bff;
+$indigo: #6610f2;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #dc3545;
+$orange: #fd7e14;
+$yellow: #ffc107;
+$green: #28a745;
+$teal: #20c997;
+$cyan: #17a2b8;
+$white: #fff;
+$gray: #6c757d;
+$gray-dark: #343a40;
+$gray-light: #c4c4c4;
+$bggray: #f5f5f5;
+
+ header {
+    background-image: url("/images/homapage-banner-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height:100vh; 
+ }
+
+ .navbar{
+     display:flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+     position: sticky;
+     background:$gray-dark;
+     padding: 1rem 1rem;
+
+   
+
+    .navbar__hamburger{
+        color: $white;
+        font-size:2rem;
+    }
+
+    .navbar__share{
+        display: none;
+        list-style: none;
+        position:absolute;
+        top:100%;
+        right:0;
+        background:$gray-dark;
+        border-radius:0.2rem;
+        .navbar__share__item{
+            //display: inline-block;
+            text-align: center;
+            padding:0.5rem 1rem;
+            a {
+                color:$gray;
+                text-decoration: none;
+                transition-property: all;
+                transition-duration: 0.5s;
+                transition-timing-function: ease-in-out;
+                transition-delay: 0s;
+    
+                &:hover {
+                  color: $white;
+                }
+
+            }
+        }
+    }
+
+
+    .navbar__eclipse{
+        color: $white;
+        font-size:2rem;
+        
+    }
+
+    .navbar__page{
+        display: none;
+    }
+
+    //page navigation
+    .left{
+        left: 0;
+    }
+
+    .right{
+        right: 0;
+    }
+
+    .navbar__side{
+        display:none;
+        list-style: none;
+        position:absolute;
+        top:100%;
+        height:100vh;
+        background:$gray-dark;
+        .navbar__side__item{
+            padding: 1rem 3rem;
+            text-align: left;
+            a{  
+                color: $white;
+                text-transform: uppercase;
+                text-decoration: none;
+                text-decoration: none;
+                transition-property: all;
+                transition-duration: 0.5s;
+                transition-timing-function: ease-in-out;
+                transition-delay: 0s;
+    
+                &:hover {
+                  color: $gray;
+                }
+                
+            }
+        }
+    }
+
+
+ }
+ 
+
+
+
+ // desktop design
+
+ @media screen and (min-width: 800px) {
+    .navbar{
+        all:unset;
+        display:flex;
+        position: sticky;
+        background:$gray-dark;
+        padding:1rem 0;
+        align-items: center;
+        justify-content:space-between;
+
+        .navbar__eclipse{
+            display:none;
+        }
+
+        .navbar__hamburger{
+             order:4;
+        }
+ 
+
+
+        .navbar__page{
+           
+            list-style: none;
+            display: inline-block;
+            background:$gray-dark;
+            .navbar__page__item{
+                padding: 0 0.5rem;
+                text-align: center;
+                display: inline-block;
+                a{  
+                    color: $white;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    text-decoration: none;
+                    transition-property: all;
+                    transition-duration: 0.5s;
+                    transition-timing-function: ease-in-out;
+                    transition-delay: 0s;
+        
+                    &:hover {
+                      color: $gray;
+                    }
+                    
+                }
+            }
+        }
+
+        .navbar__share{
+            all:unset;
+            padding: 0 0.5rem;
+            .navbar__share__item{
+                all:unset;
+                padding: 0 0.5rem;
+            }
+        }
+
+    }
+
+ }

@@ -1,6 +1,7 @@
 let carrouselLinks = document.querySelectorAll(".carrousel");
 
 
+
 // parallax effect of header
 
 window.onscroll = function() {parallax()};
@@ -240,3 +241,66 @@ if(audioPlayer)
     document.getElementById("countdown-seconds").innerHTML = seconds;
   }, 1000);
 }
+
+
+// navigation of header 
+
+
+//eclipse 
+let eclipse=document.querySelector(".navbar__eclipse");
+eclipse.addEventListener("click",(e)=>{
+    let navbarShare=document.querySelector(".navbar__share");
+    if(navbarShare.style.display=="block"){
+        navbarShare.style.display="none";
+    }else{
+        navbarShare.style.display="block";
+    }
+    
+});
+
+ 
+
+// navbar__hamburger
+let hamburger=document.querySelector(".navbar__hamburger");
+hamburger.addEventListener("click",(e)=>{
+    let navbarSide=document.querySelector(".navbar__side");
+if(screen.width<=800){
+    if(navbarSide.style.display=="block"){
+        console.log(navbarSide.classList);
+        if(navbarSide.classList.length>1){
+            navbarSide.classList.remove("right");
+            navbarSide.classList.add("left");
+        }else{
+            navbarSide.classList.add("left");
+        }
+        
+        navbarSide.style.display="none";
+        e.target.classList.remove("fa-arrow-left");
+        e.target.classList.add("fa-bars");
+    }else{
+        navbarSide.style.display="block";
+        e.target.classList.add("fa-arrow-left");
+        e.target.classList.remove("fa-bars");
+    }
+}else{
+    // it is desktop
+    if(navbarSide.style.display=="block"){
+        if(navbarSide.classList.length>1){
+            navbarSide.classList.remove("left");
+            navbarSide.classList.add("right");
+        }else{
+            navbarSide.classList.add("right");
+        }
+        navbarSide.style.display="none";
+        e.target.classList.remove("fa-arrow-right");
+        e.target.classList.add("fa-bars");
+    }else{
+        navbarSide.style.display="block";
+        navbarSide.style.right="0rem";
+        e.target.classList.add("fa-arrow-right");
+        e.target.classList.remove("fa-bars");
+    }
+}
+    
+});
+
