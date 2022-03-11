@@ -1131,6 +1131,20 @@ p {
   #span-4 {
     display: none;
   }
+  .slideshow-container-tickets {
+    display: flex;
+    flex-direction: row;
+    &-content {
+      flex: 0 0 50%;
+    }
+  }
+  .flextickets-container {
+    padding-right: 1rem;
+    border-right: 1px solid $gray-light;
+  }
+  .tickets {
+    margin: 0.5rem 2rem;
+  }
 }
 
 ///////////////// Desktop design /////////////////
@@ -1240,5 +1254,23 @@ p {
   }
   #text-right {
     text-align: right;
+  }
+  .slideshow-container-tickets {
+    display: flex;
+    flex-direction: row;
+  }
+  .slideshow-container-tickets {
+    display: flex;
+    flex-direction: row;
+    &-content {
+      flex: 0 0 33%;
+    }
+  }
+  .flextickets-container {
+    padding-right: 1rem;
+    border-right: 1px solid $gray-light;
+  }
+  .tickets {
+    margin: 0.5rem 2rem;
   }
 }

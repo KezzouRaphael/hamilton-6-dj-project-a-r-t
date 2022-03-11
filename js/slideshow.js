@@ -14,13 +14,16 @@ function resizeWindow(){
   if(desktop.matches)
   {
     showSlides(4);
+    showSlidesTickets(3);
   }
   else if(tablet.matches){
     showSlides(1);
+    showSlidesTickets(1);
   }
   else
   {
     showSlides(1);
+    showSlidesTickets(1);
   }
 }
 
@@ -107,7 +110,7 @@ function showSlidesTickets(n) {
     for (i = 0; i < dotsTicket.length; i++) {
         dotsTicket[i].className = dotsTicket[i].className.replace(" current", "");
     }
-    //dotsTicket[2].style.display = "none";
+    dotsTicket[2].style.display = "none";
     slidesTicket[slideIndex-1].style.display = "block";
     slidesTicket[slideIndex].style.display="block";
     dotsTicket[slideIndex-1].className += " current";
