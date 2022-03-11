@@ -131,7 +131,7 @@ function getNumber(val){
   }
 
   function myFunction() {
-    console.log(sticky);
+ 
      if (window.pageYOffset >= 10) {
        navbar.classList.add("sticky")
      } else {
@@ -266,7 +266,7 @@ hamburger.addEventListener("click",(e)=>{
     let navbarSide=document.querySelector(".navbar__side");
 if(screen.width<=800){
     if(navbarSide.style.display=="block"){
-        console.log(navbarSide.classList);
+       
         if(navbarSide.classList.length>1){
             navbarSide.classList.remove("right");
             navbarSide.classList.add("left");
