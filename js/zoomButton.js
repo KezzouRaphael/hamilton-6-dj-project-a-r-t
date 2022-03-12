@@ -30,7 +30,7 @@ function zoomClicked(e){
   modal.style.display = "block";
   let imgZoomed = document.createElement("img");
   let divspan = document.getElementsByClassName("modal-content").item(0);
-  imgZoomed.setAttribute("src","/images/"+e.target.getAttribute("id")+"-original.jpg");
+  imgZoomed.setAttribute("src","./images/"+e.target.getAttribute("id")+"-original.jpg");
   modal.replaceChildren(divspan,imgZoomed);
 }
 function onhoverfunction(e){

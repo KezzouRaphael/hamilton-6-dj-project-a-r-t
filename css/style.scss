@@ -69,13 +69,13 @@
     }
     .player__control {
       color: $gray;
-      background-image: url("images/play-svgrepo-com.svg");
+      background-image: url("../images/play-svgrepo-com.svg");
     }
   }
 }
 
 header {
-  background-image: url("/images/banner-img.jpg");
+  background-image: url("../images/banner-img.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -136,14 +136,13 @@ header {
   padding: 1rem 1rem;
   font-weight: bold;
 
- 
-  .navbar__logo{
+  .navbar__logo {
     max-width: 70%;
-    img{
-      margin:0;
+    img {
+      margin: 0;
     }
   }
- 
+
   .navbar__hamburger {
     color: $white;
     font-size: 2rem;
@@ -168,7 +167,6 @@ header {
         transition-duration: 0.5s;
         transition-timing-function: ease-in-out;
         transition-delay: 0s;
- 
 
         &:hover {
           color: $white;
@@ -226,7 +224,7 @@ header {
 
 // banner of the home pageYOffset
 #home_nav {
-  background-image: url("/images/homapage-banner-img.jpg");
+  background-image: url("../images/homapage-banner-img.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -505,7 +503,7 @@ p {
 }
 
 .section-music {
-  background-image: url(/images/bg-circle-2.png);
+  background-image: url("../images/bg-circle-2.png");
   background-size: cover;
   background-position: center center;
   background-color: $bggray;
@@ -736,7 +734,8 @@ p {
     margin-right: auto;
     margin-left: auto;
     text-align: center;
-    background-image: url("./images/bg-counter.jpg");
+ 
+    background-image: url("../images/bg-counter.jpg");
     background-color: $gray-dark;
     color: $white;
     background-position: center;
@@ -780,7 +779,9 @@ p {
   }
 }
 .Fanbase {
-  background-image: url("./images/bg-circle-1.png");
+ 
+  background-image: url("../images/bg-circle-1.png");
+ 
   background-color: #282828;
   background-size: cover;
   background-position: center;
@@ -832,7 +833,9 @@ p {
 
 .btnlatest {
   text-align: center;
-  background-image: url("./images/homepage-latest-releases-background.jpg");
+ 
+  background-image: url("../images/homepage-latest-releases-background.jpg");
+ 
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -857,7 +860,9 @@ p {
 
 .suscribesection {
   text-align: center;
-  background-image: url("./images/homepage-footer-background.jpg");
+ 
+  background-image: url("../images/homepage-footer-background.jpg");
+ 
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -896,7 +901,9 @@ p {
 }
 //////////////////////////////////////////PARTNERS AND SPONSORS///////////////////////////////
 .section-partners-and-sponsors {
-  background-image: url("./images/homepage-sponsors-background.jpg");
+ 
+  background-image: url("../images/homepage-sponsors-background.jpg");
+ 
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -1049,7 +1056,9 @@ p {
   }
 }
 .bgimage {
-  background-image: url("./images/homepage-news-background.jpg");
+
+  background-image: url("../images/homepage-news-background.jpg");
+ 
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1240,8 +1249,8 @@ p {
     display: flex;
     position: sticky;
     z-index: 2000;
-    background:$gray-dark;
-    padding:0.5rem 1rem;
+    background: $gray-dark;
+    padding: 0.5rem 1rem;
     font-weight: bold;
     align-items: center;
     justify-content: space-between;
@@ -1253,16 +1262,14 @@ p {
     .navbar__hamburger {
       order: 4;
     }
- 
-    navbar__logo{
+
+    navbar__logo {
       max-width: 80%;
-      img{
-        margin:0;
+      img {
+        margin: 0;
       }
     }
 
-
- 
     .navbar__page {
       list-style: none;
       display: inline-block;
@@ -1288,15 +1295,13 @@ p {
       }
     }
 
- 
-    .navbar__share{
-        all:unset;
-        //padding: 0 0.5rem;
-        .navbar__share__item{
-            all:unset;
-            padding: 0 0.5rem;
-        }
- 
+    .navbar__share {
+      all: unset;
+      //padding: 0 0.5rem;
+      .navbar__share__item {
+        all: unset;
+        padding: 0 0.5rem;
+      }
     }
   }
 
