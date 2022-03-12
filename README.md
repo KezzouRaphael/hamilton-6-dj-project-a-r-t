@@ -2,7 +2,7 @@
 
 ## Short description about the purpose
 
-It is made for Dj Angerone, he is getting known of his profession in singing. This webiste will help him to reach out his fans and also to sell tickets during his tours. he has also a gallery to expose his new photos to his fan.
+It is made for Dj Angerone, he is getting known of his profession in music. This webiste will help him to reach out his fans and also to sell tickets during his tours. he has also a gallery to expose his new photos to his fan.
 
 
 ## Technologies used
